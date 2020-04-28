@@ -24,7 +24,7 @@ const places = [{
   alternatives: ['Nîmes'],
 }, {
   label: 'Thaïlande',
-  alternatives: ['Georges du Verdon', 'Lac de Monteynard'],
+  alternatives: ['Gorges du Verdon', 'Lac de Monteynard','Canyon Vacca','Gouffre de la Fage'],
 }, {
   label: 'Afrique du Sud',
   alternatives: ['Roche de Solutré'],
@@ -33,16 +33,22 @@ const places = [{
   alternatives: ['Marais Poitevin'],
 }, {
   label: 'Canada',
-  alternatives: ['Plateau des milles étangs', 'Lac de Gaube'],
+  alternatives: ['Plateau des milles étangs', 'Lac de Gaube','Gorges du Verdon'],
 }, {
   label: 'Équateur',
-  alternatives: ['Georges de la Dordogne'],
+  alternatives: ['Gorges de la Dordogne'],
 }, {
   label: 'Bavière',
   alternatives: ['Strasbourg', 'Colmar'],
 }, {
   label: 'Venise',
   alternatives: ['Annecy', 'Colmar'],
+}, {
+  label: 'Grèces',
+  alternatives: ['Nîmes','Le Donon'],
+}, {
+  label: 'Finlande',
+  alternatives: ['Lac Capitello'],
 }]
 
 
