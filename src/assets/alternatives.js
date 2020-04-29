@@ -36,6 +36,7 @@ const alternatives = [{
     path: 'lac_annecy1.jpg'
   }, {
     path: 'lac_annecy2.jpg'
+  }]
 }, {
   label: 'Nîmes',
   images: [{
@@ -44,6 +45,7 @@ const alternatives = [{
     path: 'nimes1.jpg'
   }, {
     path: 'nimes2.jpg'
+  }],
 }, {
   label: 'Gouffre de la Fage',
   images: [{
