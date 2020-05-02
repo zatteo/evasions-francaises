@@ -1,12 +1,7 @@
 <template>
   <div class="alternative">
-    <h2>Les alternatives</h2>
-    <div v-if="alternatives.length === 0">
-      Oh, non il n'y a aucune solution :'(
-    </div>
-    <div v-for="alternative in alternatives" :key="alternative.label">
-      <Alternative :alternative="alternative"/>
-    </div>
+    <Alternative :alternative="alternatives[currentAlternative]"/>
+    <button v-if="alternatives.length > 0" @click="next()" style="margin-bottom: 10px;">Une autre alternative !</button>
   </div>
 </template>
 
@@ -22,6 +17,16 @@ export default {
   props: {
     alternatives: Array
   },
+  data() {
+    return {
+      currentAlternative: 0,
+    }
+  },
+  methods: {
+    next() {
+      this.currentAlternative = (this.currentAlternative + 1) % this.alternatives.length;
+    }
+  }
 }
 </script>
 

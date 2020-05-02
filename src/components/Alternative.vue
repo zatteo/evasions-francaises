@@ -1,28 +1,34 @@
 <template>
   <div class="alternative pure-g">
-    <div class="pure-u-1">
+    <div class="pure-u-1 title-wrapper">
       <h3>{{ alternative.label }}</h3>
     </div>
-    <div class="pure-u-1 pure-u-md-1-3" style="border: 1px solid red;">
-      Description
+    <div class="pure-u-1 pure-u-md-1-3 description-wrapper">
+      Description de l'endroit...
+
+      <div>
+        Distance : x km (au lieu de y km)
+        <br>
+        CO² économisé : x t de CO²
+      </div>
     </div>
-    <div class="pure-u-1 pure-u-md-2-3" style="border: 1px solid red; max-width: 200px;">
+    <div class="pure-u-1 pure-u-md-2-3">
       <div v-if="alternative.images.length > 0">
         <agile class="main-agile" ref="main" :options="options1" :as-nav-for="asNavFor1">
           <div class="slide" v-for="(slide, index) in slides" :key="index" :class="`slide--${index}`">
             <img :src="`assets/images/${slide.path}`">
           </div>
         </agile>
-        <agile class="thumbnails" ref="thumbnails" :options="options2" :as-nav-for="asNavFor2">
+        <agile v-if="alternative.images.length > 1" class="thumbnails" ref="thumbnails" :options="options2" :as-nav-for="asNavFor2">
           <div class="slide slide--thumbniail" v-for="(slide, index) in slides" :key="index" :class="`slide--${index}`" @click="$refs.thumbnails.goTo(index)">
             <img :src="`assets/images/${slide.path}`">
           </div>
           <template slot="prevButton">
-            <span>previous</span>
+            <span>&#60;</span>
           </template>
 
           <template slot="nextButton">
-            <span>next</span>
+            <span>&#62;</span>
           </template>
         </agile>
       </div>
@@ -55,21 +61,7 @@ export default {
 				centerMode: true,
 				dots: false,
 				navButtons: false,
-				slidesToShow: 3,
-				responsive: [
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 5
-            }
-          },
-          {
-            breakpoint: 1000,
-            settings: {
-              navButtons: true
-            }
-          }
-        ]
+				slidesToShow: 5,
       },
     }
   },
@@ -85,11 +77,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -102,13 +90,28 @@ a {
   color: #42b983;
 }
 
+.title-wrapper {
+  text-align: left;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.alternative {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .main-agile {
-	margin-bottom: 30px;
 }
 
 .thumbnails {
-	margin: 0 -5px;
-	width: calc(100% + 10px);
+
 }
 
 .agile__slide {
@@ -116,7 +119,6 @@ a {
 	box-sizing: border-box;
 	color: #fff;
 	display: flex;
-	height: 450px;
 	justify-content: center;
 }
 

@@ -1,16 +1,21 @@
 <template>
   <div class="main">
-    <h1>Entrez votre destination</h1>
-    <b>Qui a dit qu'il fallait aller à Bali pour décompresser ? Les plus beaux paysages sont à côté de nous :)</b>
-    <br>
-    <div style="width: 600px;">
-       <v-select :value="selected" @input="setSelected" :options="places" :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"></v-select>
+    <div class="search">
+      <h1>Qui a dit qu'il fallait prendre l'avion pour s'évader ?</h1>
+      <b>Entrez votre destination lointaine et découvrez les plus belles alternatives à moins de 1000km.</b>
+      <br>
+      <div class="search-bar">
+        <v-select :value="selected" @input="setSelected" :options="places" :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"></v-select>
+      </div>
+      <br>
     </div>
-    <br>
-    <div v-if="placeFound">
-      <Place :place="placeFound"/>
+
+    <div class="result">
+      <!-- <div v-if="placeFound">
+        <Place :place="placeFound"/>
+      </div> -->
+      <AlternativeList v-if="alternativesFound" :alternatives="alternativesFound"/>
     </div>
-    <AlternativeList :alternatives="alternativesFound"/>
 
     <h2>Pourquoi ce site ?</h2>
     <b>Avec l'avion, le crédit carbone individuel annuel est dépassé en une seule fois .</b>
@@ -25,7 +30,7 @@
 </template>
 
 <script>
-import Place from './Place'
+// import Place from './Place'
 import AlternativeList from './AlternativeList'
 
 import loadedAlternatives from '../assets/alternatives';
@@ -34,7 +39,7 @@ import loadedPlaces from '../assets/places';
 export default {
   name: 'Main',
   components: {
-    Place,
+    // Place,
     AlternativeList,
   },
   props: {
@@ -88,5 +93,29 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #39cccc;
+  width: 95%;
+}
+
+.search-bar {
+  min-width: 300px;
+  max-width: 800px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result {
+  margin-top: 10px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  width: 60%;
 }
 </style>
