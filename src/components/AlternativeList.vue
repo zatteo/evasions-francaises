@@ -1,7 +1,7 @@
 <template>
   <div class="alternative">
     <Alternative :alternative="alternatives[currentAlternative]"/>
-    <button v-if="alternatives.length > 0" @click="next()" style="margin-bottom: 10px;">Une autre alternative !</button>
+    <button v-if="alternatives.length > 0" @click="next()" class="pure-button">Une autre alternative !</button>
   </div>
 </template>
 

@@ -6,6 +6,7 @@
       <br>
       <div class="search-bar">
         <v-select :value="selected" @input="setSelected" :options="places" :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"></v-select>
+        <button @click="resetSelected">reset</button>
       </div>
       <br>
     </div>
@@ -14,7 +15,7 @@
       <!-- <div v-if="placeFound">
         <Place :place="placeFound"/>
       </div> -->
-      <AlternativeList v-if="alternativesFound" :alternatives="alternativesFound"/>
+      <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound"/>
     </div>
 
     <h2>Pourquoi ce site ?</h2>
@@ -66,7 +67,11 @@ export default {
         this.placeFound = undefined;
         this.alternativesFound = [];
       }
-
+    },
+    resetSelected() {
+      this.selected = '';
+      this.placeFound = undefined;
+      this.alternativesFound = [];
     }
   },
 }
