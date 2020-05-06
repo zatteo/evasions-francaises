@@ -1,9 +1,15 @@
 import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import VueAgile from 'vue-agile'
 import vSelect from 'vue-select';
 import App from './App.vue'
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
 Vue.use(VueAgile)
+
+Vue.use(BootstrapVue);
 
 Vue.component('v-select', vSelect);
 
