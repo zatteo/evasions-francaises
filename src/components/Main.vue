@@ -21,7 +21,13 @@
                 type="button"
                 class="btn btn-primary btn-lg search-button"
                 @click="resetSelected"
-              >reset</button>
+              >
+                reset
+              </button>
+            </div>
+            <div class="location">
+              Votre localisation : {{ location.name }} ({{location.latitude}} : {{location.longitude}})
+              <button @click="getLocation">Me géolocaliser</button>
             </div>
             <br />
           </div>
@@ -34,7 +40,7 @@
             <!-- <div v-if="placeFound">
         <Place :place="placeFound"/>
             </div>-->
-            <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound" />
+            <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound" :place="placeFound" />
           </div>
         </div>
       </div>
@@ -82,17 +88,54 @@ export default {
       alternatives: loadedAlternatives,
       selected: "",
       placeFound: undefined,
-      alternativesFound: []
+      alternativesFound: [],
+      location: {
+        name: 'Paris',
+        latitude: 48.8534,
+        longitude: 2.3488,
+      }
     };
+  },
+  computed: {
+    fullPlaces() {
+      const { places, location, calculateDistance, calculateEmission } = this;
+
+      return places.map((place) => {
+        const distance = calculateDistance(location.latitude, location.longitude, place.latitude, place.longitude);
+
+        const emission = calculateEmission(distance, 'plane');
+
+        return {
+          ...place,
+          distance,
+          emission,
+        }
+      });
+    },
+    fullAlternatives() {
+      const { alternatives, location, calculateDistance, calculateEmission } = this;
+
+      return alternatives.map((alternative) => {
+        const distance = calculateDistance(location.latitude, location.longitude, alternative.latitude, alternative.longitude);
+
+        const emission = calculateEmission(distance, 'plane');
+
+        return {
+          ...alternative,
+          distance,
+          emission,
+        }
+      });
+    },
   },
   methods: {
     setSelected(search) {
       this.selected = search;
-      const place = this.places.find(d => search.label === d.label);
+      const place = this.fullPlaces.find(d => search.label === d.label);
 
       if (place) {
         this.placeFound = place;
-        this.alternativesFound = this.alternatives.filter(a =>
+        this.alternativesFound = this.fullAlternatives.filter(a =>
           place.alternatives.includes(a.label)
         );
       } else {
@@ -104,8 +147,57 @@ export default {
       this.selected = "";
       this.placeFound = undefined;
       this.alternativesFound = [];
+    },
+    getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          this.location.name = 'GPS';
+          this.location.latitude = position.coords.latitude;
+          this.location.longitude = position.coords.longitude;
+        }, (error) => {
+          console.log(error)
+        }, { timeout: 10000 });
+      }
+    },
+    calculateDistance(lat1, lon1, lat2, lon2) {
+      var R = 6371; // km
+      var dLat = this.toRad(lat2-lat1);
+      var dLon = this.toRad(lon2-lon1);
+      lat1 = this.toRad(lat1);
+      lat2 = this.toRad(lat2);
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      var d = R * c;
+      return d;
+    },
+    toRad(Value) {
+      return Value * Math.PI / 180;
+    },
+    calculateEmission(distance, transport) {
+      let emission;
+
+      switch (transport) {
+        case 'plane':
+          emission = distance * 0.000285;
+          break;
+        case 'train':
+          emission = distance * 0.000014;
+          break;
+        default:
+          emission = distance * 0.000285;
+          break;
+      }
+
+      return emission.toFixed(2);
     }
-  }
+  },
+  watch: {
+    fullAlternatives() {
+      this.setSelected(this.selected);
+    }
+  },
 };
 </script>
 

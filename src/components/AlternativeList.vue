@@ -1,6 +1,6 @@
 <template>
   <div class="alternative">
-    <Alternative :alternative="alternatives[currentAlternative]"/>
+    <Alternative :alternative="alternatives[currentAlternative]" :place="place"/>
     <button v-if="alternatives.length > 0" @click="next()" class="pure-button">Une autre alternative !</button>
   </div>
 </template>
@@ -15,7 +15,8 @@ export default {
     Alternative
   },
   props: {
-    alternatives: Array
+    alternatives: Array,
+    place: Object,
   },
   data() {
     return {

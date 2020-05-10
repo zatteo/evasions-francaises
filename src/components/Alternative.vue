@@ -7,9 +7,9 @@
       Description de l'endroit...
 
       <div>
-        Distance : x km (au lieu de y km)
+        Distance : {{ alternative.distance }} km (au lieu de {{ place.emission }} km)
         <br>
-        CO² économisé : x t de CO²
+        CO² : -x t de CO² ({{ alternative.emission }} t au lieu de {{ place.emission }} t)
       </div>
     </div>
     <div class="pure-u-1 pure-u-md-2-3">
@@ -45,7 +45,8 @@ export default {
     agile: VueAgile
   },
   props: {
-    alternative: Object
+    alternative: Object,
+    place: Object,
   },
   data () {
 		return {
