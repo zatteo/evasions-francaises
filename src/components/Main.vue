@@ -1,65 +1,68 @@
 <template>
   <div class="container">
-    <div class="main">
-      <div class="row">
-        <div class="col-12">
-          <div class="search">
-            <p class="title">Destinations Alternatives</p>
-            <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
-            <b
-              class="search-text"
-            >Entrez votre destination lointaine et découvrez les plus belles alternatives à moins de 1000km.</b>
-            <br />
-            <div class="search-bar">
-              <v-select
-                :value="selected"
-                @input="setSelected"
-                :options="places"
-                :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"
-              ></v-select>
-              <button
-                type="button"
-                class="btn btn-primary btn-lg search-button"
-                @click="resetSelected"
-              >
-                reset
-              </button>
-            </div>
-            <div class="location">
-              Votre localisation : {{ location.name }} ({{location.latitude}} : {{location.longitude}})
-              <button @click="getLocation">Me géolocaliser</button>
-            </div>
-            <br />
+    <div class="row">
+      <div class="col-12">
+        <div class="search">
+          <p class="title">Destinations Alternatives</p>
+          <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
+          <b
+            class="search-text"
+          >Entrez votre destination lointaine et découvrez les plus belles alternatives à moins de 1000km.</b>
+          <br />
+          <div class="search-bar">
+            <v-select
+              :value="selected"
+              @input="setSelected"
+              :options="places"
+              :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"
+            ></v-select>
+            <button
+              type="button"
+              class="btn btn-primary search-button"
+              @click="resetSelected"
+            >
+              Réinitialiser
+            </button>
           </div>
+          <div class="location">
+            Votre localisation : {{ location.name }} ({{location.latitude}} : {{location.longitude}})
+            <button
+              type="button"
+              class="btn btn-primary" @click="getLocation"
+            >
+              Me géolocaliser
+            </button>
+          </div>
+          <br />
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="result">
-            <!-- <div v-if="placeFound">
-        <Place :place="placeFound"/>
-            </div>-->
-            <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound" :place="placeFound" />
-          </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="result">
+          <!-- <div v-if="placeFound">
+      <Place :place="placeFound"/>
+          </div>-->
+          <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound" :place="placeFound" />
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-12">
-          <div class="why">
-            <p class="why-title">Pourquoi ce site ?</p>
-            <b>Avec l'avion, le crédit carbone individuel annuel est dépassé en une seule fois .</b>
-            <ul>
-              <li>L’empreinte carbone moyenne d’un français est de 12 tonnes d’équivalent CO2 par an (en prenant en compte les émissions importées/exportées).</li>
-              <br />
-              <br />
-              <li>Pour atteindre la neutralité carbone à l’échelle mondiale, il faudrait que chacun émette au maximum 1,5 tonne par an et donc diviser par 6 ses propres émissions.</li>
-              <br />
-              <br />
-              <li>Un aller retour Paris-New-York émettant 2,5 tonnes d’équivalent CO2 par passager, les longs trajets en avion ne sont pas compatibles avec le budget carbone des Français.</li>
-            </ul>
-          </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="why">
+          <p class="why-title">Pourquoi ce site ?</p>
+          <b>Avec l'avion, le crédit carbone individuel annuel est dépassé en une seule fois .</b>
+          <ul>
+            <li>L’empreinte carbone moyenne d’un français est de 12 tonnes d’équivalent CO2 par an (en prenant en compte les émissions importées/exportées).</li>
+            <br />
+            <br />
+            <li>Pour atteindre la neutralité carbone à l’échelle mondiale, il faudrait que chacun émette au maximum 1,5 tonne par an et donc diviser par 6 ses propres émissions.</li>
+            <br />
+            <br />
+            <li>Un aller retour Paris-New-York émettant 2,5 tonnes d’équivalent CO2 par passager, les longs trajets en avion ne sont pas compatibles avec le budget carbone des Français.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -170,7 +173,8 @@ export default {
         Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
       var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
       var d = R * c;
-      return d;
+
+      return parseInt(d.toFixed(2), 10);
     },
     toRad(Value) {
       return Value * Math.PI / 180;
@@ -190,7 +194,7 @@ export default {
           break;
       }
 
-      return emission.toFixed(2);
+      return parseFloat(emission.toFixed(2), 10);
     }
   },
   watch: {
@@ -203,6 +207,7 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
+
 @font-face {
   font-family: PacificoLight;
   src: url("./../assets/Pacifico-Light.ttf");
@@ -221,13 +226,6 @@ li {
 }
 a {
   color: #42b983;
-}
-.main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .search-button {

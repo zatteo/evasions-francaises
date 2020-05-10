@@ -85,5 +85,4 @@ const places = [{
   alternatives: ['Lac Capitello'],
 }]
 
-
 export default places;

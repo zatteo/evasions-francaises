@@ -61,7 +61,7 @@ const alternatives = [{
   longitude: 4.35,
   images: [{
     path: 'nimes.jpg',
-  }, {  
+  }, {
     path: 'nimes1.jpg'
   }, {
     path: 'nimes2.jpg'
@@ -250,6 +250,5 @@ const alternatives = [{
     path: 'montblanc1.jpg'
   }],
 }]
-
 
 export default alternatives;
