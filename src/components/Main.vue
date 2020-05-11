@@ -24,14 +24,19 @@
               Réinitialiser
             </button>
           </div>
-          <div class="location">
-            Votre localisation : {{ location.name }} ({{location.latitude}} : {{location.longitude}})
-            <button
-              type="button"
-              class="btn btn-primary" @click="getLocation"
-            >
-              Me géolocaliser
-            </button>
+          <div class="row">
+            <div class="col-8">
+              Votre localisation : {{ location.name }} ({{location.latitude}} : {{location.longitude}})
+              <button
+                type="button"
+                class="btn btn-primary" @click="getLocation"
+              >
+                Me géolocaliser
+              </button>
+            </div>
+            <div class="col-4">
+              <b-form-input id="distance" v-model="filters.distance" type="number" step="10" placeholder="Distance max"></b-form-input>
+            </div>
           </div>
           <br />
         </div>
@@ -96,6 +101,9 @@ export default {
         name: 'Paris',
         latitude: 48.8534,
         longitude: 2.3488,
+      },
+      filters: {
+        distance: '',
       }
     };
   },
@@ -133,13 +141,14 @@ export default {
   },
   methods: {
     setSelected(search) {
+      const { filters } = this;
       this.selected = search;
       const place = this.fullPlaces.find(d => search.label === d.label);
 
       if (place) {
         this.placeFound = place;
         this.alternativesFound = this.fullAlternatives.filter(a =>
-          place.alternatives.includes(a.label)
+          place.alternatives.includes(a.label) && (filters.distance === '' || a.distance <= filters.distance)
         );
       } else {
         this.placeFound = undefined;
