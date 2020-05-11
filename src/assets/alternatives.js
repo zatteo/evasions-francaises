@@ -4,6 +4,8 @@ const alternatives = [{
   longitude: 8.73462,
   images: [{
     path: 'corse.jpg',
+    description: 'Superbe plage',
+    source: 'Office du Tourisme de Corse'
   }, {
     path: 'corse2.jpeg'
   }],

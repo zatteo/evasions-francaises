@@ -30,7 +30,12 @@
           @sliding-start="onSlideStart"
           @sliding-end="onSlideEnd"
         >
-          <b-carousel-slide v-for="image in alternative.images" :key="image.path">
+          <b-carousel-slide
+            v-for="image in alternative.images"
+            :key="image.path"
+            :caption="image.description"
+            :text="image.source"
+          >
             <template v-slot:img>
               <img
                 class="d-block img-fluid w-100"
