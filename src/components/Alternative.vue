@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12 col-md-4 description-wrapper">
         Description de l'endroit...
-        <div>
+        <div v-if="place">
           <b> Votre destination est plus de proche de {{ Math.abs(alternative.distance - place.distance) }} km</b>
           <br>
           {{ alternative.distance }} km au lieu de {{ place.distance }} km

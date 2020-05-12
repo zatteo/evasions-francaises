@@ -1,18 +1,20 @@
 <template>
   <div class="alternative">
     <Alternative :alternative="alternatives[currentAlternative]" :place="place"/>
-    <button v-if="alternatives.length > 0" @click="next()" class="pure-button">Une autre alternative !</button>
+    <button v-if="alternatives.length > 0" @click="next()" class="pure-button">
+      Une autre alternative !
+    </button>
   </div>
 </template>
 
 <script>
-import Alternative from './Alternative'
+import Alternative from './Alternative';
 
 
 export default {
   name: 'AlternativeList',
   components: {
-    Alternative
+    Alternative,
   },
   props: {
     alternatives: Array,
@@ -21,14 +23,14 @@ export default {
   data() {
     return {
       currentAlternative: 0,
-    }
+    };
   },
   methods: {
     next() {
       this.currentAlternative = (this.currentAlternative + 1) % this.alternatives.length;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
