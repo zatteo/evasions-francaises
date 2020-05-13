@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "generate-maps": "node src/scripts/generate-maps"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -23,6 +24,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "osm-static-maps": "^3.8.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

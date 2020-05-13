@@ -103,11 +103,12 @@
 </template>
 
 <script>
-// import Place from './Place'
-import AlternativeList from './AlternativeList';
 
-import loadedAlternatives from '../assets/alternatives';
-import loadedPlaces from '../assets/places';
+// import Place from './Place'
+import AlternativeList from './AlternativeList.vue';
+
+import loadedAlternatives from '../assets/alternatives.json';
+import loadedPlaces from '../assets/places.json';
 
 export default {
   name: 'Main',
@@ -210,6 +211,7 @@ export default {
     },
     setRandomAlternative() {
       const { fullAlternatives } = this;
+      // eslint-disable-next-line no-unused-vars
       let { alternativesFound } = this;
 
       this.resetSelected();
@@ -268,9 +270,11 @@ export default {
     },
   },
 };
+
 </script>
 
 <style scoped>
+
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 @font-face {
@@ -371,4 +375,5 @@ a {
     opacity: 1;
   }
 }
+
 </style>

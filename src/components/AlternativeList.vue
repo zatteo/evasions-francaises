@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Alternative from './Alternative';
+import Alternative from './Alternative.vue';
 
 
 export default {

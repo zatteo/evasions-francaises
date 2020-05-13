@@ -7,13 +7,23 @@
       <div class="col-12 col-md-4 description-wrapper">
         Description de l'endroit...
         <div v-if="place">
-          <b> Votre destination est plus de proche de {{ Math.abs(alternative.distance - place.distance) }} km</b>
+          <b>
+            Votre destination est plus de proche de
+            {{ Math.abs(alternative.distance - place.distance) }} km
+          </b>
           <br>
           {{ alternative.distance }} km au lieu de {{ place.distance }} km
           <br>
-          <b> Émission de CO² : {{ parseInt((((alternative.emission - place.emission) / place.emission ) * 100).toFixed(2)) }} %</b>
+          <b>
+            Émission de CO² :
+            {{
+              parseInt((((alternative.emission - place.emission) / place.emission ) * 100)
+              .toFixed(2))
+            }} %
+          </b>
           <br>
           {{ alternative.emission }} t au lieu de {{ place.emission }} t
+          <img style="width: 100%" :src="`assets/maps/${alternative.label}.jpg`">
         </div>
       </div>
       <div class="col-12 col-md-8">
@@ -65,12 +75,14 @@ export default {
   computed: {
     slides() {
       return this.alternative.images;
-    }
+    },
   },
-}
+};
+
 </script>
 
 <style scoped>
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -99,4 +111,5 @@ a {
   justify-content: center;
   padding: 20px;
 }
+
 </style>
