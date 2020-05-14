@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="main">
-      <div class="row">
-        <div class="col-12">
+      <div class="row fade-in">
+        <div class="col">
           <div class="search">
             <p class="title">Destinations Alternatives</p>
             <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
@@ -32,15 +32,15 @@
         <div class="col">
           <div class="result">
             <!-- <div v-if="placeFound">
-        <Place :place="placeFound"/>
+              <Place :place="placeFound"/>
             </div>-->
             <AlternativeList v-if="alternativesFound.length > 0" :alternatives="alternativesFound" />
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12">
+      <div v-if="selected" class="row">
+        <div class="col">
           <div class="why">
             <p class="why-title">Pourquoi ce site ?</p>
             <b>Avec l'avion, le crédit carbone individuel annuel est dépassé en une seule fois .</b>
@@ -155,7 +155,7 @@ a {
 
 .search {
   padding: 3% 3% 0 3%;
-  margin-top: 5%;
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,8 +171,9 @@ a {
 }
 
 .why {
-  padding-top: 2%;
+  padding: 1%;
   margin-top: 3%;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +196,7 @@ a {
 }
 
 .result {
-  margin-top: 10px;
+  margin-top: 3%;
   background-color: #fefefe;
   border-radius: 10px;
 }

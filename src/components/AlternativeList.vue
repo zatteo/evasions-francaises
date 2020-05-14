@@ -1,7 +1,7 @@
 <template>
   <div class="alternative">
     <Alternative :alternative="alternatives[currentAlternative]"/>
-    <button v-if="alternatives.length > 0" @click="next()" class="pure-button">Une autre alternative !</button>
+    <button v-if="alternatives.length > 0" @click="next()" class="btn btn-primary btn-lg alternative-button">Une autre alternative !</button>
   </div>
 </template>
 
@@ -45,5 +45,18 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.alternative-button {
+  margin-top: 2%;
+}
+
+.alternative {
+  padding: 1%;
+}
+
+.btn-primary {
+  background-color: #3fac8c !important;
+  border-color: #3fac8c !important;
 }
 </style>
