@@ -5,12 +5,20 @@
         <div class="search">
           <p class="title">Destinations Alternatives</p>
           <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
-          <b
+          <p
             class="search-text"
           >
             Entrez votre destination lointaine et
-            découvrez les plus belles alternatives à moins de 1000km.
-          </b>
+            découvrez les plus belles alternatives à moins de
+            <input
+              id="distance"
+              class="search-distance"
+              v-model="filters.distance"
+              type="number"
+              step="10"
+            >
+            km.
+          </p>
           <br />
           <div class="search-bar">
             <v-select
@@ -19,42 +27,31 @@
               :options="places"
               :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"
             ></v-select>
+            <div class="text-legend">
+              Votre localisation : {{ location.name }} ({{location.latitude}}
+              : {{location.longitude}})
+              <a
+                href="" @click.prevent="getLocation"
+              >
+                Me géolocaliser
+              </a>
+            </div>
+          </div>
+          <div class="row">
             <button
               type="button"
-              class="btn btn-primary search-button"
+              class="btn btn-primary btn-toolbar" @click="setRandomAlternative"
+            >
+              Une alternative au hasard
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-toolbar"
               @click="resetSelected"
             >
               Réinitialiser
             </button>
           </div>
-          <div class="row">
-            <div class="col-8">
-              Votre localisation : {{ location.name }} ({{location.latitude}}
-              : {{location.longitude}})
-              <button
-                type="button"
-                class="btn btn-primary" @click="getLocation"
-              >
-                Me géolocaliser
-              </button>
-            </div>
-            <div class="col-4">
-              <b-form-input
-              id="distance"
-              v-model="filters.distance"
-              type="number"
-              step="10"
-              placeholder="Distance max"
-             ></b-form-input>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="btn btn-primary" @click="setRandomAlternative"
-          >
-            Une alternative au hasard
-          </button>
-          <br />
         </div>
       </div>
     </div>
@@ -132,7 +129,7 @@ export default {
         longitude: 2.3488,
       },
       filters: {
-        distance: '',
+        distance: '1000',
       },
     };
   },
@@ -297,13 +294,19 @@ a {
   color: #42b983;
 }
 
-.search-button {
-  margin-top: 2%;
-}
-
 .btn-primary {
   background-color: #3fac8c !important;
   border-color: #3fac8c !important;
+}
+
+.btn-toolbar {
+  margin: 4px;
+}
+
+.text-legend {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #6c757d !important
 }
 
 .title {
@@ -329,6 +332,10 @@ a {
   font-size: 2rem;
 }
 
+.search-distance {
+  width: auto;
+}
+
 .why {
   padding-top: 2%;
   margin-top: 3%;
@@ -351,6 +358,7 @@ a {
   width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .result {
