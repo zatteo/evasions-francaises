@@ -1,9 +1,10 @@
 <template>
   <div class="alternative">
-    <Alternative :alternative="alternatives[currentAlternative]" :place="place"/>
-    <button v-if="alternatives.length > 0" @click="next()" class="pure-button">
-      Une autre alternative !
-    </button>
+    <Alternative
+      :alternative="alternatives[currentAlternative]"
+      :place="place"
+      v-on:nextAlternative="nextAlternative()"
+    />
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {
     };
   },
   methods: {
-    next() {
+    nextAlternative() {
       this.currentAlternative = (this.currentAlternative + 1) % this.alternatives.length;
     },
   },

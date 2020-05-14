@@ -13,7 +13,14 @@ const generateMap = (alternative) => {
     },
     center: '1.8752777777777778,46.6061111',
     zoom: 5,
-    attribution: '© OpenStreetMap contributors'
+    attribution: '© OpenStreetMap contributors',
+    height: 380,
+    width: 380,
+    markerIconOptions: {
+      iconUrl: 'http://localhost:8080/assets/marker.png',
+      iconSize: [32, 32],
+      iconAnchor: [16, 32]
+    }
   }).then(function (imageBinaryBuffer) {
     fs.writeFile(`./public/assets/maps/${alternative.label}.jpg`, imageBinaryBuffer, 'binary', function(err) {
       console.log(err);
