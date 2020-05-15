@@ -1,16 +1,21 @@
 <template>
-  <div class="alternative">
-    <Alternative
-      :alternative="alternatives[currentAlternative]"
-      :place="place"
-      v-on:nextAlternative="nextAlternative()"
-    />
+  <Alternative
+    v-if="alternatives[currentAlternative]"
+    :alternative="alternatives[currentAlternative]"
+    :place="place"
+    v-on:nextAlternative="nextAlternative()"
+  />
+  <div v-else class="card">
+    <h3 class="card-header">Aucune alternative n'a été trouvée</h3>
+    <div class="card-body">
+      Essayez peut-être de chercher une autre destination, voir d'augmenter la distance maximale ?
+    </div>
   </div>
 </template>
 
 <script>
-import Alternative from './Alternative.vue';
 
+import Alternative from './Alternative.vue';
 
 export default {
   name: 'AlternativeList',
@@ -32,22 +37,10 @@ export default {
     },
   },
 };
+
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
+
 </style>

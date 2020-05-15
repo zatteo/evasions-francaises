@@ -1,5 +1,5 @@
 <template>
-  <div class="alternative card">
+  <div class="card">
     <h3 class="card-header">{{ alternative.label }}</h3>
     <div class="card-body">
       <div class="row">
@@ -55,7 +55,6 @@
         <div class="col-12 col-md-8">
           <b-carousel
             id="carousel-1"
-            v-model="slide"
             :interval="4000"
             controls
             indicators
@@ -63,8 +62,6 @@
             img-width="1024"
             img-height="480"
             style="text-shadow: 1px 1px 2px #333;"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
           >
             <b-carousel-slide
               v-for="image in alternative.images"
@@ -74,7 +71,7 @@
             >
               <template v-slot:img>
                 <img
-                  class="d-block img-fluid w-100"
+                  class="image"
                   width="1024"
                   height="480"
                   :src="`assets/images/${image.path}`"
@@ -104,28 +101,11 @@ export default {
     alternative: Object,
     place: Object,
   },
-  computed: {
-    slides() {
-      return this.alternative.images;
-    },
-  },
 };
 
 </script>
 
 <style scoped>
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 
 .title-wrapper {
   text-align: left;
@@ -135,12 +115,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: left;
+  text-align: justify;
 }
 
 .description-card {
   flex: 1;
   margin-bottom: 10px;
+}
+
+.carousel-item {
+  background-color: white !important;
+}
+
+.image {
+  max-height: 100%;
+  width: auto;
 }
 
 .map {

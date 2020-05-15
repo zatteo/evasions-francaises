@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="search">
+        <div class="card search-card">
           <p class="title">Destinations Alternatives</p>
           <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
           <p
@@ -44,13 +44,6 @@
             >
               Une alternative au hasard
             </button>
-            <button
-              type="button"
-              class="btn btn-primary btn-toolbar"
-              @click="resetSelected"
-            >
-              Réinitialiser
-            </button>
           </div>
         </div>
       </div>
@@ -63,19 +56,28 @@
       <Place :place="placeFound"/>
           </div>-->
           <AlternativeList
-            v-if="alternativesFound.length > 0"
             :alternatives="alternativesFound"
-            :place="placeFound" />
+            :place="placeFound"
+          />
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <div class="why">
+        <div class="card why-card">
           <p class="why-title">Pourquoi ce site ?</p>
-          <b>Avec l'avion, le crédit carbone individuel annuel est dépassé en une seule fois .</b>
-          <ul>
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <img class="why-icon" src="assets/map.png">
+              <p class="why-icon-text">Promouvoir le tourisme local</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <img class="why-icon" src="assets/pollution.png">
+              <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
+            </div>
+          </div>
+          <!-- <ul>
             <li>
               L’empreinte carbone moyenne d’un français est de 12 tonnes d’équivalent CO2 par an
               (en prenant en compte les émissions importées/exportées).
@@ -92,7 +94,7 @@
               Un aller retour Paris-New-York émettant 2,5 tonnes d’équivalent CO2 par passager, les
               longs trajets en avion ne sont pas compatibles avec le budget carbone des Français.
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -187,6 +189,10 @@ export default {
   },
   methods: {
     setSelected(search) {
+      if (search === null) {
+        this.resetSelected();
+      }
+
       const { filters } = this;
       this.selected = search;
       const place = this.fullPlaces.find((d) => search.label === d.label);
@@ -262,15 +268,23 @@ export default {
     },
   },
   watch: {
-    fullAlternatives() {
-      this.setSelected(this.selected);
+    filters: {
+      handler() {
+        this.setSelected(this.selected);
+      },
+      deep: true,
+    },
+    fullAlternatives: {
+      handler() {
+        this.setSelected(this.selected);
+      },
     },
   },
 };
 
 </script>
 
-<style scoped>
+<style>
 
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 
@@ -279,20 +293,17 @@ export default {
   src: url("./../assets/Pacifico-Light.ttf");
 }
 
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
 a {
-  color: #42b983;
+  color: #3fac8c !important;
 }
+
+.card {
+  margin-top: 10px;
+}
+
+</style>
+
+<style scoped>
 
 .btn-primary {
   background-color: #3fac8c !important;
@@ -304,6 +315,7 @@ a {
 }
 
 .text-legend {
+  margin-top: 2px;
   font-size: 0.85rem;
   font-style: italic;
   color: #6c757d !important
@@ -311,45 +323,21 @@ a {
 
 .title {
   margin: 2% 0 0 0;
-  font-size: 4rem;
   font-family: "Pacifico";
+  font-size: 4rem;
 }
 
-.search {
-  padding: 3% 3% 0 3%;
-  margin-top: 5%;
+.search-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 10px;
 }
 
 .search-title {
+  margin: 0 0 2% 0;
   font-family: "PacificoLight";
-  padding: 0 0 5% 0;
   font-size: 2rem;
-}
-
-.search-distance {
-  width: auto;
-}
-
-.why {
-  padding-top: 2%;
-  margin-top: 3%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.why-title {
-  font-family: "PacificoLight";
-  font-size: 3rem;
 }
 
 .search-bar {
@@ -361,27 +349,24 @@ a {
   text-align: left;
 }
 
-.result {
-  margin-top: 10px;
-  background-color: #fefefe;
-  border-radius: 10px;
+.search-distance {
+  width: auto;
 }
 
-.fade-in {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
+.why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.why-title {
+  font-family: "PacificoLight";
+  font-size: 3rem;
+}
+
+.why-icon {
+  width: 20%;
 }
 
 </style>
