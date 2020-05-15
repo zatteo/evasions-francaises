@@ -7,9 +7,7 @@
           <div class="card description-card">
             <div class="card-body">
               <h4 class="card-title text-muted">Description</h4>
-              <p>
-                blablabla
-              </p>
+              <p v-html="alternative.description"></p>
             </div>
           </div>
           <div v-if="place" class="card">
