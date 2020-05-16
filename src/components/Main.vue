@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
         <div class="card search-card">
-          <p class="title">Destinations Alternatives</p>
+          <p class="title">Destinations alternatives</p>
           <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
           <p
             class="search-text"
@@ -25,7 +25,7 @@
               :value="selected"
               @input="setSelected"
               :options="places"
-              :placeholder="`Bali, Grand Canyon, et ${places.length - 2} autres destinations...`"
+              :placeholder="`Bali, Grand Canyon, ...`"
             ></v-select>
             <div class="text-legend">
               Votre localisation : {{ location.name }} ({{location.latitude}}
@@ -52,11 +52,10 @@
     <div class="row">
       <div class="col-12">
         <div class="result">
-          <!-- <div v-if="placeFound">
-      <Place :place="placeFound"/>
-          </div>-->
           <AlternativeList
+            :didSomething="didSomething"
             :alternatives="alternativesFound"
+            :categories="categoriesFound"
             :place="placeFound"
           />
         </div>
@@ -77,24 +76,6 @@
               <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
             </div>
           </div>
-          <!-- <ul>
-            <li>
-              L’empreinte carbone moyenne d’un français est de 12 tonnes d’équivalent CO2 par an
-              (en prenant en compte les émissions importées/exportées).
-            </li>
-            <br />
-            <br />
-            <li>
-              Pour atteindre la neutralité carbone à l’échelle mondiale, il faudrait que chacun
-              émette au maximum 1,5 tonne par an et donc diviser par 6 ses propres émissions
-            </li>
-            <br />
-            <br />
-            <li>
-              Un aller retour Paris-New-York émettant 2,5 tonnes d’équivalent CO2 par passager, les
-              longs trajets en avion ne sont pas compatibles avec le budget carbone des Français.
-            </li>
-          </ul> -->
         </div>
       </div>
     </div>
@@ -103,16 +84,15 @@
 
 <script>
 
-// import Place from './Place'
 import AlternativeList from './AlternativeList.vue';
 
 import loadedAlternatives from '../assets/alternatives.json';
+import loadedCategories from '../assets/categories.json';
 import loadedPlaces from '../assets/places.json';
 
 export default {
   name: 'Main',
   components: {
-    // Place,
     AlternativeList,
   },
   props: {
@@ -120,11 +100,14 @@ export default {
   },
   data() {
     return {
+      didSomething: false,
       places: loadedPlaces,
       alternatives: loadedAlternatives,
+      categories: loadedCategories,
       selected: '',
       placeFound: undefined,
       alternativesFound: [],
+      categoriesFound: [],
       location: {
         name: 'Paris',
         latitude: 48.8534,
@@ -189,22 +172,37 @@ export default {
   },
   methods: {
     setSelected(search) {
+      this.didSomething = true;
+
       if (search === null) {
         this.resetSelected();
       }
 
-      const { filters } = this;
+      const { categories, filters } = this;
       this.selected = search;
       const place = this.fullPlaces.find((d) => search.label === d.label);
 
       if (place) {
         this.placeFound = place;
+
+        const validAlternatives = [];
+
+        this.categoriesFound = [];
+
+        categories.forEach((category) => {
+          if (place.categories.includes(category.label)) {
+            this.categoriesFound.push(category.label);
+            validAlternatives.push(...category.alternatives);
+          }
+        });
+
         this.alternativesFound = this.fullAlternatives.filter(
-          (a) => place.alternatives.includes(a.label) && (filters.distance === '' || a.distance <= filters.distance),
+          (a) => validAlternatives.includes(a.label) && (filters.distance === '' || a.distance <= filters.distance),
         );
       } else {
         this.placeFound = undefined;
         this.alternativesFound = [];
+        this.categoriesFound = [];
       }
     },
     resetSelected() {
@@ -301,14 +299,14 @@ a {
   margin-top: 10px;
 }
 
-</style>
-
-<style scoped>
-
-.btn-primary {
+.btn-primary, .badge-primary {
   background-color: #3fac8c !important;
   border-color: #3fac8c !important;
 }
+
+</style>
+
+<style scoped>
 
 .btn-toolbar {
   margin: 4px;

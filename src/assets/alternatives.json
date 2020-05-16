@@ -78,7 +78,7 @@
     ]
   },
   {
-    "label": "Chateau de Chantilly",
+    "label": "Château de Chantilly",
     "latitude": 49.19461,
     "longitude": 2.47124,
     "images": [
@@ -272,6 +272,10 @@
       },
       {
         "path": "strasbourg1.jpg"
+      },
+      {
+        "path": "strasbourg2.jpg",
+        "source": "pokaa.fr"
       }
     ],
     "description": "L'architecture alsacienne du coeur de Strasbourg vous rappellera les décors bavarois. Pendant les fêtes de fin d'année, l'esprit de Noël englobe la ville et Strasbourg devient la véritable capitale de Noël. La Laponie n'a qu'à bien se tenir !",
@@ -389,7 +393,7 @@
     "images": [
       {
         "path": "donon_wikipedia.jpg",
-        "source": "wikipedia"
+        "source": "Wikipédia"
       }
     ],
     "description": "Un temple de style grec dans les Vosges ? C'est le Donon, un monument surprenant à plus de 1000m d'altitude. Un lieu chargé d'histoire, habité dès l'ère romaine.",
@@ -403,11 +407,11 @@
     "longitude": 9.0579488,
     "images": [
       {
-        "path": "lac_capitello_.JPG",
+        "path": "lac_capitello.jpg",
         "source": "Voyage Michelin"
       },
       {
-        "path": "lac_capitello_antoineontherock.jpg",
+        "path": "lac_capitello1.jpg",
         "source": "antoineontherock"
       }
     ],
@@ -468,6 +472,93 @@
     "description": "Si l'on parle de haute montagne, on ne peut évidemment pas passer à côté du Mont Blanc, le plus haut sommet d'Europe. Un grand classique !",
     "links": [
       "https://www.chamonix.com/le-mont-blanc,47-69352,fr.html"
+    ]
+  },
+  {
+    "label": "Archipel des Glénan",
+    "latitude": 47.7060188,
+    "longitude": -3.9950714,
+    "images": [
+      {
+        "path": "archipel_glenan.jpg"
+      },
+      {
+        "path": "archipel_glenan2.jpg"
+      }
+    ],
+    "description": "Un archipel dignes des plus belles îles du montagne, et en Bretagne !",
+    "links": [
+      "https://www.tourismebretagne.com/destinations/les-10-destinations/quimper-cornouaille/larchipel-des-glenan/"
+    ]
+  },
+  {
+    "label": "Orgues d'Ille sur Têt",
+    "latitude": 42.6866075,
+    "longitude": 2.6210651,
+    "images": [
+      {
+        "path": "orgues_ille_sur_tet.jpg",
+        "source": "travelguide.michelin.com"
+      },
+      {
+        "path": "orgues_ille_sur_tet1.jpg",
+        "source": "Flickr"
+      }
+    ],
+    "description": "",
+    "links": [
+      "https://www.tourisme-pyreneesorientales.com/orgues-dille-sur-tet"
+    ]
+  },
+  {
+    "label": "Pays cathare",
+    "latitude": 43.0542733,
+    "longitude": 2.5124715,
+    "images": [
+      {
+        "path": "pays_cathare.jpg"
+      },
+      {
+        "path": "pays_cathare1.jpg"
+      }
+    ],
+    "description": "",
+    "links": [
+      "https://www.payscathare.org"
+    ]
+  },
+  {
+    "label": "Bonifacio",
+    "latitude": 41.3878259,
+    "longitude": 9.1606179,
+    "images": [
+      {
+        "path": "bonifacio.jpg"
+      },
+      {
+        "path": "bonifacio1.jpg"
+      }
+    ],
+    "description": "Située à la pointe Sud de la Corse, la cité médiévale de Bonifacio est réputée pour ses falaises et sa nature préservée. De magnifiques panoramas sont à découvrir !",
+    "links": [
+      "https://www.bonifacio.fr"
+    ]
+  },
+  {
+    "label": "Désert des Agriates",
+    "latitude": 42.6963,
+    "longitude": 9.1647,
+    "images": [
+      {
+        "path": "desert_agriate.jpg"
+      },
+      {
+        "path": "desert_agriate2.jpg"
+      }
+    ],
+    "description": "",
+    "links": [
+      "https://www.visit-corsica.com/"
     ]
   }
 ]

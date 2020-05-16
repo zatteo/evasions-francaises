@@ -3,146 +3,235 @@
     "label": "Bali",
     "latitude": -8.3304977,
     "longitude": 115.0906401,
-    "alternatives": [
-      "Corse",
-      "Côte d'Azur"
+    "categories": [
+      "Plages"
+    ]
+  },
+  {
+    "label": "Bahamas",
+    "latitude": 24.9873,
+    "longitude": -77.3273,
+    "categories": [
+      "Plages"
     ]
   },
   {
     "label": "Chutes du Niagara",
     "latitude": 43.0945,
     "longitude": -79.05671,
-    "alternatives": [
-      "Jura"
+    "categories": [
+      "Cascades"
     ]
   },
   {
     "label": "Grand Canyon",
     "latitude": 36.0965604,
     "longitude": -112.0984941,
-    "alternatives": [
-      "Ocres de Rustrel"
+    "categories": [
+      "Grand Canyon"
     ]
   },
   {
     "label": "Mont Everest",
     "latitude": 27.9878675,
     "longitude": 86.9248308,
-    "alternatives": [
-      "Mont Blanc"
+    "categories": [
+      "Haute montagne"
     ]
   },
   {
-    "label": "Sahara",
+    "label": "Désert du Sahara",
     "latitude": 24.49215,
     "longitude": -12.65625,
-    "alternatives": [
-      "Dune du Pilat"
+    "categories": [
+      "Désert de sable"
     ]
   },
   {
     "label": "Darjeeling",
     "latitude": 26.8349002,
     "longitude": 88.3071496,
-    "alternatives": [
-      "Rocamadour"
+    "categories": [
+      "À flanc de montagne"
     ]
   },
   {
     "label": "Autriche",
     "latitude": 47.2000338,
     "longitude": 13.199959,
-    "alternatives": [
-      "Lac d'Annecy",
-      "Chateau de Chantilly"
+    "categories": [
+      "Lacs de montagne",
+      "Châteaux"
     ]
   },
   {
     "label": "Rome",
     "latitude": 41.89193,
     "longitude": 12.51133,
-    "alternatives": [
-      "Nîmes"
+    "categories": [
+      "Architecture antique"
     ]
   },
   {
     "label": "Thaïlande",
     "latitude": 15.5,
     "longitude": 101,
-    "alternatives": [
-      "Gorges du Verdon",
-      "Lac de Monteynard",
-      "Canyon Vacca",
-      "Gouffre de la Fage"
+    "categories": [
+      "Gorges",
+      "Grottes"
     ]
   },
   {
     "label": "Afrique du Sud",
     "latitude": -28.8166236,
     "longitude": 24.991639,
-    "alternatives": [
-      "Roche de Solutré"
+    "categories": [
+      "Afrique du Sud"
     ]
   },
   {
     "label": "Lousiane",
     "latitude": 30.8703881,
     "longitude": -92.007126,
-    "alternatives": [
-      "Marais Poitevin"
+    "categories": [
+      "Marais"
     ]
   },
   {
     "label": "Canada",
     "latitude": 60.10867,
     "longitude": -113.64258,
-    "alternatives": [
-      "Plateau des milles étangs",
-      "Lac de Gaube",
-      "Gorges du Verdon"
+    "categories": [
+      "Lacs de montagne"
     ]
   },
   {
     "label": "Équateur",
     "latitude": -1.3397668,
     "longitude": -79.3666965,
-    "alternatives": [
-      "Gorges de la Dordogne"
+    "categories": [
+      "Fleuves et forêts"
+    ]
+  },
+  {
+    "label": "Amazonie",
+    "latitude": -3.2187,
+    "longitude": -60.0266,
+    "categories": [
+      "Fleuves et forêts"
     ]
   },
   {
     "label": "Bavière",
     "latitude": 49,
     "longitude": 11.5,
-    "alternatives": [
-      "Strasbourg",
-      "Colmar"
+    "categories": [
+      "Esprit allemand"
     ]
   },
   {
     "label": "Venise",
     "latitude": 45.4371908,
     "longitude": 12.3345898,
-    "alternatives": [
-      "Annecy",
-      "Colmar"
+    "categories": [
+      "Venise"
     ]
   },
   {
-    "label": "Grèces",
+    "label": "Grèce",
     "latitude": 48.6902486,
     "longitude": -1.9495636,
-    "alternatives": [
-      "Nîmes",
-      "Le Donon"
+    "categories": [
+      "Architecture antique"
     ]
   },
   {
     "label": "Finlande",
     "latitude": 64,
     "longitude": 26,
-    "alternatives": [
-      "Lac Capitello"
+    "categories": [
+      "Lacs de Montagne"
+    ]
+  },
+  {
+    "label": "Norvège",
+    "latitude": 59.869,
+    "longitude": 10.7529,
+    "categories": [
+      "Lacs de Montagne"
+    ]
+  },
+  {
+    "label": "Suède",
+    "latitude": 59.2862,
+    "longitude": 18.0698,
+    "categories": [
+      "Lacs de Montagne"
+    ]
+  },
+  {
+    "label": "Virginie",
+    "latitude": 37.5406,
+    "longitude": -77.4316,
+    "categories": [
+      "Montagnes et forêts",
+      "Fleuves et forêts"
+    ]
+  },
+  {
+    "label": "Cappadoce",
+    "latitude": 36.49,
+    "longitude": 34.89,
+    "categories": [
+      "Cappadoce"
+    ]
+  },
+  {
+    "label": "Lac Hilier",
+    "latitude": -34.1046,
+    "longitude": 123.2027,
+    "categories": [
+      "Lacs roses"
+    ]
+  },
+  {
+    "label": "Lac rose",
+    "latitude": 0,
+    "longitude": 0,
+    "categories": [
+      "Lacs roses"
+    ]
+  },
+  {
+    "label": "Écosse",
+    "latitude": 56.7861112,
+    "longitude": -4.1140518,
+    "categories": [
+      "Châteaux forts"
+    ]
+  },
+  {
+    "label": "Irlande",
+    "latitude": 53.3403,
+    "longitude": -6.2675,
+    "categories": [
+      "Châteaux forts"
+    ]
+  },
+  {
+    "label": "Laponie",
+    "latitude": 67.835,
+    "longitude": 18.517,
+    "categories": [
+      "Esprit de Noël"
+    ]
+  },
+  {
+    "label": "Mexique",
+    "latitude": 19.045,
+    "longitude": -99.367,
+    "categories": [
+      "Désert montagneux"
     ]
   }
 ]
