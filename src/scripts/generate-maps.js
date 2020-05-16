@@ -4,9 +4,9 @@ const osmsm = require('osm-static-maps');
 
 const loadedAlternatives = require('../assets/alternatives.json');
 
-const generateMap = (alternative) => {
-  console.log(alternative)
-  osmsm({
+const generateMap = async (alternative) => {
+  console.log(`Generating ${alternative.label}.jpg...`)
+  const imageBinaryBuffer = await osmsm({
     geojson: {
       type: "Point",
       coordinates: [alternative.longitude, alternative.latitude]
@@ -16,16 +16,17 @@ const generateMap = (alternative) => {
     attribution: '© OpenStreetMap contributors',
     height: 380,
     width: 380,
+    quality: 70,
     markerIconOptions: {
       iconUrl: 'http://localhost:8080/assets/marker.png',
       iconSize: [32, 32],
       iconAnchor: [16, 32]
     }
-  }).then(function (imageBinaryBuffer) {
-    fs.writeFile(`./public/assets/maps/${alternative.label}.jpg`, imageBinaryBuffer, 'binary', function(err) {
-      console.log(err);
-    });
-  }).catch(function (error) { console.log(err) })
+  });
+
+  console.log(`Writing ${alternative.label}.jpg...`)
+  fs.writeFileSync(`./public/assets/maps/${alternative.label}.jpg`, imageBinaryBuffer, 'binary');
 }
 
-generateMap(loadedAlternatives[0])
+loadedAlternatives.forEach((alternative) => generateMap(alternative))
+

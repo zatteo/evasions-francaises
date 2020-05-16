@@ -191,7 +191,7 @@ export default {
 
         categories.forEach((category) => {
           if (place.categories.includes(category.label)) {
-            this.categoriesFound.push(category.label);
+            this.categoriesFound.push(category);
             validAlternatives.push(...category.alternatives);
           }
         });
@@ -250,6 +250,7 @@ export default {
     calculateEmission(distance, transport) {
       let emission;
 
+      // https://www.eea.europa.eu/media/infographics/co2-emissions-from-passenger-transport/view
       switch (transport) {
         case 'plane':
           emission = distance * 0.000285;

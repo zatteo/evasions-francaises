@@ -218,8 +218,8 @@
   },
   {
     "label": "Plateau des milles étangs",
-    "latitude": 46.8656,
-    "longitude": 4.18988,
+    "latitude": 47.7366,
+    "longitude": 6.5643,
     "images": [
       {
         "path": "milles_etang.jpg",
@@ -560,5 +560,21 @@
     "links": [
       "https://www.visit-corsica.com/"
     ]
+  },
+  {
+    "label": "Sommet du Galtz",
+    "latitude": 48.108074,
+    "longitude": 7.2847476,
+    "images": [
+      {
+        "path": "galtz.png",
+        "source": "iris68.com"
+      }
+    ],
+    "description": "Rio de Janeiro n'a qu'à bien se tenir ! Voici le Christ Rédempteur made in Alsace, d'une hauteur de 23m (soit 15m de moins que le véritable Christ Rédempteur). Il se trouve sur le Sommet du Galtz et accueille à bras ouvert les curieux. Il est même visible depuis Colmar.",
+    "links": [
+      "https://tourisme-colmar.com/fr/"
+    ],
+    "categories": [" Christ Rédempteur"]
   }
 ]

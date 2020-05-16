@@ -38,7 +38,10 @@
           title="Carte"
         >
           <div class="map">
-            <img :src="`assets/maps/${alternative.label}.jpg`">
+            <img
+              :src="`assets/maps/${alternative.label}.jpg`"
+              alt="La carte n'est pas disponible :/"
+            >
           </div>
           <template v-slot:modal-footer="{ ok }">
             <b-button size="sm" variant="success" @click="ok()">
