@@ -2,25 +2,33 @@
   <div>
     <div v-if="alternatives[currentAlternative]" class="card">
       <div class="card-header">
-        <h3>
-          {{ alternatives.length }}
-          {{ alternatives.length > 1 ? 'alternatives trouvées' : 'alternative trouvée' }}
-          pour "{{ place.label }}"
-        </h3>
-        <span v-for="category in categories" :key="category" class="badge badge-info">
-          {{ category }}
-        </span>
+        <div class="row">
+          <div class="col-12 col-md-8 text-left">
+            <h3 class="d-inline-block mb-0">
+              {{ alternatives.length }}
+              {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
+              pour "{{ place.label }}"
+            </h3>
+            <span
+              v-for="category in place.categories"
+              :key="category"
+              class="badge badge-info ml-1"
+            >
+              {{ category }}
+            </span>
+          </div>
+          <div class="col-12 col-md-4 text-right">
+            <button @click="nextAlternative()" type="button" class="btn btn-primary">
+              Une autre alternative !
+            </button>
+          </div>
+        </div>
       </div>
       <div class="card-body">
         <Alternative
           :alternative="alternatives[currentAlternative]"
           :place="place"
         />
-      </div>
-      <div class="card-footer text-muted">
-        <button @click="nextAlternative()" type="button" class="btn btn-primary">
-          Une autre alternative !
-        </button>
       </div>
     </div>
     <div v-else-if="didSomething" class="card">
@@ -44,7 +52,6 @@ export default {
   props: {
     didSomething: Boolean,
     alternatives: Array,
-    categories: Array,
     place: Object,
   },
   data() {

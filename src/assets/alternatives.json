@@ -4,6 +4,7 @@
     "latitude": 41.92723,
     "longitude": 8.73462,
     "description": "Eaux turquoises, plage de sable fin, <b>les plages de Corse n'ont rien à envier aux destinations les plus paradisiaques</b> du monde. L'intérieur des terres est particulièrement authentiques, avec ses villages et ses montagnes. Pour réduire votre impact, vous pouvez vous y rendre en ferry voir même en voilier pour les plus aventuriers !",
+    "categories": ["Plages"],
     "images": [
       {
         "path": "corse.jpg",
@@ -22,6 +23,7 @@
     "label": "Côte d'Azur",
     "latitude": 43.70313,
     "longitude": 7.26608,
+    "categories": ["Plages"],
     "images": [
       {
         "path": "azur.jpg"
@@ -39,6 +41,7 @@
     "label": "Jura",
     "latitude": 46.83333,
     "longitude": 5.83333,
+    "categories": ["Cascades"],
     "images": [
       {
         "path": "jura.jpg"
@@ -53,6 +56,7 @@
     "label": "Rocamadour",
     "latitude": 44.7991877,
     "longitude": 1.6183521,
+    "categories": [""],
     "images": [
       {
         "path": "rocamadour.jpg"
@@ -67,6 +71,7 @@
     "label": "Dune du Pilat",
     "latitude": 44.5891614,
     "longitude": -1.2141047,
+    "categories": ["Désert de sable"],
     "images": [
       {
         "path": "dune_pilat.jpg"
@@ -81,6 +86,7 @@
     "label": "Château de Chantilly",
     "latitude": 49.19461,
     "longitude": 2.47124,
+    "categories": ["Châteaux"],
     "images": [
       {
         "path": "chantilly.jpg"
@@ -95,6 +101,7 @@
     "label": "Lac d'Annecy",
     "latitude": 45.8493061,
     "longitude": 6.1711755,
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "lac_annecy.jpg"
@@ -115,6 +122,7 @@
     "label": "Nîmes",
     "latitude": 43.83333,
     "longitude": 4.35,
+    "categories": ["Architecture antique"],
     "images": [
       {
         "path": "nimes.jpg"
@@ -135,6 +143,7 @@
     "label": "Gouffre de la Fage",
     "latitude": 44.43291,
     "longitude": 3.59337,
+    "categories": ["Grottes"],
     "images": [
       {
         "path": "gouffre_fage_.jpg",
@@ -154,6 +163,7 @@
     "label": "Gorges du Verdon",
     "latitude": 43.740335,
     "longitude": 6.3799984,
+    "categories": ["Gorges"],
     "images": [
       {
         "path": "gorge_verdon.jpg"
@@ -171,6 +181,7 @@
     "label": "Roche de Solutré",
     "latitude": 46.2987205,
     "longitude": 4.7181403,
+    "categories": ["Afrique du Sud"],
     "images": [
       {
         "path": "roche_solutre.jpg"
@@ -188,6 +199,7 @@
     "label": "Lac de Monteynard",
     "latitude": 44.9656674,
     "longitude": 5.7017388,
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "lac_monteynard.jpg"
@@ -202,6 +214,7 @@
     "label": "Marais Poitevin",
     "latitude": 46.33333,
     "longitude": -1,
+    "categories": ["Marais"],
     "images": [
       {
         "path": "poitevin.jpg",
@@ -220,6 +233,7 @@
     "label": "Plateau des milles étangs",
     "latitude": 47.7366,
     "longitude": 6.5643,
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "milles_etang.jpg",
@@ -235,6 +249,7 @@
     "label": "Gorges de la Dordogne",
     "latitude": 45.1429198,
     "longitude": 0.6321258,
+    "categories": ["Fleuves et forêts"],
     "images": [
       {
         "path": "dordogne.jpg"
@@ -252,6 +267,7 @@
     "label": "Lac de Gaube",
     "latitude": 42.8314346,
     "longitude": -0.1396429,
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "lac_gaube.jpg"
@@ -266,6 +282,7 @@
     "label": "Strasbourg",
     "latitude": 48.584614,
     "longitude": 7.7507127,
+    "categories": ["Esprit allemand", "Esprit de Noël"],
     "images": [
       {
         "path": "strasbourg.jpg"
@@ -287,6 +304,7 @@
     "label": "Colmar",
     "latitude": 48.08333,
     "longitude": 7.36667,
+    "categories": ["Esprit allemand", "Venise"],
     "images": [
       {
         "path": "colmar.jpg"
@@ -304,6 +322,7 @@
     "label": "Annecy",
     "latitude": 45.9,
     "longitude": 6.11667,
+    "categories": ["Venise"],
     "images": [
       {
         "path": "annecy.jpg"
@@ -318,6 +337,7 @@
     "label": "Aigues-Mortes",
     "latitude": 43.57178083878112,
     "longitude": 4.202356647949204,
+    "categories": ["Lacs roses"],
     "images": [
       {
         "path": "aigues_morte.jpg"
@@ -332,6 +352,7 @@
     "label": "Orgues de Bort",
     "latitude": 45.4,
     "longitude": 2.5,
+    "categories": ["Montagnes et forêts"],
     "images": [
       {
         "path": "bort_orgues_siteofficiel.jpg",
@@ -351,6 +372,7 @@
     "label": "Canyon de Vacca",
     "latitude": 41.724223,
     "longitude": 9.2712855,
+    "categories": ["Canyon Vacca"],
     "images": [
       {
         "path": "canyon_vacca_.JPG",
@@ -370,6 +392,7 @@
     "label": "Calanques de Marseille",
     "latitude": 43.2961743,
     "longitude": 5.3699525,
+    "categories": ["Plages"],
     "images": [
       {
         "path": "calanque_marseille.jpg"
@@ -390,6 +413,7 @@
     "label": "Donon",
     "latitude": 48.5126166,
     "longitude": 7.1644661,
+    "categories": ["Architecture antique"],
     "images": [
       {
         "path": "donon_wikipedia.jpg",
@@ -405,6 +429,7 @@
     "label": "Lac Capitello",
     "latitude": 42.216131,
     "longitude": 9.0579488,
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "lac_capitello.jpg",
@@ -424,6 +449,7 @@
     "label": "Ocres de Rustrel",
     "latitude": 43.92571,
     "longitude": 5.48554,
+    "categories": ["Grand Canyon"],
     "images": [
       {
         "path": "ocre_rustrel.jpg"
@@ -441,6 +467,7 @@
     "label": "Vosges",
     "latitude": 48.163786,
     "longitude": 6.3820712,
+    "categories": ["Montagnes et forêts"],
     "images": [
       {
         "path": "vosges.jpg"
@@ -461,6 +488,7 @@
     "label": "Mont Blanc",
     "latitude": 46.0926274,
     "longitude": 5.0775307,
+    "categories": ["Haute montagne"],
     "images": [
       {
         "path": "montblanc.jpg"
@@ -478,6 +506,7 @@
     "label": "Archipel des Glénan",
     "latitude": 47.7060188,
     "longitude": -3.9950714,
+    "categories": ["Plages"],
     "images": [
       {
         "path": "archipel_glenan.jpg"
@@ -495,6 +524,7 @@
     "label": "Orgues d'Ille sur Têt",
     "latitude": 42.6866075,
     "longitude": 2.6210651,
+    "categories": ["Cappadoce"],
     "images": [
       {
         "path": "orgues_ille_sur_tet.jpg",
@@ -514,6 +544,7 @@
     "label": "Pays cathare",
     "latitude": 43.0542733,
     "longitude": 2.5124715,
+    "categories": ["Châteaux forts"],
     "images": [
       {
         "path": "pays_cathare.jpg"
@@ -531,6 +562,7 @@
     "label": "Bonifacio",
     "latitude": 41.3878259,
     "longitude": 9.1606179,
+    "categories": ["À flanc de montagne"],
     "images": [
       {
         "path": "bonifacio.jpg"
@@ -548,6 +580,7 @@
     "label": "Désert des Agriates",
     "latitude": 42.6963,
     "longitude": 9.1647,
+    "categories": ["Désert montagneux"],
     "images": [
       {
         "path": "desert_agriate.jpg"
@@ -565,6 +598,7 @@
     "label": "Sommet du Galtz",
     "latitude": 48.108074,
     "longitude": 7.2847476,
+    "categories": ["Christ Rédempteur"],
     "images": [
       {
         "path": "galtz.png",
@@ -574,7 +608,81 @@
     "description": "Rio de Janeiro n'a qu'à bien se tenir ! Voici le Christ Rédempteur made in Alsace, d'une hauteur de 23m (soit 15m de moins que le véritable Christ Rédempteur). Il se trouve sur le Sommet du Galtz et accueille à bras ouvert les curieux. Il est même visible depuis Colmar.",
     "links": [
       "https://tourisme-colmar.com/fr/"
+    ]
+  },
+  {
+    "label": "Cairn du petit Mont",
+    "latitude": 47.533,
+    "longitude": -2.9023,
+    "categories": [],
+    "images": [
+      {
+        "path": "cairn_petit_mont.jpg",
+        "source": "Alexandre Lamoureux"
+      },
+      {
+        "path": "cairn_petit_mont1.jpg",
+        "source": "Alain Bourson"
+      }
     ],
-    "categories": [" Christ Rédempteur"]
+    "description": "Rio de Janeiro n'a qu'à bien se tenir ! Voici le Christ Rédempteur made in Alsace, d'une hauteur de 23m (soit 15m de moins que le véritable Christ Rédempteur). Il se trouve sur le Sommet du Galtz et accueille à bras ouvert les curieux. Il est même visible depuis Colmar.",
+    "links": [
+      "https://tourisme-colmar.com/fr/"
+    ]
+  },
+  {
+    "label": "Statue de la Liberté",
+    "latitude": 48.8502887,
+    "longitude": 2.280082,
+    "categories": ["Statue de la Liberté"],
+    "images": [
+      {
+        "path": "statue_liberte_colmar.jpg",
+        "description": "À Colmar",
+        "source": "Tourisme Alsace"
+      },
+      {
+        "path": "statue_liberte_colmar1.jpg",
+        "description": "À Colmar",
+        "source": "France 3"
+      },
+      {
+        "path": "statue_liberte_paris.jpg",
+        "description": "À Paris",
+        "source": "The artful tower"
+      },
+      {
+        "path": "statue_liberte_st_cyr.jpg",
+        "description": "À Saint-Cyr-sur-Mer",
+        "source": "Made in Marseille"
+      },
+      {
+        "path": "statue_liberte_poitiers.jpg",
+        "description": "À Poitiers",
+        "source": "Flickr"
+      }
+    ],
+    "description": "On compte beaucoup de réplique de la Statue de la Liberté en France, cela va s'en dire, Auguste Bartholdi était Français et on en est fière. Vous trouverez des répliques notamment dans sa ville d'origine, Colmar, mais encore plusieurs à Paris, à Poitiers, en Normandie, dans le Var, dans l'Isère, ...",
+    "links": [
+      ""
+    ]
+  },
+  {
+    "label": "Alignement de Carnac",
+    "latitude": 47.5898,
+    "longitude": -3.0798,
+    "categories": ["Monument mégalithique"],
+    "images": [
+      {
+        "path": "carnac.jpg"
+      },
+      {
+        "path": "carnac1.jpg"
+      }
+    ],
+    "description": "Sur plus de 4km vous trouverez un alignement de menhirs et de dolmens. Ce décor a même inspiré Junichi Masuda pour les jeux vidéos Pokémon X et Pokémon Y !",
+    "links": [
+      "http://www.menhirs-carnac.fr/"
+    ]
   }
 ]

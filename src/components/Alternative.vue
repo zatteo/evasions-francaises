@@ -7,6 +7,13 @@
             <h4 class="card-title text-muted">
               {{ alternative.label }}
             </h4>
+            <span
+              v-for="validCategory in validCategories"
+              :key="`validCategory-${validCategory}`"
+              class="badge badge-info"
+            >
+              {{ validCategory }}
+            </span>
             <p v-html="alternative.description"></p>
             <div v-if="place">
               <!-- <button type="button" class="btn btn-primary"> -->
@@ -105,6 +112,11 @@ export default {
       const emissionInPercent = ((alternative.emission - place.emission) / place.emission) * 100;
 
       return parseInt(emissionInPercent.toFixed(2), 10);
+    },
+    validCategories() {
+      const { alternative, place } = this;
+
+      return place.categories.filter((category) => alternative.categories.includes(category));
     },
   },
 };

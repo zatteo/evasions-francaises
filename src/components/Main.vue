@@ -55,7 +55,6 @@
           <AlternativeList
             :didSomething="didSomething"
             :alternatives="alternativesFound"
-            :categories="categoriesFound"
             :place="placeFound"
           />
         </div>
@@ -87,7 +86,6 @@
 import AlternativeList from './AlternativeList.vue';
 
 import loadedAlternatives from '../assets/alternatives.json';
-import loadedCategories from '../assets/categories.json';
 import loadedPlaces from '../assets/places.json';
 
 export default {
@@ -103,7 +101,6 @@ export default {
       didSomething: false,
       places: loadedPlaces,
       alternatives: loadedAlternatives,
-      categories: loadedCategories,
       selected: '',
       placeFound: undefined,
       alternativesFound: [],
@@ -178,26 +175,15 @@ export default {
         this.resetSelected();
       }
 
-      const { categories, filters } = this;
+      const { filters } = this;
       this.selected = search;
       const place = this.fullPlaces.find((d) => search.label === d.label);
 
       if (place) {
         this.placeFound = place;
 
-        const validAlternatives = [];
-
-        this.categoriesFound = [];
-
-        categories.forEach((category) => {
-          if (place.categories.includes(category.label)) {
-            this.categoriesFound.push(category);
-            validAlternatives.push(...category.alternatives);
-          }
-        });
-
         this.alternativesFound = this.fullAlternatives.filter(
-          (a) => validAlternatives.includes(a.label) && (filters.distance === '' || a.distance <= filters.distance),
+          (a) => place.categories.filter((category) => a.categories.includes(category)).length > 0 && (filters.distance === '' || a.distance <= filters.distance),
         );
       } else {
         this.placeFound = undefined;
@@ -303,6 +289,11 @@ a {
 .btn-primary, .badge-primary {
   background-color: #3fac8c !important;
   border-color: #3fac8c !important;
+}
+
+.btn-info, .badge-info {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
 }
 
 </style>
