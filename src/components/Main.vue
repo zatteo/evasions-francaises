@@ -44,6 +44,7 @@
             >
               Une alternative au hasard
             </button>
+            <Subscribe/>
           </div>
         </div>
       </div>
@@ -84,6 +85,7 @@
 <script>
 
 import AlternativeList from './AlternativeList.vue';
+import Subscribe from './Subscribe.vue';
 
 import loadedAlternatives from '../assets/alternatives.json';
 import loadedPlaces from '../assets/places.json';
@@ -92,6 +94,7 @@ export default {
   name: 'Main',
   components: {
     AlternativeList,
+    Subscribe,
   },
   props: {
     msg: String,

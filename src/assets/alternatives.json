@@ -715,16 +715,16 @@
     "links": [
       "http://www.seguret.fr/visiter.html"
     ]
-  }
+  },
   {
     "label": "Fort la Latte",
     "latitude": 48.6648,
     "longitude": -2.2846,
-    "description": "Ce château fort du XIVème siècle est classé depuis 1925 comme monument historique. Il trône fièrement au sommet d'un cap rocheux face à la mer. Pour les fan de manau, vous aurez remarqué qu'il s'agit du fameux château du clip «  La tribu de Dana ».",
+    "description": "Ce château fort du XIVème siècle est classé depuis 1925 comme monument historique. Il trône fièrement au sommet d'un cap rocheux face à la mer. Pour les fans de manau, vous aurez remarqué qu'il s'agit du fameux château du clip « La tribu de Dana ».",
     "categories": ["Châteaux forts"],
     "images": [
       {
-        "path": "fort_latte.jpg",
+        "path": "fort_latte.jpg"
       },
       {
         "path": "fort_latte2.jpg"
@@ -762,10 +762,10 @@
     "categories": ["fleuves et forêts", "Horseshoe","plages"],
     "images": [
       {
-        "path": "moliets.jpg",
+        "path": "moliets.jpg"
       },
       {
-        "path": "moliets2.jpg",
+        "path": "moliets2.jpg"
       }
     ],
     "links": [
@@ -780,10 +780,10 @@
     "categories": ["fleuves et forêts"],
     "images": [
       {
-        "path": "courant_huchet.jpg",
+        "path": "courant_huchet.jpg"
       },
       {
-        "path": "courant_huchet2.jpg",
+        "path": "courant_huchet2.jpg"
       }
     ],
     "links": [
