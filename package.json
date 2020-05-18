@@ -1,8 +1,9 @@
 {
-  "name": "destinations-alternatives",
+  "name": "evasions-francaises",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "npx serve -s dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -12,6 +13,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.13.1",
     "core-js": "^3.6.4",
+    "serve": "^11.3.0",
     "vue": "^2.6.11",
     "vue-select": "^3.10.0"
   },

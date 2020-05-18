@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
         <div class="card search-card">
-          <p class="title">Destinations alternatives</p>
+          <p class="title">Évasions françaises</p>
           <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
           <p
             class="search-text"
