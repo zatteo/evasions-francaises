@@ -16,19 +16,15 @@
             </span>
             <p v-html="alternative.description"></p>
             <div v-if="place">
-              <!-- <button type="button" class="btn btn-primary"> -->
-                <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
-                  Distance
-                  <b>{{ distanceDifference }} km</b>
-                </span></h5>
-              <!-- </button> -->
+              <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
+                Distance
+                <b>{{ distanceDifference }} km</b>
+              </span></h5>
               &nbsp;
-              <!-- <button type="button" class="btn btn-primary"> -->
-                <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
-                  CO²
-                  <b>{{ emissionDifferenceInPercent }} %</b>
-                </span></h5>
-              <!-- </button> -->
+              <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
+                CO²
+                <b>{{ emissionDifferenceInPercent }} %</b>
+              </span></h5>
             </div>
             <br>
             <a href="" v-b-modal.map-modal @click.prevent>
@@ -79,7 +75,7 @@
                 class="image"
                 width="1024"
                 height="480"
-                :src="`assets/images/${image.path}`"
+                :src="`assets/images/medium/${image.path}`"
                 alt="image slot"
               >
             </template>
