@@ -1,7 +1,7 @@
 <!-- eslint-disable -->
 <template>
   <div>
-    <b-button v-b-modal.subscribe>blabla</b-button>
+    <b-button v-b-modal.subscribe>S'inscrire à la newsletter</b-button>
 
     <b-modal id="subscribe" title="BootstrapVue">
       <!-- START - We recommend to place the below code where you want the form in your website html  -->
