@@ -265,5 +265,31 @@
     "categories": [
       "Paysage de Toscane"
     ]
+  },
+  {
+    "label": "Arizona, Horseshoe",
+    "latitude": 36.876,
+    "longitude": 111.5196,
+    "categories": [
+      "Horseshoe"
+    ]
+  },
+  {
+    "label": "Nevada, Parc National Yosemite",
+    "latitude": 37.7458,
+    "longitude": 119.5,
+    "categories": [
+      "Montagnes et forêts",
+      "Fleuves et forêts",
+      "Cascades"
+    ]
+  },
+  {
+    "label": "Nevada, Désert des Mojaves",
+    "latitude": 39.0039,
+    "longitude": -115.4751,
+    "categories": [
+      "Désert montagneux"
+    ]
   }
 ]
