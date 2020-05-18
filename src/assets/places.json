@@ -257,5 +257,13 @@
       "Montagnes et forêts",
       "Fleuves et forêts"
     ]
+  },
+  {
+    "label": "Toscane",
+    "latitude": 43.7106,
+    "longitude": 11.2527,
+    "categories": [
+      "Paysage de Toscane"
+    ]
   }
 ]
