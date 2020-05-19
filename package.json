@@ -15,7 +15,8 @@
     "core-js": "^3.6.4",
     "serve": "^11.3.0",
     "vue": "^2.6.11",
-    "vue-select": "^3.10.0"
+    "vue-select": "^3.10.0",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",

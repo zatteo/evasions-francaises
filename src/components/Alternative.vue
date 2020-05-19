@@ -15,7 +15,7 @@
               {{ validCategory }}
             </span>
             <p v-html="alternative.description"></p>
-            <div v-if="place">
+            <div v-if="place" id="popover-stats">
               <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
                 Distance
                 <b>{{ distanceDifference }} km</b>
@@ -26,6 +26,12 @@
                 <b>{{ emissionDifferenceInPercent }} %</b>
               </span></h5>
             </div>
+            <b-popover target="popover-stats" triggers="hover" placement="top">
+              <template v-slot:title>Calcul des émissions de CO²</template>
+              Les émissions de CO² sont calculées sur la base des émissions par passager en avion,
+              en fonction des distances à vol d'oiseau.
+              <a href="https://www.bbc.com/news/science-environment-49349566" target="_blank">Source</a>.
+            </b-popover>
             <br>
             <a href="" v-b-modal.map-modal @click.prevent>
               Afficher sur une carte

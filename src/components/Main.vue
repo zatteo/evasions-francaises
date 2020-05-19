@@ -239,16 +239,16 @@ export default {
     calculateEmission(distance, transport) {
       let emission;
 
-      // https://www.eea.europa.eu/media/infographics/co2-emissions-from-passenger-transport/view
+      // https://www.bbc.com/news/science-environment-49349566
       switch (transport) {
         case 'plane':
-          emission = distance * 0.000285;
+          emission = distance * 0.000102;
           break;
         case 'train':
-          emission = distance * 0.000014;
+          emission = distance * 0.000041;
           break;
         default:
-          emission = distance * 0.000285;
+          emission = distance * 0.000102;
           break;
       }
 
