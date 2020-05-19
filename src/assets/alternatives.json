@@ -759,7 +759,7 @@
     "latitude": 43.7879 ,
     "longitude": -1.3568 ,
     "description": "Un petit village dans les Landes doté d’une légère ressemblance avec le célèbre Horseshoe d’Arizona. Vous pouvez également parcourir les 2000 hectares de forêt de pin du Courant d'Huchet, qui n’est pas s’en rappeler des forêts de pin du parc national Yosemite",
-    "categories": ["fleuves et forêts", "Horseshoe","plages"],
+    "categories": ["Fleuves et forêts", "Horseshoe","Plages"],
     "images": [
       {
         "path": "moliets.jpg"
@@ -777,7 +777,7 @@
     "latitude": 43.8863 ,
     "longitude":-1.3293 ,
     "description": "Surnommée la « Petite Amazonie landaise », ",
-    "categories": ["fleuves et forêts"],
+    "categories": ["Fleuves et forêts"],
     "images": [
       {
         "path": "courant_huchet.jpg"
@@ -795,7 +795,7 @@
     "latitude": 48.4687677 ,
     "longitude": 6.9310831,
     "description": "Le Lac de Pierre Percée est le 3ème lac artificiel de Lorraine ! Sa forme en feuille d’érable vient confirmer l’idée d’une ressemblance avec les lacs canadiens. Laissez vous séduire par la multitudes activités que le lac et sa végétation a à vous offrir (sports nautiques, du saut à l’élastique, du VTT, randonnées,…)",
-    "categories": ["lacs de montagne"],
+    "categories": ["Lacs de montagne"],
     "images": [
       {
         "path": "pierre_percee_flickr.jpg",
@@ -851,6 +851,50 @@
     ],
     "links": [
       "http://www.port-grimaud.fr/"
+    ]
+  },
+  {
+    "label": "Lac Salagou",
+    "latitude": 43.6481 ,
+    "longitude": 3.3652,
+    "description": " Ce grand lac du sud ouest avec ses tons rouges et oranges fait immédiatement penser aux roches du Grand Canyon et aux paysages de l'Outback australien.",
+    "categories": ["Grand Canyon","Grès rouge"],
+    "images": [
+      {
+        "path": "lac_salagou.jpg",
+        "source": "flickr, Mia Roux "
+      },
+      {
+        "path": "lac_salagou2.jpg",
+        "source": "flickr, Nathalie Trancart "
+      },
+    ],
+    "links": [
+      "http://www.herault-tourisme.com/accueil-1-1.html"
+    ]
+  },
+  {
+    "label": "Iles Lavezzi",
+    "latitude": 41.206 ,
+    "longitude": 9.25,
+    "description": "Cet archipel de 23 îles est accesible uniquement par voie maritime. Depuis 1982, quelques îles de l'archipel font partie d'une Réserve naturelle, ce qui les protèges",
+    "categories": ["Archipel","Plages"],
+    "images": [
+      {
+        "path": "iles_lavezzi.jpg",
+        "source": "flickr "
+      },
+      {
+        "path": "iles_lavezzi2.jpg",
+        "source": "flickr "
+      },
+      {
+        "path": "iles_lavezzi3.jpg",
+        "source": "flickr "
+      },
+    ],
+    "links": [
+      "https://www.bonifacio.fr/experiences/premiere-visite-le-top-5/une-escapade-sur-les-iles-lavezzi/"
     ]
   }
 ]

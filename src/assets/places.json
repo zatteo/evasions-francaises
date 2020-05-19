@@ -291,5 +291,23 @@
     "categories": [
       "Désert montagneux"
     ]
+  },
+  {
+    "label": "Australie",
+    "latitude": -35.2544,
+    "longitude": 149.1331,
+    "categories": [
+      "Grès rouge",
+      "Grand canyon"  
+    ]
+  },
+  {
+    "label": "Les Seychelles",
+    "latitude": -4.701,
+    "longitude": 55.4507,
+    "categories": [
+      "Plages",
+      "Archipel"  
+    ]
   }
 ]
