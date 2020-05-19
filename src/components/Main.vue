@@ -1,91 +1,94 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="card search-card">
-          <p class="title">Évasions françaises</p>
-          <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
-          <p
-            class="search-text"
-          >
-            Entrez votre destination lointaine et
-            découvrez les plus belles alternatives à moins de
-            <input
-              id="distance"
-              class="search-distance"
-              v-model="filters.distance"
-              type="number"
-              step="10"
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card search-card">
+            <p class="title">Évasions françaises</p>
+            <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
+            <p
+              class="search-text"
             >
-            km.
-          </p>
-          <br />
-          <div class="search-bar">
-            <v-select
-              :value="selected"
-              @input="setSelected"
-              :options="places"
-              :placeholder="`Bali, Grand Canyon, ...`"
-            ></v-select>
-            <div class="text-legend">
-              Votre localisation : {{ location.name }} ({{location.latitude}}
-              : {{location.longitude}})
-              <a
-                href="" @click.prevent="getLocation"
+              Entrez votre destination lointaine et
+              découvrez les plus belles alternatives à moins de
+              <input
+                id="distance"
+                class="search-distance"
+                v-model="filters.distance"
+                type="number"
+                step="10"
               >
-                Me géolocaliser
-              </a>
+              km.
+            </p>
+            <br />
+            <div class="search-bar">
+              <v-select
+                :value="selected"
+                @input="setSelected"
+                :options="places"
+                :placeholder="`Bali, Grand Canyon, ...`"
+              ></v-select>
+              <div class="text-legend">
+                Votre localisation : {{ location.name }} ({{location.latitude}}
+                : {{location.longitude}})
+                <a
+                  href="" @click.prevent="getLocation"
+                >
+                  Me géolocaliser
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <button
-              type="button"
-              class="btn btn-primary btn-toolbar" @click="setRandomAlternative"
-            >
-              Une alternative au hasard
-            </button>
-            <Subscribe/>
+            <div class="row">
+              <button
+                type="button"
+                class="btn btn-primary btn-toolbar" @click="setRandomAlternative"
+              >
+                Une alternative au hasard
+              </button>
+              <Subscribe/>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="result">
-          <AlternativeList
-            :didSomething="didSomething"
-            :alternatives="alternativesFound"
-            :place="placeFound"
-          />
+      <div class="row">
+        <div class="col-12">
+          <div class="result">
+            <AlternativeList
+              :didSomething="didSomething"
+              :alternatives="alternativesFound"
+              :place="placeFound"
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="card why-card">
-          <p class="why-title">Pourquoi ce site ?</p>
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <img class="why-icon" src="assets/map.png">
-              <p class="why-icon-text">Promouvoir le tourisme local</p>
-            </div>
-            <div class="col-12 col-sm-6">
-              <img class="why-icon" src="assets/pollution.png">
-              <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
+      <div class="row">
+        <div class="col-12">
+          <div class="card why-card">
+            <p class="why-title">Pourquoi ce site ?</p>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <img class="why-icon" src="assets/map.png">
+                <p class="why-icon-text">Promouvoir le tourisme local</p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <img class="why-icon" src="assets/pollution.png">
+                <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Banner/>
   </div>
 </template>
 
 <script>
 
 import AlternativeList from './AlternativeList.vue';
-import Subscribe from './Subscribe.vue';
+import Banner from './Banner.vue';
 
 import loadedAlternatives from '../assets/alternatives.json';
 import loadedPlaces from '../assets/places.json';
@@ -94,7 +97,7 @@ export default {
   name: 'Main',
   components: {
     AlternativeList,
-    Subscribe,
+    Banner,
   },
   props: {
     msg: String,

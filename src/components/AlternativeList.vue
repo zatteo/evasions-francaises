@@ -18,7 +18,12 @@
             </span>
           </div>
           <div class="col-12 col-md-4 text-right">
-            <button @click="nextAlternative()" type="button" class="btn btn-primary">
+            <button
+              @click="nextAlternative()"
+              type="button"
+              class="btn btn-primary"
+              :disabled="alternatives.length <= 1"
+            >
               Une autre alternative !
             </button>
           </div>

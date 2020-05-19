@@ -28,8 +28,8 @@
             </div>
             <b-popover target="popover-stats" triggers="hover" placement="top">
               <template v-slot:title>Calcul des émissions de CO²</template>
-              Les émissions de CO² sont calculées sur la base des émissions par passager en avion,
-              en fonction des distances à vol d'oiseau.
+              Les émissions de CO² sont calculées sur la base d'un passager en avion
+              pour la destination et l'alternative, en fonction des distances à vol d'oiseau.
               <a href="https://www.bbc.com/news/science-environment-49349566" target="_blank">Source</a>.
             </b-popover>
             <br>
