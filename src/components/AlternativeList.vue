@@ -4,18 +4,25 @@
       <div class="card-header">
         <div class="row">
           <div class="col-12 col-md-8 text-left">
-            <h3 class="d-inline-block mb-0">
-              {{ alternatives.length }}
-              {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
-              pour "{{ place.label }}"
-            </h3>
-            <span
-              v-for="category in place.categories"
-              :key="category"
-              class="badge badge-info ml-1"
-            >
-              {{ category }}
-            </span>
+            <div v-if="place">
+              <h3 class="d-inline-block mb-0">
+                {{ alternatives.length }}
+                {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
+                pour "{{ place.label }}"
+              </h3>
+              <span
+                v-for="category in place.categories"
+                :key="category"
+                class="badge badge-info ml-1"
+              >
+                {{ category }}
+              </span>
+            </div>
+            <div v-else>
+              <h3 class="d-inline-block mb-0">
+                Alternative au hasard
+              </h3>
+            </div>
           </div>
           <div class="col-12 col-md-4 text-right">
             <button

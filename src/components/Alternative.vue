@@ -42,22 +42,7 @@
             </a>
           </div>
         </div>
-        <b-modal
-          id="map-modal"
-          title="Carte"
-        >
-          <div class="map">
-            <img
-              :src="`assets/maps/${alternative.label}.jpg`"
-              alt="La carte n'est pas disponible :/"
-            >
-          </div>
-          <template v-slot:modal-footer="{ ok }">
-            <b-button size="sm" variant="success" @click="ok()">
-              OK
-            </b-button>
-          </template>
-        </b-modal>
+        <DisplayMapModal :alternative="alternative"/>
       </div>
       <div class="col-12 col-md-8">
         <b-carousel
@@ -94,9 +79,12 @@
 
 <script>
 
+import DisplayMapModal from './modals/DisplayMapModal.vue';
+
 export default {
   name: 'Alternative',
   components: {
+    DisplayMapModal,
   },
   props: {
     alternative: Object,
@@ -118,7 +106,8 @@ export default {
     validCategories() {
       const { alternative, place } = this;
 
-      return place.categories.filter((category) => alternative.categories.includes(category));
+      return place
+      && place.categories.filter((category) => alternative.categories.includes(category));
     },
   },
 };

@@ -126,9 +126,6 @@ export default {
     Banner,
     ProposeModal,
   },
-  props: {
-    msg: String,
-  },
   data() {
     return {
       didSomething: false,
@@ -230,13 +227,11 @@ export default {
       this.alternativesFound = [];
     },
     setRandomAlternative() {
-      const { fullAlternatives } = this;
-      // eslint-disable-next-line no-unused-vars
-      let { alternativesFound } = this;
-
       this.resetSelected();
 
-      alternativesFound = [fullAlternatives[parseInt(Math.random() * fullAlternatives.length, 10)]];
+      this.alternativesFound = [
+        this.fullAlternatives[parseInt(Math.random() * this.fullAlternatives.length, 10)],
+      ];
     },
     getLocation() {
       if (navigator.geolocation) {
