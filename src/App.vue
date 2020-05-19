@@ -76,4 +76,15 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+.MMjVD {
+  bottom: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .MMjVD {
+    bottom: 20px !important;
+  }
+}
+
 </style>

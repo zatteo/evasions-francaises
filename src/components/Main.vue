@@ -11,7 +11,9 @@
             >
              Cherchez votre prochaine destination parmi plus de {{ alternatives.length }}
              alternatives françaises aux plus belles destinations du monde, ou
-            <a href="">proposez votre alternative</a>.
+            <a href="" v-b-modal.propose-modal @click.prevent>
+              proposez votre alternative
+            </a>.
             </p>
             <br />
             <div class="search-bar">
@@ -72,6 +74,24 @@
           <div class="card why-card">
             <p class="why-title">Pourquoi ce site ?</p>
             <div class="row">
+              <div class="col-12">
+                <p>
+                  Vous êtes comme nous? Ouverts sur le monde, vous aimez voyager, vous évader,
+                  découvrir d´autres paysages, d´autres cultures plus exotiques les unes que
+                  les autres?
+                  <br><br>
+                  Après deux mois de confinement, nous vous proposons de vous évader
+                  de vos quatre murs pour partir à la découverte d´un pays exotique: La France!
+                  <br><br>
+                  Cela tombe bien, non?
+
+                  Pour chacune de vos destinations de rêve, nous vous proposons une destination
+                  alternative locale. Essayez, vous verrez: il est possible de faire le tour
+                  du Monde en France! Avec en prime, au moins sur le trajet,
+                  une meilleure empreinte environnementale. Et si vous vous nous aider,
+                  vous pouvez même proposer votre alternative.
+                </p>
+              </div>
               <div class="col-12 col-sm-6">
                 <img class="why-icon" src="assets/map.png">
                 <p class="why-icon-text">Promouvoir le tourisme local</p>
@@ -85,6 +105,7 @@
         </div>
       </div>
     </div>
+    <ProposeModal/>
     <Banner/>
   </div>
 </template>
@@ -93,6 +114,7 @@
 
 import AlternativeList from './AlternativeList.vue';
 import Banner from './Banner.vue';
+import ProposeModal from './modals/ProposeModal.vue';
 
 import loadedAlternatives from '../assets/alternatives.json';
 import loadedPlaces from '../assets/places.json';
@@ -102,6 +124,7 @@ export default {
   components: {
     AlternativeList,
     Banner,
+    ProposeModal,
   },
   props: {
     msg: String,
