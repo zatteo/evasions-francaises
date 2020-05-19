@@ -9,16 +9,9 @@
             <p
               class="search-text"
             >
-              Entrez votre destination lointaine et
-              découvrez les plus belles alternatives à moins de
-              <input
-                id="distance"
-                class="search-distance"
-                v-model="filters.distance"
-                type="number"
-                step="10"
-              >
-              km.
+             Cherchez votre prochaine destination parmi plus de {{ alternatives.length }}
+             alternatives françaises aux plus belles destinations du monde, ou
+            <a href="">proposez votre alternative</a>.
             </p>
             <br />
             <div class="search-bar">
@@ -28,14 +21,26 @@
                 :options="places"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
-              <div class="text-legend">
+              <div class="search-toolbar text-legend">
                 Votre localisation : {{ location.name }} ({{location.latitude}}
                 : {{location.longitude}})
                 <a
-                  href="" @click.prevent="getLocation"
+                  href=""
+                  class="ml-1"
+                  @click.prevent="getLocation"
                 >
                   Me géolocaliser
                 </a>
+                <span class="ml-auto">
+                  Distance maximale
+                  <input
+                    id="distance"
+                    class="search-distance"
+                    v-model="filters.distance"
+                    type="number"
+                    step="10"
+                  >
+                </span>
               </div>
             </div>
             <div class="row">
@@ -45,7 +50,6 @@
               >
                 Une alternative au hasard
               </button>
-              <Subscribe/>
             </div>
           </div>
         </div>
@@ -342,12 +346,17 @@ a {
   width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: left;
 }
 
-.search-distance {
-  width: auto;
+.search-toolbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+/* .search-distance {
+  width: auto;
+} */
 
 .why {
   display: flex;
