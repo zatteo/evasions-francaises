@@ -49,6 +49,14 @@
             <a :href="alternative.links && alternative.links[0]" target="_blank">
               En savoir plus
             </a>
+            <br>
+            <br>
+            <i data-feather="alert-triangle" style="width: 16px; height: 16px;"></i> Coronavirus <i data-feather="alert-triangle" style="width: 16px; height: 16px;"></i>
+            <br>
+            <p class="font-italic">
+              Le combat contre le virus est notre responsabilité à tous.
+              Respectez les consignes locales et les gestes barrières.
+            </p>
           </div>
         </div>
         <DisplayMapModal :alternative="alternative"/>
@@ -98,6 +106,10 @@ export default {
   props: {
     alternative: Object,
     place: Object,
+  },
+  mounted() {
+    // eslint-disable-next-line no-undef
+    feather.replace();
   },
   computed: {
     distanceDifference() {

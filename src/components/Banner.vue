@@ -79,14 +79,14 @@ export default {
     alternatives: Array,
     place: Object,
   },
+  mounted() {
+    // eslint-disable-next-line no-undef
+    feather.replace();
+  },
   data() {
     return {
       display: 'flex',
     };
-  },
-  mounted() {
-    // eslint-disable-next-line no-undef
-    feather.replace();
   },
 };
 

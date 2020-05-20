@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-12">
           <div class="card why-card">
-            <p class="why-title">Pourquoi ce site ?</p>
+            <p class="why-title">Pourquoi ?</p>
             <div class="row">
               <div class="col-12">
                 <p>
@@ -87,7 +87,10 @@
                   alternatives locales. Essayez, vous verrez : il est possible de faire le tour
                   du monde en France ! Avec en prime, au moins sur le trajet,
                   une meilleure empreinte environnementale. Et si vous voulez nous aider,
-                  vous pouvez même proposer votre alternative.
+                  vous pouvez même
+                  <a href="" v-b-modal.propose-modal @click.prevent>
+                    proposer votre alternative
+                  </a>.
                 </p>
               </div>
               <div class="col-12 col-sm-6">
@@ -97,6 +100,11 @@
               <div class="col-12 col-sm-6">
                 <img class="why-icon" src="assets/pollution.png">
                 <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
+              </div>
+              <div class="col-12">
+                <p>
+                  Fait avec <i data-feather="heart"></i> en confinement. Hébergé en 🇫🇷 chez <a href="https://scalingo.com/fr" target="_blank">Scalingo</a>.
+                </p>
               </div>
             </div>
           </div>
@@ -123,6 +131,10 @@ export default {
     AlternativeList,
     Banner,
     ProposeModal,
+  },
+  mounted() {
+    // eslint-disable-next-line no-undef
+    feather.replace();
   },
   data() {
     return {
