@@ -54,7 +54,7 @@
             <i data-feather="alert-triangle" style="width: 16px; height: 16px;"></i> Coronavirus <i data-feather="alert-triangle" style="width: 16px; height: 16px;"></i>
             <br>
             <p class="font-italic">
-              Le combat contre le virus est notre responsabilité à tous.
+              Le combat contre le coronavirus est notre responsabilité à tous.
               Respectez les consignes locales et les gestes barrières.
             </p>
           </div>

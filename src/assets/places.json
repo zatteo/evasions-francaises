@@ -16,6 +16,15 @@
     ]
   },
   {
+    "label": "Australie",
+    "latitude": -35.2544,
+    "longitude": 149.1331,
+    "categories": [
+      "Grès rouge",
+      "Grand Canyon"
+    ]
+  },
+  {
     "label": "Autriche",
     "latitude": 47.2000338,
     "longitude": 13.199959,
@@ -89,6 +98,14 @@
     ]
   },
   {
+    "label": "Désert des Mojaves, Nevada",
+    "latitude": 39.0039,
+    "longitude": -115.4751,
+    "categories": [
+      "Désert montagneux"
+    ]
+  },
+  {
     "label": "Désert du Sahara",
     "latitude": 24.49215,
     "longitude": -12.65625,
@@ -129,6 +146,14 @@
     ]
   },
   {
+    "label": "Horseshoe, Arizona",
+    "latitude": 36.876,
+    "longitude": 111.5196,
+    "categories": [
+      "Horseshoe"
+    ]
+  },
+  {
     "label": "Irlande",
     "latitude": 53.3403,
     "longitude": -6.2675,
@@ -142,6 +167,15 @@
     "longitude": 86.9248308,
     "categories": [
       "Haute montagne"
+    ]
+  },
+  {
+    "label": "Les Seychelles",
+    "latitude": -4.701,
+    "longitude": 55.4507,
+    "categories": [
+      "Plages",
+      "Archipel"
     ]
   },
   {
@@ -193,7 +227,7 @@
     ]
   },
   {
-    "label": "Lac Hilier",
+    "label": "Lac Hilier, Australie",
     "latitude": -34.1046,
     "longitude": 123.2027,
     "categories": [
@@ -201,7 +235,7 @@
     ]
   },
   {
-    "label": "Lac rose",
+    "label": "Lac rose, Sénégal",
     "latitude": 0,
     "longitude": 0,
     "categories": [
@@ -214,6 +248,16 @@
     "longitude": 18.517,
     "categories": [
       "Esprit de Noël"
+    ]
+  },
+  {
+    "label": "Parc national de Yosemite, Nevada",
+    "latitude": 37.7458,
+    "longitude": 119.5,
+    "categories": [
+      "Montagnes et forêts",
+      "Fleuves et forêts",
+      "Cascades"
     ]
   },
   {
@@ -243,6 +287,14 @@
     ]
   },
   {
+    "label": "Toscane",
+    "latitude": 43.7106,
+    "longitude": 11.2527,
+    "categories": [
+      "Paysage de Toscane"
+    ]
+  },
+  {
     "label": "Venise",
     "latitude": 45.4371908,
     "longitude": 12.3345898,
@@ -257,58 +309,6 @@
     "categories": [
       "Montagnes et forêts",
       "Fleuves et forêts"
-    ]
-  },
-  {
-    "label": "Toscane",
-    "latitude": 43.7106,
-    "longitude": 11.2527,
-    "categories": [
-      "Paysage de Toscane"
-    ]
-  },
-  {
-    "label": "Arizona, Horseshoe",
-    "latitude": 36.876,
-    "longitude": 111.5196,
-    "categories": [
-      "Horseshoe"
-    ]
-  },
-  {
-    "label": "Nevada, Parc National Yosemite",
-    "latitude": 37.7458,
-    "longitude": 119.5,
-    "categories": [
-      "Montagnes et forêts",
-      "Fleuves et forêts",
-      "Cascades"
-    ]
-  },
-  {
-    "label": "Nevada, Désert des Mojaves",
-    "latitude": 39.0039,
-    "longitude": -115.4751,
-    "categories": [
-      "Désert montagneux"
-    ]
-  },
-  {
-    "label": "Australie",
-    "latitude": -35.2544,
-    "longitude": 149.1331,
-    "categories": [
-      "Grès rouge",
-      "Grand Canyon"
-    ]
-  },
-  {
-    "label": "Les Seychelles",
-    "latitude": -4.701,
-    "longitude": 55.4507,
-    "categories": [
-      "Plages",
-      "Archipel"
     ]
   }
 ]

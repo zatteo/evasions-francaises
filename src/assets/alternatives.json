@@ -534,7 +534,7 @@
         "source": "Flickr"
       }
     ],
-    "description": "",
+    "description": "Ce site géologique hors du commun est caractérisque avec ses cheminées de fée, des grandes colonnes de roches marquées par l'érosion. On en retrouve dans le monde entier, et notamment dans les Cappadoces en Turquie.",
     "links": [
       "https://www.tourisme-pyreneesorientales.com/orgues-dille-sur-tet"
     ]
@@ -552,7 +552,7 @@
         "path": "pays_cathare1.jpg"
       }
     ],
-    "description": "",
+    "description": "Chargé d'histoire, le pays Cathare propose des paysages magnifiques, avec de nombreux châteaux forts.",
     "links": [
       "https://www.payscathare.org"
     ]
@@ -588,7 +588,7 @@
         "path": "desert_agriates2.jpg"
       }
     ],
-    "description": "",
+    "description": "Des montagnes désertiques, plutôt sèches, mais avec des paysages à couper le souffle. C'est le désert des Agriates, au nord de la Corse. Une seule commune se trouve sur ce territoire de près de 15000ha.",
     "links": [
       "https://www.visit-corsica.com/"
     ]
@@ -624,7 +624,7 @@
         "source": "Alain Bourson"
       }
     ],
-    "description": "Rio de Janeiro n'a qu'à bien se tenir ! Voici le Christ Rédempteur made in Alsace, d'une hauteur de 23m (soit 15m de moins que le véritable Christ Rédempteur). Il se trouve sur le Sommet du Galtz et accueille à bras ouvert les curieux. Il est même visible depuis Colmar.",
+    "description": "Un ensemble monumental, composé de 2 cairns et 2 dolmens, en Bretagne.",
     "links": [
       "https://tourisme-colmar.com/fr/"
     ]
@@ -719,7 +719,7 @@
     "label": "Fort la Latte",
     "latitude": 48.6648,
     "longitude": -2.2846,
-    "description": "Ce château fort du XIVème siècle est classé depuis 1925 comme monument historique. Il trône fièrement au sommet d'un cap rocheux face à la mer. Pour les fans de manau, vous aurez remarqué qu'il s'agit du fameux château du clip « La tribu de Dana ».",
+    "description": "Ce château fort du XIVème siècle est classé depuis 1925 comme monument historique. Il trône fièrement au sommet d'un cap rocheux face à la mer. Pour les fans de Manau, vous aurez remarqué qu'il s'agit du fameux château du clip « La tribu de Dana ».",
     "categories": ["Châteaux forts"],
     "images": [
       {
@@ -737,7 +737,7 @@
     "label": "Lac du Lispach",
     "latitude": 48.0447,
     "longitude": 6.9423 ,
-    "description": "Patience...",
+    "description": "Un beau lac de forêt, à une altitude de 900m dans les Vosges. Un sentier permet d'en faire le tour.",
     "categories": ["Lacs de montagne"],
     "images": [
       {
@@ -757,7 +757,7 @@
     "label": "Moliets-et-Maa",
     "latitude": 43.7879 ,
     "longitude": -1.3568 ,
-    "description": "Un petit village dans les Landes doté d’une légère ressemblance avec le célèbre Horseshoe d’Arizona. Vous pouvez également parcourir les 2000 hectares de forêt de pin du Courant d'Huchet, qui n’est pas s’en rappeler des forêts de pin du parc national Yosemite",
+    "description": "Un petit village dans les Landes doté d’une légère ressemblance avec le célèbre Horseshoe en Arizona. Vous pouvez également parcourir les 2000ha de forêts de pins du Courant d'Huchet, qui n’est pas sans rappeler les forêts de pin du parc national de Yosemite",
     "categories": ["Fleuves et forêts", "Horseshoe","Plages"],
     "images": [
       {
@@ -772,10 +772,10 @@
     ]
   },
   {
-    "label": "Réserve Naturelle du courant d’Huchet",
+    "label": "Réserve naturelle du courant d’Huchet",
     "latitude": 43.8863 ,
     "longitude":-1.3293 ,
-    "description": "Surnommée la « Petite Amazonie landaise », ",
+    "description": "Surnommée la « Petite Amazonie landaise », la réserve naturelle du courant d'Huchet a été préservée et propose une grande richesse naturelle.",
     "categories": ["Fleuves et forêts"],
     "images": [
       {
@@ -790,10 +790,10 @@
     ]
   },
   {
-    "label": "Lac de Pierre Percée ",
+    "label": "Lac de Pierre-Percée ",
     "latitude": 48.4687677 ,
     "longitude": 6.9310831,
-    "description": "Le Lac de Pierre Percée est le 3ème lac artificiel de Lorraine ! Sa forme en feuille d’érable vient confirmer l’idée d’une ressemblance avec les lacs canadiens. Laissez vous séduire par la multitudes activités que le lac et sa végétation a à vous offrir (sports nautiques, du saut à l’élastique, du VTT, randonnées,…)",
+    "description": "Le lac de Pierre-Percée est le 3ème lac artificiel de Lorraine ! Sa forme en feuille d’érable vient confirmer l’idée d’une ressemblance avec les lacs canadiens. Laissez-vous séduire par la multitudes d'activités que le lac et sa végétation a à vous offrir (saut à l’élastique, VTT, sports nautiques, randonnées,…)",
     "categories": ["Lacs de montagne"],
     "images": [
       {
@@ -818,7 +818,7 @@
     "label": "Saint Jacut de la Mer ",
     "latitude": 48.601608 ,
     "longitude": 48.601608,
-    "description": "Saint Jacut de la Mer, petit village des côtes d’Armor abrite 11 plages ! Assez de quoi vous détendre, retrouvez également divers sports nautiques ( Catamarans, planche a voile, canoe,…)",
+    "description": "Saint Jacut de la Mer, petit village des côtes d’Armor, abrite 11 plages ! Largement de quoi vous détendre. Retrouvez également divers sports nautiques (catamaran, planche à voile, canoë,…)",
     "categories": ["Plages"],
     "images": [
       {
@@ -838,7 +838,7 @@
     "label": "Port Grimaud",
     "latitude": 43.2718123 ,
     "longitude": 6.5819521,
-    "description": " Au coeur du golfe de St Tropez vous trouverez la Venise Provençale. Conçu et construit par l’Architecte François Spoerry, les travaux on débuté en 1966 pour se finaliser dans les années 2000. Cette cité lacustre s’étend sur 75 hectares dont 7km de canaux, 14 ponts et 12 îles.",
+    "description": "Au coeur du golfe de St-Tropez, vous trouverez la Venise Provençale. Conçu et construit par l’architecte François Spoerry, les travaux ont débuté en 1966 pour se finaliser dans les années 2000. Cette cité lacustre s’étend sur 75ha dont 7km de canaux, 14 ponts et 12 îles.",
     "categories": ["Venise"],
     "images": [
       {
@@ -856,7 +856,7 @@
     "label": "Lac Salagou",
     "latitude": 43.6481 ,
     "longitude": 3.3652,
-    "description": " Ce grand lac du sud ouest avec ses tons rouges et oranges fait immédiatement penser aux roches du Grand Canyon et aux paysages de l'Outback australien.",
+    "description": " Ce grand lac du sud ouest avec ses tons rouges et oranges fait immédiatement penser aux roches du Grand Canyon et aux paysages de l'outback australien.",
     "categories": ["Grand Canyon","Grès rouge"],
     "images": [
       {
@@ -876,7 +876,7 @@
     "label": "Iles Lavezzi",
     "latitude": 41.206 ,
     "longitude": 9.25,
-    "description": "Cet archipel de 23 îles est accesible uniquement par voie maritime. Depuis 1982, quelques îles de l'archipel font partie d'une Réserve naturelle, ce qui les protèges",
+    "description": "Cet archipel de 23 îles est accesible uniquement par voie maritime. Depuis 1982, quelques îles de l'archipel font partie d'une réserve naturelle, ce qui les protège",
     "categories": ["Archipel","Plages"],
     "images": [
       {
