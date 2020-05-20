@@ -25,7 +25,7 @@ body {
 
 body {
   /*background-color: white;*/
-  background-image: url("./assets/backgrounds/verdon.jpg");
+  background-image: url("./assets/backgrounds/valensole.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: left top;

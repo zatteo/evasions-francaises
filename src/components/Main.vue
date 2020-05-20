@@ -103,7 +103,7 @@
               </div>
               <div class="col-12">
                 <p>
-                  Fait avec <i data-feather="heart"></i> en confinement. Hébergé en 🇫🇷 chez <a href="https://scalingo.com/fr" target="_blank">Scalingo</a>.
+                  Fait avec <i data-feather="heart"></i> en confinement. Hébergé en 🇫🇷 chez <a href="https://scalingo.com/fr" target="_blank">Scalingo</a>. Fond d'écran par <a href="https://twitter.com/ladydaner">ladydaner</a>.
                 </p>
               </div>
             </div>
