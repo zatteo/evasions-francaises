@@ -146,16 +146,15 @@ export default {
 }
 
 .image {
-  max-height: 100%;
-  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.map {
-  text-align: center;
-}
-
-.map img {
- width: 100%;
+@media (min-width: 768px) {
+  .image {
+    max-height: 100%;
+    width: auto;
+  }
 }
 
 </style>

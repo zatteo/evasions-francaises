@@ -5,7 +5,6 @@
         <div class="col-12">
           <div class="card search-card">
             <p class="title">Évasions françaises</p>
-            <p class="search-title">"Qui a dit qu'il fallait prendre l'avion pour s'évader ?"</p>
             <p
               class="search-text"
             >
@@ -24,16 +23,17 @@
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
-                Votre localisation : {{ location.name }} ({{location.latitude}}
-                : {{location.longitude}})
-                <a
-                  href=""
-                  class="ml-1"
-                  @click.prevent="getLocation"
-                >
-                  Me géolocaliser
-                </a>
-                <span class="ml-auto">
+                <span class="search-location">
+                  Votre localisation : {{ location.name }} ({{location.latitude}}
+                  : {{location.longitude}})
+                  <a
+                    href=""
+                    @click.prevent="getLocation"
+                  >
+                    Me géolocaliser
+                  </a>
+                </span>
+                <span>
                   Distance maximale
                   <input
                     id="distance"
@@ -197,8 +197,6 @@ export default {
   },
   methods: {
     setSelected(search) {
-      // eslint-disable-next-line no-debugger
-      debugger;
       this.didSomething = true;
 
       if (search === null) {
@@ -351,10 +349,8 @@ a {
   align-items: center;
 }
 
-.search-title {
-  margin: 0 0 2% 0;
-  font-family: "PacificoLight";
-  font-size: 2rem;
+.search-text {
+  padding-top: 10px;
 }
 
 .search-bar {
@@ -367,13 +363,27 @@ a {
 
 .search-toolbar {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-/* .search-distance {
-  width: auto;
-} */
+.search-location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .search-toolbar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.search-distance {
+  width: 70px;
+}
 
 .why {
   display: flex;

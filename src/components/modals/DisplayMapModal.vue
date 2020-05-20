@@ -31,4 +31,12 @@ export default {
 
 <style scoped>
 
+.map {
+  text-align: center;
+}
+
+.map > img {
+  max-width: 100%;
+}
+
 </style>
