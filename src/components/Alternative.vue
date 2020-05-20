@@ -14,7 +14,7 @@
             >
               {{ validCategory }}
             </span>
-            <p v-html="alternative.description"></p>
+            <p v-html="alternative.description" class="text-justify"></p>
             <!-- popover -->
             <div v-if="place" id="popover-stats">
               <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
@@ -68,7 +68,7 @@
             v-for="image in alternative.images"
             :key="image.path"
             :caption="image.description"
-            :text="image.source"
+            :text="image.source ? `Crédit photo : ${image.source}` : ''"
           >
             <template v-slot:img>
               <img
@@ -133,7 +133,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: justify;
+  text-align: left;
 }
 
 .description-card {

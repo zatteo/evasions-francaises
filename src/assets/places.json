@@ -165,7 +165,7 @@
     "latitude": 59.869,
     "longitude": 10.7529,
     "categories": [
-      "Lacs de Montagne"
+      "Lacs de montagne"
     ]
   },
   {
@@ -173,7 +173,7 @@
     "latitude": 64,
     "longitude": 26,
     "categories": [
-      "Lacs de Montagne"
+      "Lacs de montagne"
     ]
   },
   {
@@ -189,7 +189,7 @@
     "latitude": 59.2862,
     "longitude": 18.0698,
     "categories": [
-      "Lacs de Montagne"
+      "Lacs de montagne"
     ]
   },
   {
@@ -238,7 +238,8 @@
     "longitude": 101,
     "categories": [
       "Gorges",
-      "Grottes"
+      "Grottes",
+      "Cascades"
     ]
   },
   {
@@ -298,7 +299,7 @@
     "longitude": 149.1331,
     "categories": [
       "Grès rouge",
-      "Grand canyon"  
+      "Grand Canyon"
     ]
   },
   {
@@ -307,7 +308,7 @@
     "longitude": 55.4507,
     "categories": [
       "Plages",
-      "Archipel"  
+      "Archipel"
     ]
   }
 ]

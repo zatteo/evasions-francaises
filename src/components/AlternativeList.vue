@@ -76,6 +76,13 @@ export default {
       this.currentAlternative = (this.currentAlternative + 1) % this.alternatives.length;
     },
   },
+  watch: {
+    alternatives: {
+      handler() {
+        this.currentAlternative = 0;
+      },
+    },
+  },
 };
 
 </script>

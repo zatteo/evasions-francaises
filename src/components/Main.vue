@@ -76,19 +76,17 @@
             <div class="row">
               <div class="col-12">
                 <p>
-                  Vous êtes comme nous? Ouverts sur le monde, vous aimez voyager, vous évader,
+                  Vous êtes comme nous ? Ouverts sur le monde, vous aimez voyager, vous évader,
                   découvrir d´autres paysages, d´autres cultures plus exotiques les unes que
-                  les autres?
+                  les autres ?
                   <br><br>
                   Après deux mois de confinement, nous vous proposons de vous évader
-                  de vos quatre murs pour partir à la découverte d´un pays exotique: La France!
+                  de vos quatre murs pour partir à la découverte d´un pays exotique : la France !
                   <br><br>
-                  Cela tombe bien, non?
-
-                  Pour chacune de vos destinations de rêve, nous vous proposons une destination
-                  alternative locale. Essayez, vous verrez: il est possible de faire le tour
-                  du Monde en France! Avec en prime, au moins sur le trajet,
-                  une meilleure empreinte environnementale. Et si vous vous nous aider,
+                  Pour chacune de vos destinations de rêve, nous vous proposons des destinations
+                  alternatives locales. Essayez, vous verrez : il est possible de faire le tour
+                  du monde en France ! Avec en prime, au moins sur le trajet,
+                  une meilleure empreinte environnementale. Et si vous voulez nous aider,
                   vous pouvez même proposer votre alternative.
                 </p>
               </div>
@@ -199,13 +197,14 @@ export default {
   },
   methods: {
     setSelected(search) {
+      // eslint-disable-next-line no-debugger
+      debugger;
       this.didSomething = true;
 
       if (search === null) {
         this.resetSelected();
       }
 
-      const { filters } = this;
       this.selected = search;
       const place = this.fullPlaces.find((d) => search.label === d.label);
 
@@ -213,7 +212,7 @@ export default {
         this.placeFound = place;
 
         this.alternativesFound = this.fullAlternatives.filter(
-          (a) => place.categories.filter((category) => a.categories.includes(category)).length > 0 && (filters.distance === '' || a.distance <= filters.distance),
+          (a) => place.categories.filter((category) => a.categories.includes(category)).length > 0 && (this.filters.distance === '' || a.distance <= this.filters.distance),
         );
       } else {
         this.placeFound = undefined;

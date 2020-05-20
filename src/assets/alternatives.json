@@ -3,12 +3,11 @@
     "label": "Corse",
     "latitude": 41.92723,
     "longitude": 8.73462,
-    "description": "Eaux turquoises, plage de sable fin, <b>les plages de Corse n'ont rien à envier aux destinations les plus paradisiaques</b> du monde. L'intérieur des terres est particulièrement authentiques, avec ses villages et ses montagnes. Pour réduire votre impact, vous pouvez vous y rendre en ferry voir même en voilier pour les plus aventuriers !",
+    "description": "Eaux turquoises, plage de sable fin, les plages de Corse n'ont rien à envier aux destinations les plus paradisiaques du monde. L'intérieur des terres est particulièrement authentique, avec ses villages et ses montagnes. Pour réduire votre impact, vous pouvez vous y rendre en ferry voir même en voilier pour les plus aventuriers !",
     "categories": ["Plages"],
     "images": [
       {
         "path": "corse.jpg",
-        "description": "Superbe plage",
         "source": "Office du Tourisme de Corse"
       },
       {
@@ -47,7 +46,7 @@
         "path": "jura.jpg"
       }
     ],
-    "description": "",
+    "description": "Le Jura regorge de petits ruisseaux et de cascades. Les plus connues, les cascades du Hérisson et la cascade des Tufs, offrent des paysages particulièrement reposants.",
     "links": [
       "https://www.jura-tourism.com/"
     ]
@@ -583,10 +582,10 @@
     "categories": ["Désert montagneux"],
     "images": [
       {
-        "path": "desert_agriate.jpg"
+        "path": "desert_agriates.jpg"
       },
       {
-        "path": "desert_agriate2.jpg"
+        "path": "desert_agriates2.jpg"
       }
     ],
     "description": "",
@@ -662,7 +661,7 @@
         "source": "Flickr"
       }
     ],
-    "description": "On compte beaucoup de réplique de la Statue de la Liberté en France, cela va s'en dire, Auguste Bartholdi était Français et on en est fière. Vous trouverez des répliques notamment dans sa ville d'origine, Colmar, mais encore plusieurs à Paris, à Poitiers, en Normandie, dans le Var, dans l'Isère, ...",
+    "description": "On compte beaucoup de répliques de la Statue de la Liberté en France. Auguste Bartholdi était français et on en est fier. Vous trouverez des répliques notamment dans sa ville d'origine, Colmar, mais encore plusieurs à Paris, à Poitiers, en Normandie, dans le Var, dans l'Isère, ... Évidemment, la taille n'est pas la même.",
     "links": [
       ""
     ]
