@@ -99,7 +99,7 @@
               </div>
               <div class="col-12 col-sm-6">
                 <img class="why-icon" src="assets/pollution.png">
-                <p class="why-icon-text">Réduire les émissions de CO2 liées au tourisme</p>
+                <p class="why-icon-text">Réduire les émissions de CO₂ liées au tourisme</p>
               </div>
               <div class="col-12">
                 <p>

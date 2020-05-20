@@ -23,20 +23,20 @@
               </span></h5>
               &nbsp;
               <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
-                CO²
+                CO₂
                 <b>{{ emissionDifferenceInPercent }} %</b>
               </span></h5>
               <b-popover target="popover-stats" triggers="hover" placement="top">
-                <template v-slot:title>Calcul des émissions de CO²</template>
+                <template v-slot:title>Calcul des émissions de CO₂</template>
                 <p>
-                  Les émissions de CO² sont calculées sur la base d'un passager en avion
+                  Les émissions de CO₂ sont calculées sur la base d'un passager en avion
                   pour la destination et l'alternative, en fonction des distances à vol d'oiseau.
                 </p>
                 <p>
                   <b>Distance</b> : {{ alternative.distance }}km
                   au lieu de {{ place.distance }}km
-                  <b>Émission</b> : {{ alternative.emission }}t de CO²
-                  au lieu de {{ place.emission }}t de CO²
+                  <b>Émission</b> : {{ alternative.emission }}t de CO₂
+                  au lieu de {{ place.emission }}t de CO₂
                 </p>
                 <a href="https://www.bbc.com/news/science-environment-49349566" target="_blank">Source</a>
               </b-popover>
