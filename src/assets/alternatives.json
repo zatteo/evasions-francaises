@@ -37,18 +37,24 @@
     ]
   },
   {
-    "label": "Jura",
+    "label": "Cascades du Hérisson, Jura",
     "latitude": 46.83333,
     "longitude": 5.83333,
     "categories": ["Cascades"],
     "images": [
       {
         "path": "jura.jpg"
+      },
+      {
+        "path": "herisson.jpg"
+      },
+      {
+        "path":"herisson2.jpg"
       }
     ],
-    "description": "Le Jura regorge de petits ruisseaux et de cascades. Les plus connues, les cascades du Hérisson et la cascade des Tufs, offrent des paysages particulièrement reposants.",
+    "description": "Venez admirer les 7 cascades du Hérisson sur un parcours de 3,7km en pleine nature. Vous y verez des sauts mais aussi des Cascades jusqu'à 65mètres de haut, de quoi vous éblouir le temps d'une après midi ! Pour infos les chutes du Niagara ne font que 57mètres de haut..Bon d'accord elles font presques 1km de largeur, mais l'esprit est là ",
     "links": [
-      "https://www.jura-tourism.com/"
+      "https://www.jura-tourism.com/vivre-le-jura/visiter/les-incontournables/cascades-du-herisson/"
     ]
   },
   {
@@ -514,7 +520,7 @@
         "path": "archipel_glenan2.jpg"
       }
     ],
-    "description": "Un archipel dignes des plus belles îles du montagne, et en Bretagne !",
+    "description": "Un archipel digne des plus belles îles du monde, et en Bretagne !",
     "links": [
       "https://www.tourismebretagne.com/destinations/les-10-destinations/quimper-cornouaille/larchipel-des-glenan/"
     ]
@@ -894,6 +900,111 @@
     ],
     "links": [
       "https://www.bonifacio.fr/experiences/premiere-visite-le-top-5/une-escapade-sur-les-iles-lavezzi/"
+    ]
+  },
+  {
+    "label": "Méandre de Queille",
+    "latitude": 45.911 ,
+    "longitude": 2.8455,
+    "description": " Venez découvrir à Queille ce panorama qui ressemble à s'y méprendre à l'Amazonie. À plus de 250m au dessus de la Sioule vous pouvez observer ce méandre qui ressemble comme deux gouttes d'eau aux cartes postales amazoniennes.",
+    "categories": ["Fleuves et forêts","Horseshoe"],
+    "images": [
+      {
+        "path": "queilles.jpg"
+      }
+    ],
+    "links": [
+      "https://www.tourisme-combrailles.fr/meandre-de-queuille-queuille.html"
+    ]
+  },
+  {
+    "label": "Palais idéal du Facteur Cheval",
+    "latitude": 45.2525 ,
+    "longitude": 5.0285,
+    "description": "Une construction surprenante qui ne laissera personne indifférent. Le palais idéal du Facteur Cheval, construit par Ferdinand Cheval entre 1879 et 1912, est un mélange très personnel de plusieurs styles. On y retrouve des influences bibliques, mais aussi de la mythologie hindoue et égyptienne. Le résultat final ressemble aux temples d'Asie du Sud-Est.",
+    "categories": ["Temples Angkor"],
+    "images": [
+      {
+        "path": "palais_ideal.jpg"
+      }
+    ],
+    "links": [
+      "http://www.facteurcheval.com/"
+    ]
+  },
+  {
+    "label": "Cascade des Tufs, Jura",
+    "latitude": 46.8681,
+    "longitude": 5.8052,
+    "categories": ["Cascades"],
+    "images": [
+      {
+        "path": "tufs.jpg"
+      }
+    ],
+    "description": " Entre la découverte d'un domaine des vins d'Arbois et la dégustation de comté, prenez un instant pour vous arrêter à la cascades des Tufs. Haute de 10m et large de 15m elle saura vous éblouir grâce à ses gours et sa végétation. ",
+    "links": [
+      "https://www.jura-tourism.com/patrimoine-naturel/la-cascade-des-tufs-aux-planches-pres-darbois/"
+    ]
+  },
+  {
+    "label": "Plages de Pampelonne",
+    "latitude": 43.224,
+    "longitude": 6.6685,
+    "categories": ["Plages","Festif"],
+    "images": [
+      {
+        "path": "pampelonne.jpg",
+        "source" : " Flickr, Ruediger Gros"
+      },
+      {
+        "path" : "pampelonne2.jpg",
+        "source" : "Flickr, Andy M."
+      }
+    ],
+    "description": " La célèbre plage de Pampelonne, d'une longueur de 4,5km et située dans le Golfe de St-Tropez saura vous séduire avec ces 27 plages 'privées' toutes plus festives les unes que les autres. Pour les amateurs de nature retrouvez du calme grâce au sentier marin de Pampelonne.",
+    "links": [
+      "https://www.ramatuelle-tourisme.com/"
+    ]
+  },
+  {
+    "label": "Puy de Sancy",
+    "latitude": 43.224,
+    "longitude": 6.6685,
+    "categories": ["Volcan"],
+    "images": [
+      {
+        "path": "sancy.jpg",
+        "source" : " Flickr, Thomas Dartigues"
+      },
+      {
+        "path" : "sancy2.jpg",
+        "source" : "Flickr, HarveyDxb"
+      }
+    ],
+    "description": "Le Puy de Sancy d'une altitude de 1 885mètres en fait le plus haut volcan de France métropolitaine. Pour les plus courageux vous pouvez atteindre son sommet en une heure à pieds, pour les autres vous pouvez emprunter un téléphérique puis entamer l'ascension des 864 marches pour arriver au sommet. ",
+    "links": [
+      "https://www.sancy.com/"
+    ]
+  },
+  {
+    "label": "Musée Guimet",
+    "latitude": 48.8618,
+    "longitude": 2.2939,
+    "categories": ["Temples d'Angkor","Ambiance d'Asie"],
+    "images": [
+      {
+        "path": "guimet2.jpg",
+        "source" : " Flickr, Blandine L."
+      },
+      {
+        "path" : "guimet.jpg",
+        "source" : "Flickr, Thomas Schirmann"
+      }
+    ],
+    "description": " Non, dans ce musée vous ne retrouverez pas les beaux temples d'Angkor ou encore les paysages asiatiques à vous couper le souffle, mais plutôt l'architecture particulière que l'on retrouve en Asie. Vous trouverez ce musée dans le 16 Arondissement à Paris. ",
+    "links": [
+      "https://www.guimet.fr/"
     ]
   }
 ]

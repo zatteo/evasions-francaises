@@ -66,7 +66,7 @@
     ]
   },
   {
-    "label": "Cappadoce",
+    "label": "Cappadoce, Turquie",
     "latitude": 36.49,
     "longitude": 34.89,
     "categories": [
@@ -309,6 +309,32 @@
     "categories": [
       "Montagnes et forêts",
       "Fleuves et forêts"
+    ]
+  },
+  {
+    "label": "Cambodge, les temples d'Angkor",
+    "latitude": 10.79,
+    "longitude": 103.8,
+    "categories": [
+      "Temples Angkor",
+      "Ambiance d'Asie"
+    ]
+  },
+  {
+    "label": "Ibiza",
+    "latitude": 38.846,
+    "longitude": 1.428,
+    "categories": [
+      "Plages",
+      "Festif"
+    ]
+  },
+  {
+    "label": "Vésuve",
+    "latitude": 40.7894,
+    "longitude": 14.425,
+    "categories": [
+      "Volcan"
     ]
   }
 ]
