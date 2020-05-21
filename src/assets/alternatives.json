@@ -982,9 +982,29 @@
         "source" : "Flickr, HarveyDxb"
       }
     ],
-    "description": "Le Puy de Sancy d'une altitude de 1 885mètres en fait le plus haut volcan de France mértopolitaine. Pour les plus courageux vous pouvez atteindre son sommet en une heure à pieds, pour les autres vous pouvez emprunter un téléphérique puis entamer l'ascension des 864 marches pour arriver au sommet. ",
+    "description": "Le Puy de Sancy d'une altitude de 1 885mètres en fait le plus haut volcan de France métropolitaine. Pour les plus courageux vous pouvez atteindre son sommet en une heure à pieds, pour les autres vous pouvez emprunter un téléphérique puis entamer l'ascension des 864 marches pour arriver au sommet. ",
     "links": [
       "https://www.sancy.com/"
+    ]
+  },
+  {
+    "label": "Musée Guimet",
+    "latitude": 48.8618,
+    "longitude": 2.2939,
+    "categories": ["Temples d'Angkor","Ambiance d'Asie"],
+    "images": [
+      {
+        "path": "guimet2.jpg",
+        "source" : " Flickr, Blandine L."
+      },
+      {
+        "path" : "guimet.jpg",
+        "source" : "Flickr, Thomas Schirmann"
+      }
+    ],
+    "description": " Non, dans ce musée vous ne retrouverez pas les beaux temples d'Angkor ou encore les paysages asiatiques à vous couper le souffle, mais plutôt l'architecture particulière que l'on retrouve en Asie. Vous trouverez ce musée dans le 16 Arondissement à Paris. ",
+    "links": [
+      "https://www.guimet.fr/"
     ]
   }
 ]
