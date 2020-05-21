@@ -318,5 +318,22 @@
     "categories": [
       "Temples Angkor"
     ]
+  },
+  {
+    "label": "Ibiza",
+    "latitude": 38.846,
+    "longitude": 1.428,
+    "categories": [
+      "Plages",
+      "Festif"
+    ]
+  },
+  {
+    "label": "Vésuve",
+    "latitude": 40.7894,
+    "longitude": 14.425,
+    "categories": [
+      "Volcan"
+    ]
   }
 ]
