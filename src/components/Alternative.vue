@@ -86,7 +86,8 @@
                 width="1024"
                 height="480"
                 :src="`assets/images/medium/${image.path}`"
-                alt="image slot"
+                @error="$event.target.src = `assets/images/${image.path}`"
+                alt="..."
               >
             </template>
           </b-carousel-slide>
