@@ -28,5 +28,16 @@ const generateMap = async (alternative) => {
   fs.writeFileSync(`./public/assets/maps/${alternative.label}.jpg`, imageBinaryBuffer, 'binary');
 }
 
-loadedAlternatives.forEach((alternative) => generateMap(alternative))
+async function generateMaps(alternatives) {
+  let i, j, chunk = 10;
+  for (i = 0, j = alternatives.length; i < j; i += chunk) {
+      alternativesChunk = alternatives.slice(i,i + chunk);
 
+      await Promise.all(alternativesChunk.map((alternative) => generateMap(alternative)))
+
+  }
+
+  process.exit(0)
+};
+
+generateMaps(loadedAlternatives);
