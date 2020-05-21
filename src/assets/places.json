@@ -310,5 +310,13 @@
       "Montagnes et forêts",
       "Fleuves et forêts"
     ]
+  },
+  {
+    "label": "Cambodge, les temples d'Angkor",
+    "latitude": 10.79,
+    "longitude": 103.8,
+    "categories": [
+      "Temples Angkor"
+    ]
   }
 ]
