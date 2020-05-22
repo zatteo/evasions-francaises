@@ -4,7 +4,7 @@
     "latitude": 41.92723,
     "longitude": 8.73462,
     "description": "Eaux turquoises, plage de sable fin, les plages de Corse n'ont rien à envier aux destinations les plus paradisiaques du monde. L'intérieur des terres est particulièrement authentique, avec ses villages et ses montagnes. Pour réduire votre impact, vous pouvez vous y rendre en ferry voir même en voilier pour les plus aventuriers !",
-    "categories": ["Plages"],
+    "categories": ["Plages","Iles paradisiaques"],
     "images": [
       {
         "path": "corse.jpg",
@@ -186,7 +186,7 @@
     "label": "Roche de Solutré",
     "latitude": 46.2987205,
     "longitude": 4.7181403,
-    "categories": ["Afrique du Sud"],
+    "categories": ["Rocher"],
     "images": [
       {
         "path": "roche_solutre.jpg"
@@ -195,7 +195,7 @@
         "path": "roche_solutre1.jpg"
       }
     ],
-    "description": "Une roche surplombant les vignes, aussi célèbre pour son originalité que pour les visites régulières de François Mitterand, véritable passionné de cet endroit. Petit clin d’oeil au vin d’Afrique du Sud et à la célèbre Montagne de la Table ",
+    "description": "Une roche surplombant les vignes, aussi célèbre pour son originalité que pour les visites régulières de François Mitterand, véritable passionné de cet endroit. Petit clin d’oeil au vin d’Afrique du Sud et à la célèbre Montagne de la Table.",
     "links": [
       "http://rochedesolutre.com/en/"
     ]
@@ -245,7 +245,7 @@
         "source": "parcballonsvosges"
       }
     ],
-    "description": "Ses nombreux lacs lui ont donné le surnom de 'Petite finlande'.",
+    "description": "Sur cette zone de 220km2 s'étendent de nombreux lacs ce qui lui a donné le surnom de 'Petite finlande'.",
     "links": [
       "https://www.les1000etangs.com/"
     ]
@@ -511,7 +511,7 @@
     "label": "Archipel des Glénan",
     "latitude": 47.7060188,
     "longitude": -3.9950714,
-    "categories": ["Plages"],
+    "categories": ["Plages","Archipel","Iles paradisiaques"],
     "images": [
       {
         "path": "archipel_glenan.jpg"
@@ -883,7 +883,7 @@
     "latitude": 41.206 ,
     "longitude": 9.25,
     "description": "Cet archipel de 23 îles est accesible uniquement par voie maritime. Depuis 1982, quelques îles de l'archipel font partie d'une réserve naturelle, ce qui les protège",
-    "categories": ["Archipel","Plages"],
+    "categories": ["Archipel","Plages","Iles paradisiaques"],
     "images": [
       {
         "path": "iles_lavezzi.jpg",
@@ -1213,6 +1213,27 @@
   "description": " L'une des plus belle et des plus réputés des Calanques de Marseille, il faut mériter pour voir ce beau paysage ! Vous avez jusqu'à 1h15 de randonnée pour y parvenir. Eaux turquoises et la végétation aux alentours a de quoi rivaliser avec la Baie de Maya de Thaïlande, en plus les deux sont envahis de touriste... ",
   "links": [
     " https://www.ot-cassis.com/ "
+  ]
+  },
+  {
+  "label": "Saint-Cast-le-Guildo",
+  "latitude": 48.5739,
+  "longitude": -2.2577,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path": "cast_guildo.jpg"
+    },
+    {
+      "path": "cast_guildo2.jpg"
+    },
+    {
+      "path": "cast_guildo3.jpg"
+    }
+  ],
+  "description": " Cette jolie station balnéaire a de quoi rivaliser avec les plages de sable blanc sri lankaises ou les îles paradisiaques du pacifique (avec quelques degrés en moins, certes... on compte sur le réchauffement climatique), autant pour ses paysages que pour sa faune marine exotique. Les images parlent d'elles-même. <br> ♥ sur Marguerite pour la contribution",
+  "links": [
+    "https://www.dinan-capfrehel.com/"
   ]
   }
 ]
