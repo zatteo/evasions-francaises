@@ -238,7 +238,7 @@
     "label": "Plateau des milles étangs",
     "latitude": 47.7366,
     "longitude": 6.5643,
-    "categories": ["Lacs de montagne"],
+    "categories": ["Lacs et forêts"],
     "images": [
       {
         "path": "milles_etang.jpg",
@@ -409,7 +409,7 @@
         "path": "calanque_marseille2.jpg"
       }
     ],
-    "description": "Connues dans le monde entier, les calanques de Marseille offrent des paysages somptueux et une mer d'un bleu si ... bleu !",
+    "description": "Connues dans le monde entier, les calanques de Marseille offrent des paysages somptueux et une mer d'un bleu si ... bleu ! Compter 20km et 11h de marches pour faire toutes les calanques ",
     "links": [
       "https://www.marseilletourisme.fr/fr/que-voir/calanques/"
     ]
@@ -1006,5 +1006,213 @@
     "links": [
       "https://www.guimet.fr/"
     ]
+  },
+  {
+    "label": "Mont St-Michel",
+    "latitude": 48.5793,
+    "longitude": -1.5106,
+    "categories": ["Mont St-Michel"],
+    "images": [
+      {
+        "path": "michel.jpg"
+      },
+      {
+        "path" : "michel2.jpg"
+      }
+    ],
+    "description": " Le Mont St-Michel lieu mythique de la Normandie qui a donné naissance à une pâle copie de l'autre côté de la Manche, le St Michael's Mont dans les Cornouailles. Le Mont St-Michel est également source d'inspiration pour beaucoup d'artistes, notamment pour la célèbre cité Minas Tirith du Seigneur des Anneaux ou encore le château de la princesse Disney, Raiponce. ",
+    "links": [
+      "https://www.ot-montsaintmichel.com/index.htm"
+    ]
+  },
+  {
+    "label": "Boulevard Schloesing, Marseille",
+    "latitude": 43.2342,
+    "longitude": 5.3696,
+    "categories": ["Moaï"],
+    "images": [
+      {
+        "path": "moai.jpg",
+        "source": "tourisme-marseille"
+      }
+    ],
+    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées de Paris. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionné par ces statuts spectaculaires. ",
+    "links": [
+      "https://www.tourisme-marseille.com/fiche/le-moai-du-boulevard-schloesing-marseille/"
+    ]
+  },
+  {
+    "label": "Segments du mur de Berlin",
+    "latitude": 48.8534,
+    "longitude": 2.3488,
+    "categories": ["Segments du mur de Berlin"],
+    "images": [
+      {
+        "path": "mur_paris.jpg",
+        "source": "Kenzo Tribouillard",
+        "description" : "Segment du mur de Berlin à Paris, esplanade du 9 Novembre 1989"
+      },
+      {
+        "path" : "mur_defense.jpg",
+        "source": "Somanyparis",
+        "description": "Fragement de 3.2m du mur de Berlin à Courbevoie, La Défense"
+      },
+      {
+        "path" : "mur_stras.jpg",
+        "source": "strasbourgphoto.com",
+        "description" : "Morceau du mur de Berlin offert par le maire de Dresde au Conseil de l'Europe de Strasbourg"
+      },
+      {
+        "path" : "mur_verdun.jpg",
+        "source": "cmpaix.eu",
+        "description" : "Offert à l'occasion du 25ème anniversaire de la Chute du mur de Berlin au Centre Mondial de la Paix à Verdun"
+      },
+      {
+        "path" : "mur_caen.jpg",
+        "source": "paperblog.fr",
+        "description" : "Deux pans du mur de Berlin au Mémorial de Caen"
+      }
+    ],
+    "description": " Après la chute du mur de Berlin le 9 Novembre 1989, celui ci a été dispersé aux quatres coins de monde. La France expose donc 10 segments du mur de Berlin dans des lieux stratégiques. ",
+    "links": [
+      "https://fr.wikipedia.org/wiki/Liste_des_segments_du_mur_de_Berlin"
+    ]
+  },
+  {
+  "label": "Gouffre de Padirac",
+  "latitude": 44.8535,
+  "longitude": 1.7509,
+  "categories": ["Grottes"],
+  "images": [
+    {
+      "path": "gouffre_padirac.jpg",
+      "source": "flickr, Patrice Toulze"
+    },
+    {
+      "path": "gouffre_padirac2.jpg",
+      "source": "Gouffre de Padirac "
+    },
+    {
+    "path": "gouffre_padirac3.jpg",
+    "source": "Gouffre de Padirac"
+    }
+  ],
+  "description": " Ce gouffre de 35m de diamètre et de 103m de profondeur se développe sur plus de 55 kilomètres. Une légende raconterait qu'un trésor serait enfoui dans ce gouffre, vous êtes prêt à y jeter un petit coup d'oeil ? ",
+  "links": [
+    "https://www.gouffre-de-padirac.com/"
+  ]
+  },
+  {
+  "label": "Pont d'Arc, Ardèche",
+  "latitude": 44.3782,
+  "longitude": 4.4162,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "pont_arc.jpg",
+      "source" : "Flickr, Yann Coeuru"
+    },
+    {
+      "path": "pont_arc2.jpg",
+      "source" : "Flickr, Damian Campana"
+    },
+    {
+      "path": "pont_arc3.jpg",
+      "source" : "Flickr, bezakeo "
+    }
+  ],
+  "description": " La porte d'entrée naturelle des Gorges de l'Ardèche est haute de 54m et longue de 59m. Cette arche a été façonnée par la rivière Ardèche ce qui rend la pratique du canoë possible. Début 2020, Sebastien Tyrode passa sous l'arche avec un paramoteur !  ",
+  "links": [
+    " https://www.pontdarc-ardeche.fr/ "
+  ]
+  },
+  {
+  "label": "Etretat",
+  "latitude": 49.6525,
+  "longitude": 0.2087,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "etretat2.jpg",
+      "description": "Manneport, Porte principale d'Etretat"
+    },
+    {
+      "path": "etretat.jpg",
+      "description": "Porte d'Aval et Aiguille d'Etretat"
+    },
+    {
+      "path": "etretat3.jpg",
+      "description": "Porte d'Amont d'Etretat"
+    }
+  ],
+  "description": " Etretat, petite commune française victime de son succès grâce a son site naturel d'exception : différentes arches naturelles, une aiguille haute de 55mètres, des falaises dont la porte d'Amont comparable selon Guy de Maupassant à un éléphant plongeant sa trompe dans l'eau ",
+  "links": [
+    "http://etretat.net/office-de-tourisme-etretat/modules/content/content.php?page=accueil"
+  ]
+  },
+  {
+  "label": "Tour Percée, Isère",
+  "latitude": 45.3658,
+  "longitude": 5.9048,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "tour_percee.jpg",
+      "source": "David George"
+    },
+    {
+      "path": "tour_percee2.jpg",
+      "source": "Bouvierjr"
+    }
+  ],
+  "description": " Découvert par hasard par Pascal Sombardier lors de l'écriture de son livre «Chartreuse inédite : itinéraires insolites» en 2006 il est reconnut comme le trésor caché du massif de la Chartreuse. Cette arche n'est pas une simple arche mais plutôt une double arche naturelle ce qui la rend unique en France.",
+  "links": [
+    " https://chartreuse-tourisme.com/ "
+  ]
+  },
+  {
+  "label": "Archipel Riou",
+  "latitude": 43.051,
+  "longitude": 5.389,
+  "categories": ["Archipel"],
+  "images": [
+    {
+      "path": "archiepel_riou.jpg",
+      "source": "calanques13",
+      "description" : " Photo depuis l'île du riou"
+    },
+    {
+      "path": "archipel_riou2.jpg",
+      "source": "Flickr, Nicolas Seksik"
+    }
+  ],
+  "description": " Le seul Archipel du littoral continental français à ne pas être habité, cette Archipel n'est accessible que par ses propres moyens. La seule île accostable est la plus grande, l'île de Riou. Pourtant ce n'est pas les occupations qui manquent, avis aux amateurs de plongée, l'archipel regorgent de site exceptionnel pour la plongée. L'Archipel abrite également plus de 200 espèces d'oiseau !",
+  "links": [
+    " https://madeinmarseille.net/14945-ile-archipel-riou-calanque-tourisme/ "
+  ]
+  },
+  {
+  "label": "Calanque d'En Vau",
+  "latitude": 43.051,
+  "longitude": 5.389,
+  "categories": ["Baie de Maya"],
+  "images": [
+    {
+      "path": "calanque_envau.jpg",
+      "source": "pandotrip"
+    },
+    {
+      "path": "calanque_envau2.jpg",
+      "source": "yelp.ca"
+    },
+    {
+      "path": "calanque_envau3.jpg",
+      "source": "tribloo.com"
+    }
+  ],
+  "description": " L'une des plus belle et des plus réputés des Calanques de Marseille, il faut mériter pour voir ce beau paysage ! Vous avez jusqu'à 1h15 de randonnée pour y parvenir. Eaux turquoises et la végétation aux alentours a de quoi rivaliser avec la Baie de Maya de Thaïlande, en plus les deux sont envahis de touriste... ",
+  "links": [
+    " https://www.ot-cassis.com/ "
+  ]
   }
 ]

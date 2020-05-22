@@ -207,6 +207,7 @@
     "latitude": 64,
     "longitude": 26,
     "categories": [
+      "Lacs et forêts",
       "Lacs de montagne"
     ]
   },
@@ -335,6 +336,86 @@
     "longitude": 14.425,
     "categories": [
       "Volcan"
+    ]
+  },
+  {
+    "label": "St Michael's Mount",
+    "latitude": 50.006,
+    "longitude": -5.477,
+    "categories": [
+      "Mont St-Michel"
+    ]
+  },
+  {
+    "label": "Minas Tirith, Seigneur des anneaux",
+    "latitude": 0,
+    "longitude": 0,
+    "categories": [
+      "Mont St-Michel"
+    ]
+  },
+  {
+    "label": "île de Pâques",
+    "latitude": -27.272,
+    "longitude": -109.352,
+    "categories": [
+      "Moaï"
+    ]
+  },
+  {
+    "label": "Berlin",
+    "latitude": 13.381,
+    "longitude": 52.312,
+    "categories": [
+      "Segments du mur de Berlin"
+    ]
+  },
+  {
+    "label": "Grotte de Phraya Nakhon, Thaïlande",
+    "latitude": 12.1923,
+    "longitude": 100.0113,
+    "categories": [
+      "Grottes"
+    ]
+  },
+  {
+    "label": "Durdle Door, Angleterre",
+    "latitude": 50.6177,
+    "longitude": -2.2767,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "Rocher Percé, Canada",
+    "latitude": 48.413,
+    "longitude": -64.199,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "London Arch, Australie",
+    "latitude": -38.6278,
+    "longitude": 142.9309,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "Chutes Victoria",
+    "latitude": -20.51,
+    "longitude": 25.84,
+    "categories": [
+      "Cascades"
+    ]
+  },
+  {
+    "label": "Baie de Maya, Thaïlande",
+    "latitude": 7.512,
+    "longitude": 98.767,
+    "categories": [
+      "Baie de Maya"
     ]
   }
 ]
