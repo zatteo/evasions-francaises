@@ -151,11 +151,11 @@
     "categories": ["Grottes"],
     "images": [
       {
-        "path": "gouffre_fage_.jpg",
+        "path": "gouffre_fage.jpg",
         "source": "Teatimeinwondeland"
       },
       {
-        "path": "gouffre_fage_teatimeiwoderland.jpg",
+        "path": "gouffre_fage1.jpg",
         "source": "Teatimeinwondeland"
       }
     ],
@@ -1177,7 +1177,7 @@
   "categories": ["Archipel"],
   "images": [
     {
-      "path": "archiepel_riou.jpg",
+      "path": "archipel_riou.jpg",
       "source": "calanques13",
       "description" : " Photo depuis l'île du riou"
     },

@@ -73,12 +73,14 @@
           img-width="1024"
           img-height="480"
           style="text-shadow: 1px 1px 2px #333;"
+          v-model="imageIndex"
         >
           <b-carousel-slide
             v-for="image in alternative.images"
             :key="image.path"
             :caption="image.description"
             :text="image.source ? `Crédit photo : ${image.source}` : ''"
+            content-visible-up="md"
           >
             <template v-slot:img>
               <img
@@ -92,6 +94,10 @@
             </template>
           </b-carousel-slide>
         </b-carousel>
+        <p class="carousel-caption-mobile">
+          {{ caption.description }}
+          {{ caption.source }}
+        </p>
       </div>
     </div>
   </div>
@@ -114,6 +120,11 @@ export default {
     // eslint-disable-next-line no-undef
     feather.replace();
   },
+  data() {
+    return {
+      imageIndex: 0,
+    };
+  },
   computed: {
     distanceDifference() {
       const { alternative, place } = this;
@@ -133,10 +144,26 @@ export default {
       return place
       && place.categories.filter((category) => alternative.categories.includes(category));
     },
+    caption() {
+      return {
+        description: this.alternative.images[this.imageIndex].description || '',
+        source: this.alternative.images[this.imageIndex].source ? `(par ${this.alternative.images[this.imageIndex].source})` : '',
+      };
+    },
   },
 };
 
 </script>
+
+<style>
+
+@media (min-width: 767px) {
+  .carousel-caption-mobile {
+    display: none;
+  }
+}
+
+</style>
 
 <style scoped>
 
@@ -160,9 +187,11 @@ export default {
   background-color: white !important;
 }
 
-.image {
-  max-width: 100%;
-  height: auto;
+@media (max-width: 767px) {
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
