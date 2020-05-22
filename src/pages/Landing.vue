@@ -4,11 +4,15 @@
       <div class="row">
         <div class="col-12">
           <div class="card search-card">
+            <router-link
+              to="/"
+            >
             <p class="title">Évasions françaises</p>
+            </router-link>
             <p
               class="search-text"
             >
-             Cherchez votre prochaine destination parmi plus de {{ alternatives.length }}
+             Cherchez votre prochaine destination parmi plus de {{ $loadedAlternatives.length }}
              alternatives françaises aux plus belles destinations du monde, ou
             <a href="" v-b-modal.propose-modal @click.prevent>
               proposez votre alternative
@@ -19,7 +23,7 @@
               <v-select
                 :value="selected"
                 @input="setSelected"
-                :options="places"
+                :options="$loadedPlaces"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
@@ -61,8 +65,10 @@
         <div class="col-12">
           <div class="result">
             <AlternativeList
-              :didSomething="didSomething"
+              :destination="destination"
               :alternatives="alternativesFound"
+              :alternative="alternative"
+              :didSomething="didSomething"
               :place="placeFound"
             />
           </div>
@@ -112,35 +118,31 @@
       </div>
     </div>
     <ProposeModal/>
-    <Banner/>
   </div>
 </template>
 
 <script>
 
-import AlternativeList from './AlternativeList.vue';
-import Banner from './Banner.vue';
-import ProposeModal from './modals/ProposeModal.vue';
-
-import loadedAlternatives from '../assets/alternatives.json';
-import loadedPlaces from '../assets/places.json';
+import AlternativeList from '../components/AlternativeList.vue';
+import ProposeModal from '../components/modals/ProposeModal.vue';
 
 export default {
   name: 'Main',
   components: {
     AlternativeList,
-    Banner,
     ProposeModal,
   },
   mounted() {
     // eslint-disable-next-line no-undef
     feather.replace();
   },
+  props: [
+    'destination',
+    'alternative',
+  ],
   data() {
     return {
       didSomething: false,
-      places: loadedPlaces,
-      alternatives: loadedAlternatives,
       selected: '',
       placeFound: undefined,
       alternativesFound: [],
@@ -158,13 +160,13 @@ export default {
   computed: {
     fullPlaces() {
       const {
-        places,
+        $loadedPlaces,
         location,
         calculateDistance,
         calculateEmission,
       } = this;
 
-      return places.map((place) => {
+      return $loadedPlaces.map((place) => {
         const distance = calculateDistance(
           location.latitude,
           location.longitude,
@@ -183,13 +185,13 @@ export default {
     },
     fullAlternatives() {
       const {
-        alternatives,
+        $loadedAlternatives,
         location,
         calculateDistance,
         calculateEmission,
       } = this;
 
-      return alternatives.map((alternative) => {
+      return $loadedAlternatives.map((alternative) => {
         const distance = calculateDistance(
           location.latitude,
           location.longitude,
