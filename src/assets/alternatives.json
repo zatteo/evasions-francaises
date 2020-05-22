@@ -238,7 +238,7 @@
     "label": "Plateau des milles étangs",
     "latitude": 47.7366,
     "longitude": 6.5643,
-    "categories": ["Lacs de montagne"],
+    "categories": ["Lacs et forêts"],
     "images": [
       {
         "path": "milles_etang.jpg",
@@ -1006,5 +1006,100 @@
     "links": [
       "https://www.guimet.fr/"
     ]
+  },
+  {
+    "label": "Mont St-Michel",
+    "latitude": 48.5793,
+    "longitude": -1.5106,
+    "categories": ["Mont St-Michel"],
+    "images": [
+      {
+        "path": "michel.jpg"
+      },
+      {
+        "path" : "michel2.jpg"
+      }
+    ],
+    "description": " Le Mont St-Michel lieu mythique de la Normandie qui a donnée naissance à une pâle copie de l'autre côté de la Manche, le St Michael's Mont dans les Cornouailles. Le Mont St-Michel est également source d'inspiration pour beaucoup d'artistes, notamment pour la célèbre cité Minas Tirith du Seigneur des Anneaux ou encore le chateau de la princesse Disney, Raiponce. ",
+    "links": [
+      "https://www.ot-montsaintmichel.com/index.htm"
+    ]
+  },
+  {
+    "label": "Boulevard Schloesing, Marseille",
+    "latitude": 43.2342,
+    "longitude": 5.3696,
+    "categories": ["Moaï"],
+    "images": [
+      {
+        "path": "moai.jpg",
+        "source": "tourisme-marseille"
+      }
+    ],
+    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées de Paris. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionnée par ces statuts spéctaculaires. ",
+    "links": [
+      "https://www.tourisme-marseille.com/fiche/le-moai-du-boulevard-schloesing-marseille/"
+    ]
+  },
+  {
+    "label": "Segments du mur de Berlin",
+    "latitude": 48.8534,
+    "longitude": 2.3488,
+    "categories": ["Segments du mur de Berlin"],
+    "images": [
+      {
+        "path": "mur_paris.jpg",
+        "source": "Kenzo Tribouillard",
+        "description" : "Segment du mur de Berlin à Paris, esplanade du 9 Novembre 1989"
+      },
+      {
+        "path" : "mur_defense.jpg",
+        "source": "Somanyparis",
+        "description": "Fragement de 3.2m du mur de Berlin à Courbevoie, La Défense"
+      },
+      {
+        "path" : "mur_stras.jpg",
+        "source": "strasbourgphoto.com",
+        "description" : "Morceau du mur de Berlin offert par le maire de Dresde au Conseil de l'Europe de Strasbourg"
+      },
+      {
+        "path" : "mur_verdun.jpg",
+        "source": "cmpaix.eu",
+        "description" : "Offert à l'occasion du 25ème anniversaire de la Chute du mur de Berlin au Centre Mondial de la Paix à Verdun"
+      },
+      {
+        "path" : "mur_caen.jpg",
+        "source": "paperblog.fr",
+        "description" : "Deux pans du mur de Berlin au Mémorial de Caen"
+      }
+    ],
+    "description": " Après la chute du mur de Berlin le 9 Novembre 1989, celui ci a été dispersé aux quatres coins de monde. La France expose donc 10 segments du mur de Berlin dans des lieux stratégiques. ",
+    "links": [
+      "https://fr.wikipedia.org/wiki/Liste_des_segments_du_mur_de_Berlin"
+    ]
+  },
+  {
+  "label": "Gouffre de Padirac",
+  "latitude": 44.8535,
+  "longitude": 1.7509,
+  "categories": ["Grottes"],
+  "images": [
+    {
+      "path": "gouffre_padirac.jpg",
+      "source": "flickr, Patrice Toulze"
+    },
+    {
+      "path": "gouffre_padirac2.jpg",
+      "source": "Gouffre de Padirac "
+    },
+    {
+    "path": "gouffre_padirac3.jpg",
+    "source": "Gouffre de Padirac"
+    }
+  ],
+  "description": "  ",
+  "links": [
+    "https://www.gouffre-de-padirac.com/"
+  ]
   }
 ]

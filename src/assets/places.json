@@ -207,6 +207,7 @@
     "latitude": 64,
     "longitude": 26,
     "categories": [
+      "Lacs et forêts",
       "Lacs de montagne"
     ]
   },
@@ -335,6 +336,47 @@
     "longitude": 14.425,
     "categories": [
       "Volcan"
+    ]
+  },
+  {
+    "label": "St Michael's Mount",
+    "latitude": 50.006,
+    "longitude": -5.477,
+    "categories": [
+      "Mont St-Michel"
+    ]
+  },
+  {
+    "label": "Minas Tirith, Seigneur des anneaux",
+    "latitude": 0,
+    "longitude": 0,
+    "categories": [
+      "Mont St-Michel"
+    ]
+  },
+  {
+    "label": "île de Pâques",
+    "latitude": -27.272,
+    "longitude": -109.352,
+    "categories": [
+      "Moaï"
+    ]
+  },
+  {
+    "label": "Berlin",
+    "latitude": 13.381,
+    "longitude": 52.312,
+    "categories": [
+      "Segments du Mur de Berlin"
+    ]
+  },
+  {
+    "label": "Grotte de Phraya Nakhon, Thaïlande",
+    "latitude": 12.1923,
+    "longitude": 100.0113,
+    "categories": [
+      "Grottes",
+      "Ambiance d'Asie"
     ]
   }
 ]
