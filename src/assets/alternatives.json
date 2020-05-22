@@ -1020,7 +1020,7 @@
         "path" : "michel2.jpg"
       }
     ],
-    "description": " Le Mont St-Michel lieu mythique de la Normandie qui a donnée naissance à une pâle copie de l'autre côté de la Manche, le St Michael's Mont dans les Cornouailles. Le Mont St-Michel est également source d'inspiration pour beaucoup d'artistes, notamment pour la célèbre cité Minas Tirith du Seigneur des Anneaux ou encore le chateau de la princesse Disney, Raiponce. ",
+    "description": " Le Mont St-Michel lieu mythique de la Normandie qui a donné naissance à une pâle copie de l'autre côté de la Manche, le St Michael's Mont dans les Cornouailles. Le Mont St-Michel est également source d'inspiration pour beaucoup d'artistes, notamment pour la célèbre cité Minas Tirith du Seigneur des Anneaux ou encore le château de la princesse Disney, Raiponce. ",
     "links": [
       "https://www.ot-montsaintmichel.com/index.htm"
     ]
@@ -1036,7 +1036,7 @@
         "source": "tourisme-marseille"
       }
     ],
-    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées de Paris. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionnée par ces statuts spéctaculaires. ",
+    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées de Paris. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionné par ces statuts spectaculaires. ",
     "links": [
       "https://www.tourisme-marseille.com/fiche/le-moai-du-boulevard-schloesing-marseille/"
     ]
@@ -1097,9 +1097,77 @@
     "source": "Gouffre de Padirac"
     }
   ],
-  "description": "  ",
+  "description": " Ce gouffre de 35m de diamètre et de 103m de profondeur se développe sur plus de 55 kilomètres. Une légende raconterait qu'un trésor serait enfoui dans ce gouffre, vous êtes prêt à y jeter un petit coup d'oeil ? ",
   "links": [
     "https://www.gouffre-de-padirac.com/"
+  ]
+  },
+  {
+  "label": "Pont d'Arc, Ardèche",
+  "latitude": 44.3782,
+  "longitude": 4.4162,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "pont_arc.jpg",
+      "source" : "Flickr, Yann Coeuru"
+    },
+    {
+      "path": "pont_arc.jpg",
+      "source" : "Flickr, Damian Campana"
+    },
+    {
+      "path": "pont_arc.jpg",
+      "source" : "Flickr, bezakeo "
+    }
+  ],
+  "description": " La porte d'entrée naturelle des Gorges de l'Ardèche est haute de 54m et longue de 59m. Cette arche a été façonnée par la rivière Ardèche ce qui rend la pratique du canoë possible. Début 2020, Sebastien Tyrode passa sous l'arche avec un paramoteur !  ",
+  "links": [
+    " https://www.pontdarc-ardeche.fr/ "
+  ]
+  },
+  {
+  "label": "Etretat",
+  "latitude": 49.6525,
+  "longitude": 0.2087,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "etretat2.jpg",
+      "description": "Manneport, Porte principale d'Etretat"
+    },
+    {
+      "path": "etretat.jpg",
+      "description": "Porte d'Aval et Aiguille d'Etretat"
+    },
+    {
+      "path": "etretat3.jpg",
+      "description": "Porte d'Amont d'Etretat"
+    }
+  ],
+  "description": " Etretat, petite commune française victime de son succès grâce a son site naturel d'exception : différentes arches naturelles, une aiguille haute de 55mètres, des falaises dont la porte d'Amont comparable selon Guy de Maupassant à un éléphant plongeant sa trompe dans l'eau ",
+  "links": [
+    "http://etretat.net/office-de-tourisme-etretat/modules/content/content.php?page=accueil"
+  ]
+  },
+  {
+  "label": "Tour Percée, Isère",
+  "latitude": 45.3658,
+  "longitude": 5.9048,
+  "categories": ["Arches naturelles"],
+  "images": [
+    {
+      "path": "tour_percee.jpg",
+      "source": "David George"
+    },
+    {
+      "path": "tour_percee.jpg",
+      "source": "Bouvierjr"
+    }
+  ],
+  "description": " Découvert par hasard par Pascal Sombardier lors de l'écriture de son livre «Chartreuse inédite : itinéraires insolites» en 2006 il est reconnut comme le trésor caché du massif de la Chartreuse. Cette arche n'est pas une simple arche mais plutôt une double arche naturelle ce qui la rend unique en France.",
+  "links": [
+    " https://chartreuse-tourisme.com/ "
   ]
   }
 ]

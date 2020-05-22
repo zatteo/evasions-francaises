@@ -367,7 +367,7 @@
     "latitude": 13.381,
     "longitude": 52.312,
     "categories": [
-      "Segments du Mur de Berlin"
+      "Segments du mur de Berlin"
     ]
   },
   {
@@ -375,8 +375,39 @@
     "latitude": 12.1923,
     "longitude": 100.0113,
     "categories": [
-      "Grottes",
-      "Ambiance d'Asie"
+      "Grottes"
+    ]
+  },
+  {
+    "label": "Durdle Door, Angleterre",
+    "latitude": 50.6177,
+    "longitude": -2.2767,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "Rocher Percé, Canada",
+    "latitude": 48.413,
+    "longitude": -64.199,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "London Arch, Australie",
+    "latitude": -38.6278,
+    "longitude": 142.9309,
+    "categories": [
+      "Arches naturelles"
+    ]
+  },
+  {
+    "label": "Chutes Victoria",
+    "latitude": -20.51,
+    "longitude": 25.84,
+    "categories": [
+      "Cascades"
     ]
   }
 ]
