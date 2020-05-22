@@ -19,7 +19,7 @@
               <v-select
                 :value="selected"
                 @input="setSelected"
-                :options="places"
+                :options="sortedPlaces"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
@@ -156,6 +156,13 @@ export default {
     };
   },
   computed: {
+    sortedPlaces() {
+      const {
+        places,
+      } = this;
+
+      return places.sort((a, b) => a.label.localeCompare(b.label));
+    },
     fullPlaces() {
       const {
         places,
