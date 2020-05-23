@@ -4,14 +4,14 @@
       <div class="card-header">
         <div class="row">
           <div class="col-12 col-md-8 text-left">
-            <div v-if="place">
+            <div v-if="destination">
               <h3 class="d-inline-block mb-0">
                 {{ alternatives.length }}
                 {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
-                pour "{{ place.label }}"
+                pour "{{ destination.label }}"
               </h3>
               <span
-                v-for="category in place.categories"
+                v-for="category in destination.categories"
                 :key="category"
                 class="badge badge-info ml-1"
               >
@@ -39,7 +39,7 @@
       <div class="card-body">
         <Alternative
           :alternative="alternatives[currentAlternative]"
-          :place="place"
+          :destination="destination"
         />
       </div>
     </div>
@@ -62,9 +62,9 @@ export default {
     Alternative,
   },
   props: {
-    didSomething: Boolean,
+    destination: Object,
     alternatives: Array,
-    place: Object,
+    didSomething: Boolean,
   },
   data() {
     return {

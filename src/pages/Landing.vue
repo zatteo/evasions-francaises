@@ -4,11 +4,9 @@
       <div class="row">
         <div class="col-12">
           <div class="card search-card">
-            <router-link
-              to="/"
-            >
-            <p class="title">Évasions françaises</p>
-            </router-link>
+            <a href="/" @click.prevent="resetSelected(true)">
+              <p class="title">Évasions françaises</p>
+            </a>
             <p
               class="search-text"
             >
@@ -23,7 +21,8 @@
               <v-select
                 :value="selected"
                 @input="setSelected"
-                :options="sortedPlaces"
+                :reduce="destination => destination.slug"
+                :options="sortedDestinations"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
@@ -66,10 +65,8 @@
           <div class="result">
             <AlternativeList
               :destination="destination"
-              :alternatives="alternativesFound"
-              :alternative="alternative"
+              :alternatives="alternatives"
               :didSomething="didSomething"
-              :place="placeFound"
             />
           </div>
         </div>
@@ -133,20 +130,32 @@ export default {
     ProposeModal,
   },
   mounted() {
+    const { destinationSlug, alternativeSlug } = this;
+
+    if (destinationSlug) {
+      this.selected = destinationSlug;
+      this.destination = this.fullDestinations.find((a) => a.slug === this.destinationSlug);
+    }
+
+    if (alternativeSlug) {
+      this.alternatives = [
+        this.fullAlternatives.find((a) => a.slug === this.alternativeSlug),
+      ];
+    }
+
     // eslint-disable-next-line no-undef
     feather.replace();
   },
   props: [
-    'destination',
-    'alternative',
+    'destinationSlug',
+    'alternativeSlug',
   ],
   data() {
     return {
       didSomething: false,
       selected: '',
-      placeFound: undefined,
-      alternativesFound: [],
-      categoriesFound: [],
+      destination: undefined,
+      alternatives: [],
       location: {
         name: 'Paris',
         latitude: 48.8534,
@@ -158,33 +167,33 @@ export default {
     };
   },
   computed: {
-    sortedPlaces() {
+    sortedDestinations() {
       const {
-        $loadedPlaces,
+        $loadedDestinations,
       } = this;
 
-      return $loadedPlaces.sort((a, b) => a.label.localeCompare(b.label));
+      return $loadedDestinations.sort((a, b) => a.label.localeCompare(b.label));
     },
-    fullPlaces() {
+    fullDestinations() {
       const {
-        $loadedPlaces,
+        $loadedDestinations,
         location,
         calculateDistance,
         calculateEmission,
       } = this;
 
-      return $loadedPlaces.map((place) => {
+      return $loadedDestinations.map((destination) => {
         const distance = calculateDistance(
           location.latitude,
           location.longitude,
-          place.latitude,
-          place.longitude,
+          destination.latitude,
+          destination.longitude,
         );
 
         const emission = calculateEmission(distance, 'plane');
 
         return {
-          ...place,
+          ...destination,
           distance,
           emission,
         };
@@ -217,37 +226,41 @@ export default {
     },
   },
   methods: {
-    setSelected(search) {
+    setSelected(searchedSlug) {
       this.didSomething = true;
 
-      if (search === null) {
+      if (searchedSlug === null) {
         this.resetSelected();
       }
 
-      this.selected = search;
-      const place = this.fullPlaces.find((d) => search.label === d.label);
+      this.selected = searchedSlug;
+      const destination = this.fullDestinations.find((d) => searchedSlug === d.slug);
 
-      if (place) {
-        this.placeFound = place;
+      if (destination) {
+        this.destination = destination;
 
-        this.alternativesFound = this.fullAlternatives.filter(
-          (a) => place.categories.filter((category) => a.categories.includes(category)).length > 0 && (this.filters.distance === '' || a.distance <= this.filters.distance),
+        this.alternatives = this.fullAlternatives.filter(
+          (a) => destination.categories.filter((category) => a.categories.includes(category)).length > 0 && (this.filters.distance === '' || a.distance <= this.filters.distance),
         );
       } else {
-        this.placeFound = undefined;
-        this.alternativesFound = [];
-        this.categoriesFound = [];
+        this.destination = undefined;
+        this.alternatives = [];
       }
     },
-    resetSelected() {
+    resetSelected(full) {
       this.selected = '';
-      this.placeFound = undefined;
-      this.alternativesFound = [];
+      this.destination = undefined;
+      this.alternatives = [];
+
+      if (full) {
+        this.didSomething = false;
+        this.$router.push('/');
+      }
     },
     setRandomAlternative() {
       this.resetSelected();
 
-      this.alternativesFound = [
+      this.alternatives = [
         this.fullAlternatives[parseInt(Math.random() * this.fullAlternatives.length, 10)],
       ];
     },

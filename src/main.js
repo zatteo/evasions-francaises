@@ -8,11 +8,11 @@ import router from './router/router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+import loadedDestinations from './assets/places.json';
 import loadedAlternatives from './assets/alternatives.json';
-import loadedPlaces from './assets/places.json';
 
+Vue.prototype.$loadedDestinations = loadedDestinations;
 Vue.prototype.$loadedAlternatives = loadedAlternatives;
-Vue.prototype.$loadedPlaces = loadedPlaces;
 
 Vue.use(VueRouter);
 
