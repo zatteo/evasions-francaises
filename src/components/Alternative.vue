@@ -16,7 +16,7 @@
             </span>
             <p v-html="alternative.description" class="text-justify"></p>
             <!-- popover -->
-            <div v-if="place" id="popover-stats">
+            <div v-if="destination" id="popover-stats">
               <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
                 Distance
                 <b>{{ distanceDifference }} km</b>
@@ -34,9 +34,9 @@
                 </p>
                 <p>
                   <b>Distance</b> : {{ alternative.distance }}km
-                  au lieu de {{ place.distance }}km
+                  au lieu de {{ destination.distance }}km
                   <b>Émission</b> : {{ alternative.emission }}t de CO₂
-                  au lieu de {{ place.emission }}t de CO₂
+                  au lieu de {{ destination.emission }}t de CO₂
                 </p>
                 <a href="https://www.bbc.com/news/science-environment-49349566" target="_blank">Source</a>
               </b-popover>
@@ -87,8 +87,7 @@
                 class="image"
                 width="1024"
                 height="480"
-                :src="`assets/images/medium/${image.path}`"
-                @error="$event.target.src = `assets/images/${image.path}`"
+                :src="`/assets/images/${image.path}`"
                 alt="..."
               >
             </template>
@@ -112,13 +111,22 @@ export default {
   components: {
     DisplayMapModal,
   },
+  metaInfo() {
+    return {
+      title: this.metaTitle,
+    };
+  },
   props: {
     alternative: Object,
-    place: Object,
+    destination: Object,
   },
   mounted() {
     // eslint-disable-next-line no-undef
     feather.replace();
+    this.setURL();
+  },
+  updated() {
+    this.setURL();
   },
   data() {
     return {
@@ -127,28 +135,54 @@ export default {
   },
   computed: {
     distanceDifference() {
-      const { alternative, place } = this;
+      const { alternative, destination } = this;
 
-      return alternative.distance - place.distance;
+      return alternative.distance - destination.distance;
     },
     emissionDifferenceInPercent() {
-      const { alternative, place } = this;
+      const { alternative, destination } = this;
 
-      const emissionInPercent = ((alternative.emission - place.emission) / place.emission) * 100;
+      const emission = ((alternative.emission - destination.emission) / destination.emission);
 
-      return parseInt(emissionInPercent.toFixed(2), 10);
+      return parseInt((emission * 100).toFixed(2), 10);
     },
     validCategories() {
-      const { alternative, place } = this;
+      const { alternative, destination } = this;
 
-      return place
-      && place.categories.filter((category) => alternative.categories.includes(category));
+      return destination
+      && destination.categories.filter((category) => alternative.categories.includes(category));
     },
     caption() {
       return {
         description: this.alternative.images[this.imageIndex].description || '',
         source: this.alternative.images[this.imageIndex].source ? `(par ${this.alternative.images[this.imageIndex].source})` : '',
       };
+    },
+    metaTitle() {
+      const { destination, alternative } = this;
+
+      if (destination && alternative) {
+        return `${alternative.label}, une des plus belles alternatives françaises à ${destination.label}`;
+      }
+
+      return `${destination.label} - ${alternative.label}`;
+    },
+  },
+  methods: {
+    setURL() {
+      const { destination, alternative } = this;
+
+      if (destination && alternative) {
+        const newRoute = `/destination/${destination.slug}/alternative/${alternative.slug}`;
+        if (this.$route.path !== newRoute) {
+          this.$router.push(newRoute);
+        }
+      } else if (!destination && alternative) {
+        const newRoute = `/alternative/${alternative.slug}`;
+        if (this.$route.path !== newRoute) {
+          this.$router.push(newRoute);
+        }
+      }
     },
   },
 };

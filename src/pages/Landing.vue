@@ -4,11 +4,13 @@
       <div class="row">
         <div class="col-12">
           <div class="card search-card">
-            <p class="title">Évasions françaises</p>
+            <a href="/" @click.prevent="resetSelected(true)">
+              <p class="title">Évasions françaises</p>
+            </a>
             <p
               class="search-text"
             >
-             Cherchez votre prochaine destination parmi plus de {{ alternatives.length }}
+             Cherchez votre prochaine destination parmi plus de {{ $loadedAlternatives.length }}
              alternatives françaises aux plus belles destinations du monde, ou
             <a href="" v-b-modal.propose-modal @click.prevent>
               proposez votre alternative
@@ -19,7 +21,8 @@
               <v-select
                 :value="selected"
                 @input="setSelected"
-                :options="sortedPlaces"
+                :reduce="destination => destination.slug"
+                :options="sortedDestinations"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
@@ -61,9 +64,9 @@
         <div class="col-12">
           <div class="result">
             <AlternativeList
+              :destination="destination"
+              :alternatives="alternatives"
               :didSomething="didSomething"
-              :alternatives="alternativesFound"
-              :place="placeFound"
             />
           </div>
         </div>
@@ -94,11 +97,11 @@
                 </p>
               </div>
               <div class="col-12 col-sm-6">
-                <img class="why-icon" src="assets/map.png">
-                <p class="why-icon-text">Promouvoir le tourisme local</p>
+                <img class="why-icon" src="/assets/map.png">
+                <p class="why-icon-text">Soutenir le tourisme local</p>
               </div>
               <div class="col-12 col-sm-6">
-                <img class="why-icon" src="assets/pollution.png">
+                <img class="why-icon" src="/assets/pollution.png">
                 <p class="why-icon-text">Réduire les émissions de CO₂ liées au tourisme</p>
               </div>
               <div class="col-12">
@@ -112,39 +115,47 @@
       </div>
     </div>
     <ProposeModal/>
-    <Banner/>
   </div>
 </template>
 
 <script>
 
-import AlternativeList from './AlternativeList.vue';
-import Banner from './Banner.vue';
-import ProposeModal from './modals/ProposeModal.vue';
-
-import loadedAlternatives from '../assets/alternatives.json';
-import loadedPlaces from '../assets/places.json';
+import AlternativeList from '../components/AlternativeList.vue';
+import ProposeModal from '../components/modals/ProposeModal.vue';
 
 export default {
   name: 'Main',
   components: {
     AlternativeList,
-    Banner,
     ProposeModal,
   },
   mounted() {
+    const { destinationSlug, alternativeSlug } = this;
+
+    if (destinationSlug) {
+      this.selected = destinationSlug;
+      this.destination = this.fullDestinations.find((a) => a.slug === this.destinationSlug);
+    }
+
+    if (alternativeSlug) {
+      this.alternatives = [
+        this.fullAlternatives.find((a) => a.slug === this.alternativeSlug),
+      ];
+    }
+
     // eslint-disable-next-line no-undef
     feather.replace();
   },
+  props: [
+    'destinationSlug',
+    'alternativeSlug',
+  ],
   data() {
     return {
       didSomething: false,
-      places: loadedPlaces,
-      alternatives: loadedAlternatives,
       selected: '',
-      placeFound: undefined,
-      alternativesFound: [],
-      categoriesFound: [],
+      destination: undefined,
+      alternatives: [],
       location: {
         name: 'Paris',
         latitude: 48.8534,
@@ -156,33 +167,33 @@ export default {
     };
   },
   computed: {
-    sortedPlaces() {
+    sortedDestinations() {
       const {
-        places,
+        $loadedDestinations,
       } = this;
 
-      return places.sort((a, b) => a.label.localeCompare(b.label));
+      return $loadedDestinations.sort((a, b) => a.label.localeCompare(b.label));
     },
-    fullPlaces() {
+    fullDestinations() {
       const {
-        places,
+        $loadedDestinations,
         location,
         calculateDistance,
         calculateEmission,
       } = this;
 
-      return places.map((place) => {
+      return $loadedDestinations.map((destination) => {
         const distance = calculateDistance(
           location.latitude,
           location.longitude,
-          place.latitude,
-          place.longitude,
+          destination.latitude,
+          destination.longitude,
         );
 
         const emission = calculateEmission(distance, 'plane');
 
         return {
-          ...place,
+          ...destination,
           distance,
           emission,
         };
@@ -190,13 +201,13 @@ export default {
     },
     fullAlternatives() {
       const {
-        alternatives,
+        $loadedAlternatives,
         location,
         calculateDistance,
         calculateEmission,
       } = this;
 
-      return alternatives.map((alternative) => {
+      return $loadedAlternatives.map((alternative) => {
         const distance = calculateDistance(
           location.latitude,
           location.longitude,
@@ -215,37 +226,41 @@ export default {
     },
   },
   methods: {
-    setSelected(search) {
+    setSelected(searchedSlug) {
       this.didSomething = true;
 
-      if (search === null) {
+      if (searchedSlug === null) {
         this.resetSelected();
       }
 
-      this.selected = search;
-      const place = this.fullPlaces.find((d) => search.label === d.label);
+      this.selected = searchedSlug;
+      const destination = this.fullDestinations.find((d) => searchedSlug === d.slug);
 
-      if (place) {
-        this.placeFound = place;
+      if (destination) {
+        this.destination = destination;
 
-        this.alternativesFound = this.fullAlternatives.filter(
-          (a) => place.categories.filter((category) => a.categories.includes(category)).length > 0 && (this.filters.distance === '' || a.distance <= this.filters.distance),
+        this.alternatives = this.fullAlternatives.filter(
+          (a) => destination.categories.filter((category) => a.categories.includes(category)).length > 0 && (this.filters.distance === '' || a.distance <= this.filters.distance),
         );
       } else {
-        this.placeFound = undefined;
-        this.alternativesFound = [];
-        this.categoriesFound = [];
+        this.destination = undefined;
+        this.alternatives = [];
       }
     },
-    resetSelected() {
+    resetSelected(full) {
       this.selected = '';
-      this.placeFound = undefined;
-      this.alternativesFound = [];
+      this.destination = undefined;
+      this.alternatives = [];
+
+      if (full) {
+        this.didSomething = false;
+        this.$router.push('/');
+      }
     },
     setRandomAlternative() {
       this.resetSelected();
 
-      this.alternativesFound = [
+      this.alternatives = [
         this.fullAlternatives[parseInt(Math.random() * this.fullAlternatives.length, 10)],
       ];
     },
