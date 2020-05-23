@@ -1,6 +1,9 @@
 [
   {
     "label": "Afrique du Sud",
+    "slug": "afrique-sud",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -28.8166236,
     "longitude": 24.991639,
     "categories": [
@@ -9,6 +12,9 @@
   },
   {
     "label": "Amazonie",
+    "slug": "amazonie",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -3.2187,
     "longitude": -60.0266,
     "categories": [
@@ -17,6 +23,9 @@
   },
   {
     "label": "Australie",
+    "slug": "australie",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -35.2544,
     "longitude": 149.1331,
     "categories": [
@@ -26,6 +35,9 @@
   },
   {
     "label": "Autriche",
+    "slug": "autriche",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 47.2000338,
     "longitude": 13.199959,
     "categories": [
@@ -35,6 +47,9 @@
   },
   {
     "label": "Bahamas",
+    "slug": "bahamas",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 24.9873,
     "longitude": -77.3273,
     "categories": [
@@ -44,6 +59,9 @@
   },
   {
     "label": "Bali",
+    "slug": "bali",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -8.3304977,
     "longitude": 115.0906401,
     "categories": [
@@ -53,6 +71,9 @@
   },
   {
     "label": "Bavière",
+    "slug": "baviere",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 49,
     "longitude": 11.5,
     "categories": [
@@ -61,6 +82,9 @@
   },
   {
     "label": "Canada",
+    "slug": "canada",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 60.10867,
     "longitude": -113.64258,
     "categories": [
@@ -68,7 +92,10 @@
     ]
   },
   {
-    "label": "Cappadoce, Turquie",
+    "label": "Cappadoce",
+    "slug": "cappadoce",
+    "date": "18/05/2020",
+    "country": "Turquie",
     "latitude": 36.49,
     "longitude": 34.89,
     "categories": [
@@ -77,6 +104,9 @@
   },
   {
     "label": "Christ Rédempteur",
+    "slug": "christ-redempteur",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 0,
     "longitude": 0,
     "categories": [
@@ -85,6 +115,9 @@
   },
   {
     "label": "Chutes du Niagara",
+    "slug": "chutes-niagara",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 43.0945,
     "longitude": -79.05671,
     "categories": [
@@ -93,6 +126,9 @@
   },
   {
     "label": "Darjeeling",
+    "slug": "darjeeling",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 26.8349002,
     "longitude": 88.3071496,
     "categories": [
@@ -101,6 +137,9 @@
   },
   {
     "label": "Désert des Mojaves, Nevada",
+    "slug": "desert-mojaves",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 39.0039,
     "longitude": -115.4751,
     "categories": [
@@ -109,6 +148,9 @@
   },
   {
     "label": "Désert du Sahara",
+    "slug": "desert-sahara",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 24.49215,
     "longitude": -12.65625,
     "categories": [
@@ -117,6 +159,9 @@
   },
   {
     "label": "Écosse",
+    "slug": "ecosse",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 56.7861112,
     "longitude": -4.1140518,
     "categories": [
@@ -125,6 +170,9 @@
   },
   {
     "label": "Équateur",
+    "slug": "equateur",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -1.3397668,
     "longitude": -79.3666965,
     "categories": [
@@ -133,6 +181,9 @@
   },
   {
     "label": "Grand Canyon",
+    "slug": "grand-canyon",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 36.0965604,
     "longitude": -112.0984941,
     "categories": [
@@ -141,6 +192,9 @@
   },
   {
     "label": "Grèce",
+    "slug": "grece",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 48.6902486,
     "longitude": -1.9495636,
     "categories": [
@@ -149,6 +203,9 @@
   },
   {
     "label": "Horseshoe, Arizona",
+    "slug": "horseshoe",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 36.876,
     "longitude": 111.5196,
     "categories": [
@@ -157,6 +214,9 @@
   },
   {
     "label": "Irlande",
+    "slug": "irlande",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 53.3403,
     "longitude": -6.2675,
     "categories": [
@@ -165,6 +225,9 @@
   },
   {
     "label": "Mont Everest",
+    "slug": "mont-everest",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 27.9878675,
     "longitude": 86.9248308,
     "categories": [
@@ -173,6 +236,9 @@
   },
   {
     "label": "Les Seychelles",
+    "slug": "seychelles",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -4.701,
     "longitude": 55.4507,
     "categories": [
@@ -183,6 +249,9 @@
   },
   {
     "label": "Lousiane",
+    "slug": "louisiane",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 30.8703881,
     "longitude": -92.007126,
     "categories": [
@@ -191,6 +260,9 @@
   },
   {
     "label": "Mexique",
+    "slug": "mexique",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 19.045,
     "longitude": -99.367,
     "categories": [
@@ -199,6 +271,9 @@
   },
   {
     "label": "Norvège",
+    "slug": "norvege",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 59.869,
     "longitude": 10.7529,
     "categories": [
@@ -207,6 +282,9 @@
   },
   {
     "label": "Finlande",
+    "slug": "finlande",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 64,
     "longitude": 26,
     "categories": [
@@ -216,6 +294,9 @@
   },
   {
     "label": "Statue de la Liberté",
+    "slug": "statue-liberte",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 40.6851,
     "longitude": -74.0444,
     "categories": [
@@ -224,6 +305,9 @@
   },
   {
     "label": "Suède",
+    "slug": "suede",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 59.2862,
     "longitude": 18.0698,
     "categories": [
@@ -232,6 +316,9 @@
   },
   {
     "label": "Lac Hilier, Australie",
+    "slug": "lac-hilier",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -34.1046,
     "longitude": 123.2027,
     "categories": [
@@ -240,6 +327,9 @@
   },
   {
     "label": "Lac rose, Sénégal",
+    "slug": "lac-rose",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 0,
     "longitude": 0,
     "categories": [
@@ -248,6 +338,9 @@
   },
   {
     "label": "Laponie",
+    "slug": "laponie",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 67.835,
     "longitude": 18.517,
     "categories": [
@@ -256,6 +349,9 @@
   },
   {
     "label": "Parc national de Yosemite, Nevada",
+    "slug": "parc-national-yosemite",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 37.7458,
     "longitude": 119.5,
     "categories": [
@@ -266,6 +362,9 @@
   },
   {
     "label": "Rome",
+    "slug": "rome",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 41.89193,
     "longitude": 12.51133,
     "categories": [
@@ -274,6 +373,9 @@
   },
   {
     "label": "Stonehenge",
+    "slug": "stonehenge",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 51.1788293,
     "longitude": -1.826183,
     "categories": [
@@ -282,6 +384,9 @@
   },
   {
     "label": "Thaïlande",
+    "slug": "thailande",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 15.5,
     "longitude": 101,
     "categories": [
@@ -292,6 +397,9 @@
   },
   {
     "label": "Toscane",
+    "slug": "toscane",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 43.7106,
     "longitude": 11.2527,
     "categories": [
@@ -300,6 +408,9 @@
   },
   {
     "label": "Venise",
+    "slug": "venise",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 45.4371908,
     "longitude": 12.3345898,
     "categories": [
@@ -308,6 +419,9 @@
   },
   {
     "label": "Virginie",
+    "slug": "virginie",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 37.5406,
     "longitude": -77.4316,
     "categories": [
@@ -317,6 +431,9 @@
   },
   {
     "label": "Cambodge, les temples d'Angkor",
+    "slug": "temples-angkor",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 10.79,
     "longitude": 103.8,
     "categories": [
@@ -326,6 +443,9 @@
   },
   {
     "label": "Ibiza",
+    "slug": "ibiza",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 38.846,
     "longitude": 1.428,
     "categories": [
@@ -335,6 +455,9 @@
   },
   {
     "label": "Vésuve",
+    "slug": "vesuve",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 40.7894,
     "longitude": 14.425,
     "categories": [
@@ -343,6 +466,9 @@
   },
   {
     "label": "St Michael's Mount",
+    "slug": "saint-michaels-mount",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 50.006,
     "longitude": -5.477,
     "categories": [
@@ -351,6 +477,9 @@
   },
   {
     "label": "Minas Tirith, Seigneur des anneaux",
+    "slug": "minas-tirith",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 0,
     "longitude": 0,
     "categories": [
@@ -359,6 +488,9 @@
   },
   {
     "label": "île de Pâques",
+    "slug": "ile-paques",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -27.272,
     "longitude": -109.352,
     "categories": [
@@ -367,6 +499,9 @@
   },
   {
     "label": "Berlin",
+    "slug": "berlin",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 13.381,
     "longitude": 52.312,
     "categories": [
@@ -375,6 +510,9 @@
   },
   {
     "label": "Grotte de Phraya Nakhon, Thaïlande",
+    "slug": "grotte-phraya-nakhon",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 12.1923,
     "longitude": 100.0113,
     "categories": [
@@ -383,6 +521,9 @@
   },
   {
     "label": "Durdle Door, Angleterre",
+    "slug": "durdle-door",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 50.6177,
     "longitude": -2.2767,
     "categories": [
@@ -391,6 +532,9 @@
   },
   {
     "label": "Rocher Percé, Canada",
+    "slug": "rocher-perce",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 48.413,
     "longitude": -64.199,
     "categories": [
@@ -399,6 +543,9 @@
   },
   {
     "label": "London Arch, Australie",
+    "slug": "london-arch",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -38.6278,
     "longitude": 142.9309,
     "categories": [
@@ -407,6 +554,9 @@
   },
   {
     "label": "Chutes Victoria",
+    "slug": "chutes-victoria",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": -20.51,
     "longitude": 25.84,
     "categories": [
@@ -415,6 +565,9 @@
   },
   {
     "label": "Baie de Maya, Thaïlande",
+    "slug": "baie-maya",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 7.512,
     "longitude": 98.767,
     "categories": [
@@ -423,6 +576,9 @@
   },
   {
     "label": "Plage Kalpitiya, Sri Lanka",
+    "slug": "plage-kalpitiya",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 8.2368062,
     "longitude": 79.7661508,
     "categories": [
@@ -432,6 +588,9 @@
   },
   {
     "label": "Rocher de Sigiriya, Sri Lanka",
+    "slug": "rocher-sigiriya",
+    "date": "18/05/2020",
+    "country": "",
     "latitude": 7.9076,
     "longitude": 80.7495,
     "categories": [

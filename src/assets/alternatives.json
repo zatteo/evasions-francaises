@@ -1,6 +1,9 @@
 [
   {
     "label": "Corse",
+    "slug": "corse",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 41.92723,
     "longitude": 8.73462,
     "description": "Eaux turquoises, plage de sable fin, les plages de Corse n'ont rien à envier aux destinations les plus paradisiaques du monde. L'intérieur des terres est particulièrement authentique, avec ses villages et ses montagnes. Pour réduire votre impact, vous pouvez vous y rendre en ferry voir même en voilier pour les plus aventuriers !",
@@ -20,6 +23,9 @@
   },
   {
     "label": "Côte d'Azur",
+    "slug": "cote-azur",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.70313,
     "longitude": 7.26608,
     "categories": ["Plages"],
@@ -38,6 +44,9 @@
   },
   {
     "label": "Cascades du Hérisson, Jura",
+    "slug": "cascades-herisson",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 46.83333,
     "longitude": 5.83333,
     "categories": ["Cascades"],
@@ -59,6 +68,9 @@
   },
   {
     "label": "Rocamadour",
+    "slug": "rocamadour",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 44.7991877,
     "longitude": 1.6183521,
     "categories": ["À flanc de montagne"],
@@ -74,6 +86,9 @@
   },
   {
     "label": "Dune du Pilat",
+    "slug": "dune-pilat",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 44.5891614,
     "longitude": -1.2141047,
     "categories": ["Désert de sable"],
@@ -89,6 +104,9 @@
   },
   {
     "label": "Château de Chantilly",
+    "slug": "chateau-chantilly",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 49.19461,
     "longitude": 2.47124,
     "categories": ["Châteaux"],
@@ -104,6 +122,9 @@
   },
   {
     "label": "Lac d'Annecy",
+    "slug": "lac-annecy",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.8493061,
     "longitude": 6.1711755,
     "categories": ["Lacs de montagne"],
@@ -125,6 +146,9 @@
   },
   {
     "label": "Nîmes",
+    "slug": "nimes",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.83333,
     "longitude": 4.35,
     "categories": ["Architecture antique"],
@@ -146,6 +170,9 @@
   },
   {
     "label": "Gouffre de la Fage",
+    "slug": "gouffre-fage",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 44.43291,
     "longitude": 3.59337,
     "categories": ["Grottes"],
@@ -166,6 +193,9 @@
   },
   {
     "label": "Gorges du Verdon",
+    "slug": "gorges-verdon",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.740335,
     "longitude": 6.3799984,
     "categories": ["Gorges"],
@@ -184,6 +214,9 @@
   },
   {
     "label": "Roche de Solutré",
+    "slug": "roche-solutre",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 46.2987205,
     "longitude": 4.7181403,
     "categories": ["Rocher"],
@@ -202,6 +235,9 @@
   },
   {
     "label": "Lac de Monteynard",
+    "slug": "lac-monteynard",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 44.9656674,
     "longitude": 5.7017388,
     "categories": ["Lacs de montagne"],
@@ -217,6 +253,9 @@
   },
   {
     "label": "Marais Poitevin",
+    "slug": "marais-poitevin",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 46.33333,
     "longitude": -1,
     "categories": ["Marais"],
@@ -236,6 +275,9 @@
   },
   {
     "label": "Plateau des milles étangs",
+    "slug": "plateau-milles-etangs",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 47.7366,
     "longitude": 6.5643,
     "categories": ["Lacs et forêts"],
@@ -252,6 +294,9 @@
   },
   {
     "label": "Gorges de la Dordogne",
+    "slug": "gorges-dordogne",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.1429198,
     "longitude": 0.6321258,
     "categories": ["Fleuves et forêts"],
@@ -270,6 +315,9 @@
   },
   {
     "label": "Lac de Gaube",
+    "slug": "lac-gaube",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 42.8314346,
     "longitude": -0.1396429,
     "categories": ["Lacs de montagne"],
@@ -285,6 +333,9 @@
   },
   {
     "label": "Strasbourg",
+    "slug": "",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.584614,
     "longitude": 7.7507127,
     "categories": ["Esprit allemand", "Esprit de Noël"],
@@ -307,6 +358,9 @@
   },
   {
     "label": "Colmar",
+    "slug": "colmar",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.08333,
     "longitude": 7.36667,
     "categories": ["Esprit allemand", "Venise"],
@@ -325,6 +379,9 @@
   },
   {
     "label": "Annecy",
+    "slug": "annecy",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.9,
     "longitude": 6.11667,
     "categories": ["Venise"],
@@ -340,6 +397,9 @@
   },
   {
     "label": "Aigues-Mortes",
+    "slug": "aigues-mortes",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.57178083878112,
     "longitude": 4.202356647949204,
     "categories": ["Lacs roses"],
@@ -355,6 +415,9 @@
   },
   {
     "label": "Orgues de Bort",
+    "slug": "orgues-bort",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.4,
     "longitude": 2.5,
     "categories": ["Montagnes et forêts"],
@@ -375,6 +438,9 @@
   },
   {
     "label": "Canyon de Vacca",
+    "slug": "canyon-vacca",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 41.724223,
     "longitude": 9.2712855,
     "categories": ["Canyon Vacca"],
@@ -395,6 +461,9 @@
   },
   {
     "label": "Calanques de Marseille",
+    "slug": "calanques-marseille",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.2961743,
     "longitude": 5.3699525,
     "categories": ["Plages"],
@@ -416,6 +485,9 @@
   },
   {
     "label": "Donon",
+    "slug": "donon",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.5126166,
     "longitude": 7.1644661,
     "categories": ["Architecture antique"],
@@ -432,6 +504,9 @@
   },
   {
     "label": "Lac Capitello",
+    "slug": "lac-capitello",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 42.216131,
     "longitude": 9.0579488,
     "categories": ["Lacs de montagne"],
@@ -452,6 +527,9 @@
   },
   {
     "label": "Ocres de Rustrel",
+    "slug": "ocres-rustrel",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.92571,
     "longitude": 5.48554,
     "categories": ["Grand Canyon", "Horseshoe"],
@@ -470,6 +548,9 @@
   },
   {
     "label": "Vosges",
+    "slug": "vosges",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.163786,
     "longitude": 6.3820712,
     "categories": ["Montagnes et forêts"],
@@ -491,6 +572,9 @@
   },
   {
     "label": "Mont Blanc",
+    "slug": "mont-blanc",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 46.0926274,
     "longitude": 5.0775307,
     "categories": ["Haute montagne"],
@@ -509,6 +593,9 @@
   },
   {
     "label": "Archipel des Glénan",
+    "slug": "archipel-glenan",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 47.7060188,
     "longitude": -3.9950714,
     "categories": ["Plages","Archipel","Iles paradisiaques"],
@@ -527,6 +614,9 @@
   },
   {
     "label": "Orgues d'Ille sur Têt",
+    "slug": "orgues-ille-tet",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 42.6866075,
     "longitude": 2.6210651,
     "categories": ["Cappadoce"],
@@ -547,6 +637,9 @@
   },
   {
     "label": "Pays cathare",
+    "slug": "pays-cathare",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.0542733,
     "longitude": 2.5124715,
     "categories": ["Châteaux forts"],
@@ -565,6 +658,9 @@
   },
   {
     "label": "Bonifacio",
+    "slug": "bonifacio",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 41.3878259,
     "longitude": 9.1606179,
     "categories": ["À flanc de montagne"],
@@ -583,6 +679,9 @@
   },
   {
     "label": "Désert des Agriates",
+    "slug": "desert-agriates",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 42.6963,
     "longitude": 9.1647,
     "categories": ["Désert montagneux"],
@@ -601,6 +700,9 @@
   },
   {
     "label": "Sommet du Galtz",
+    "slug": "sommet-galtz",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.108074,
     "longitude": 7.2847476,
     "categories": ["Christ Rédempteur"],
@@ -617,6 +719,9 @@
   },
   {
     "label": "Cairn du petit Mont",
+    "slug": "cairn-petit-mont",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 47.533,
     "longitude": -2.9023,
     "categories": [],
@@ -637,6 +742,9 @@
   },
   {
     "label": "Statue de la Liberté",
+    "slug": "statue-liberte",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.8502887,
     "longitude": 2.280082,
     "categories": ["Statue de la Liberté"],
@@ -674,6 +782,9 @@
   },
   {
     "label": "Alignement de Carnac",
+    "slug": "alignement-carnac",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 47.5898,
     "longitude": -3.0798,
     "categories": ["Monument mégalithique"],
@@ -692,6 +803,9 @@
   },
   {
     "label": "Séguret",
+    "slug": "seguret",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 44.1458,
     "longitude": -5.0235,
     "categories": ["À flanc de montagne"],
@@ -707,6 +821,9 @@
   },
   {
     "label": "Ménerbes",
+    "slug": "menerbes",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.7721,
     "longitude": 5.2075,
     "categories": ["Paysage de Toscane"],
@@ -723,6 +840,9 @@
   },
   {
     "label": "Fort la Latte",
+    "slug": "fort-latte",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.6648,
     "longitude": -2.2846,
     "description": "Ce château fort du XIVème siècle est classé depuis 1925 comme monument historique. Il trône fièrement au sommet d'un cap rocheux face à la mer. Pour les fans de Manau, vous aurez remarqué qu'il s'agit du fameux château du clip « La tribu de Dana ».",
@@ -741,6 +861,9 @@
   },
   {
     "label": "Lac du Lispach",
+    "slug": "lac-lispach",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.0447,
     "longitude": 6.9423 ,
     "description": "Un beau lac de forêt, à une altitude de 900m dans les Vosges. Un sentier permet d'en faire le tour.",
@@ -761,6 +884,9 @@
   },
   {
     "label": "Moliets-et-Maa",
+    "slug": "moliets-maa",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.7879 ,
     "longitude": -1.3568 ,
     "description": "Un petit village dans les Landes doté d’une légère ressemblance avec le célèbre Horseshoe en Arizona. Vous pouvez également parcourir les 2000ha de forêts de pins du Courant d'Huchet, qui n’est pas sans rappeler les forêts de pin du parc national de Yosemite",
@@ -779,6 +905,9 @@
   },
   {
     "label": "Réserve naturelle du courant d’Huchet",
+    "slug": "reserve-naturelle-courant-huchet",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.8863 ,
     "longitude":-1.3293 ,
     "description": "Surnommée la « Petite Amazonie landaise », la réserve naturelle du courant d'Huchet a été préservée et propose une grande richesse naturelle.",
@@ -797,6 +926,9 @@
   },
   {
     "label": "Lac de Pierre-Percée ",
+    "slug": "lac-pierre-percee",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.4687677 ,
     "longitude": 6.9310831,
     "description": "Le lac de Pierre-Percée est le 3ème lac artificiel de Lorraine ! Sa forme en feuille d’érable vient confirmer l’idée d’une ressemblance avec les lacs canadiens. Laissez-vous séduire par la multitudes d'activités que le lac et sa végétation a à vous offrir (saut à l’élastique, VTT, sports nautiques, randonnées,…)",
@@ -822,6 +954,9 @@
   },
   {
     "label": "Saint Jacut de la Mer ",
+    "slug": "saint-jacut-mer",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.601608 ,
     "longitude": 48.601608,
     "description": "Saint Jacut de la Mer, petit village des côtes d’Armor, abrite 11 plages ! Largement de quoi vous détendre. Retrouvez également divers sports nautiques (catamaran, planche à voile, canoë,…)",
@@ -842,6 +977,9 @@
   },
   {
     "label": "Port Grimaud",
+    "slug": "port-grimaud",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.2718123 ,
     "longitude": 6.5819521,
     "description": "Au coeur du golfe de St-Tropez, vous trouverez la Venise Provençale. Conçu et construit par l’architecte François Spoerry, les travaux ont débuté en 1966 pour se finaliser dans les années 2000. Cette cité lacustre s’étend sur 75ha dont 7km de canaux, 14 ponts et 12 îles.",
@@ -860,6 +998,9 @@
   },
   {
     "label": "Lac Salagou",
+    "slug": "lac-salagou",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.6481 ,
     "longitude": 3.3652,
     "description": " Ce grand lac du sud ouest avec ses tons rouges et oranges fait immédiatement penser aux roches du Grand Canyon et aux paysages de l'outback australien.",
@@ -880,6 +1021,9 @@
   },
   {
     "label": "Iles Lavezzi",
+    "slug": "iles-lavezzi",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 41.206 ,
     "longitude": 9.25,
     "description": "Cet archipel de 23 îles est accesible uniquement par voie maritime. Depuis 1982, quelques îles de l'archipel font partie d'une réserve naturelle, ce qui les protège",
@@ -904,6 +1048,9 @@
   },
   {
     "label": "Méandre de Queille",
+    "slug": "meandre-queille",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.911 ,
     "longitude": 2.8455,
     "description": " Venez découvrir à Queille ce panorama qui ressemble à s'y méprendre à l'Amazonie. À plus de 250m au dessus de la Sioule vous pouvez observer ce méandre qui ressemble comme deux gouttes d'eau aux cartes postales amazoniennes.",
@@ -919,6 +1066,9 @@
   },
   {
     "label": "Palais idéal du Facteur Cheval",
+    "slug": "palais-ideal-facteur-cheval",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 45.2525 ,
     "longitude": 5.0285,
     "description": "Une construction surprenante qui ne laissera personne indifférent. Le palais idéal du Facteur Cheval, construit par Ferdinand Cheval entre 1879 et 1912, est un mélange très personnel de plusieurs styles. On y retrouve des influences bibliques, mais aussi de la mythologie hindoue et égyptienne. Le résultat final ressemble aux temples d'Asie du Sud-Est.",
@@ -934,6 +1084,9 @@
   },
   {
     "label": "Cascade des Tufs, Jura",
+    "slug": "cascade-tufs",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 46.8681,
     "longitude": 5.8052,
     "categories": ["Cascades"],
@@ -949,6 +1102,9 @@
   },
   {
     "label": "Plages de Pampelonne",
+    "slug": "plage-pampelonne",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.224,
     "longitude": 6.6685,
     "categories": ["Plages","Festif"],
@@ -969,6 +1125,9 @@
   },
   {
     "label": "Puy de Sancy",
+    "slug": "puy-sancy",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.224,
     "longitude": 6.6685,
     "categories": ["Volcan"],
@@ -989,6 +1148,9 @@
   },
   {
     "label": "Musée Guimet",
+    "slug": "musee-guimet",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.8618,
     "longitude": 2.2939,
     "categories": ["Temples d'Angkor","Ambiance d'Asie"],
@@ -1009,6 +1171,9 @@
   },
   {
     "label": "Mont St-Michel",
+    "slug": "mont-saint-michel",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.5793,
     "longitude": -1.5106,
     "categories": ["Mont St-Michel"],
@@ -1027,6 +1192,9 @@
   },
   {
     "label": "Boulevard Schloesing, Marseille",
+    "slug": "boulevard-schloesing-marseille",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 43.2342,
     "longitude": 5.3696,
     "categories": ["Moaï"],
@@ -1043,6 +1211,9 @@
   },
   {
     "label": "Segments du mur de Berlin",
+    "slug": "segment-mur-berlin",
+    "date": "18/05/2020",
+    "department": "",
     "latitude": 48.8534,
     "longitude": 2.3488,
     "categories": ["Segments du mur de Berlin"],
@@ -1080,7 +1251,10 @@
   },
   {
   "label": "Gouffre de Padirac",
-  "latitude": 44.8535,
+  "slug": "gouffre-padirac",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 44.8535,
   "longitude": 1.7509,
   "categories": ["Grottes"],
   "images": [
@@ -1104,7 +1278,10 @@
   },
   {
   "label": "Pont d'Arc, Ardèche",
-  "latitude": 44.3782,
+  "slug": "pont-arc",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 44.3782,
   "longitude": 4.4162,
   "categories": ["Arches naturelles"],
   "images": [
@@ -1128,7 +1305,10 @@
   },
   {
   "label": "Etretat",
-  "latitude": 49.6525,
+  "slug": "etretat",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 49.6525,
   "longitude": 0.2087,
   "categories": ["Arches naturelles"],
   "images": [
@@ -1152,7 +1332,10 @@
   },
   {
   "label": "Tour Percée, Isère",
-  "latitude": 45.3658,
+  "slug": "tour-percee",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 45.3658,
   "longitude": 5.9048,
   "categories": ["Arches naturelles"],
   "images": [
@@ -1172,7 +1355,10 @@
   },
   {
   "label": "Archipel Riou",
-  "latitude": 43.051,
+  "slug": "archipel-riou",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 43.051,
   "longitude": 5.389,
   "categories": ["Archipel"],
   "images": [
@@ -1193,7 +1379,10 @@
   },
   {
   "label": "Calanque d'En Vau",
-  "latitude": 43.051,
+  "slug": "calanque-en-vau",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 43.051,
   "longitude": 5.389,
   "categories": ["Baie de Maya"],
   "images": [
@@ -1217,7 +1406,10 @@
   },
   {
   "label": "Saint-Cast-le-Guildo",
-  "latitude": 48.5739,
+  "slug": "saint-cast-guildo",
+    "date": "18/05/2020",
+    "department": "",
+    "latitude": 48.5739,
   "longitude": -2.2577,
   "categories": ["Plages"],
   "images": [
