@@ -1427,5 +1427,70 @@
   "links": [
     "https://www.dinan-capfrehel.com/"
   ]
+  },
+  {
+  "label": "Route nationale 66",
+  "slug": "route-nationale-66",
+    "date": "23/05/2020",
+    "department": "Haut Rhin",
+    "latitude": 47.6922,
+  "longitude": 7.3389,
+  "categories": ["Route 66"],
+  "images": [
+    {
+      "path": "route66.jpg",
+      "source": "Rauenstein"
+    }
+  ],
+  "description": "La France aussi a sa route 66, qui n'a rien à envier à son homolgue américaine. De Remiremont à Mulhouse, laissez vous séduire par 80km de route inintéressante entre mur anti bruit et alsaciens pressés. Vous l'aurez compris, pas d'alternatives françaises à la hauteur pour le moment.",
+  "links": [
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  ]
+  },
+  {
+  "label": "Massif du Vercors",
+  "slug": "massif-vercors",
+    "date": "23/05/2020",
+    "department": "Isère",
+    "latitude": 44.9361,
+  "longitude": 5.4163,
+  "categories": ["Désert montagneux","Montagnes et forêts"],
+  "images": [
+    {
+      "path": "vercors.jpg",
+      "source": "Flickr, François Fromont"
+    },
+    {
+    "path": "vercors2.jpg",
+    "source": "Flickr, Daniel"
+    },
+    {
+    "path": "vercors3.jpg",
+    "source": "Flickr, Sylvain Freyermuth"
+    }
+  ],
+  "description": " Laissez vous séduire par le massif du Vercors et ses multiples activités en pleine nature ! Avec plus de 3 000 cavités naturelles, ses 2 850km de sentier balisés, ses 1 200km  d'itinéraires VTT, sa faune et sa flore d'une grande diversité vous ne vous ennuyerez pas dans le Massif du Vercors.   ",
+  "links": [
+    " http://vercors.fr/ "
+  ]
+  },
+  {
+  "label": "Chute de Druise",
+  "slug": "chute-druise",
+    "date": "23/05/2020",
+    "department": "Drôme",
+    "latitude": 44.824,
+  "longitude": 5.1926,
+  "categories": ["Cascades"],
+  "images": [
+    {
+      "path": "druise.jpg",
+      "source": "Flickr, Marc"
+    }
+  ],
+  "description": " La chute de Druise d'une hauteur de 72 mètres entouré d'une nature luxuriante. ",
+  "links": [
+    " https://www.visorando.com/randonnee-chute-de-la-druise/ "
+  ]
   }
 ]
