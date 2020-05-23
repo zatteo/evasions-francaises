@@ -432,7 +432,7 @@
   {
     "label": "Temples d'Angkor",
     "slug": "temples-angkor",
-    "date": "18/05/2020",
+    "date": "21/05/2020",
     "country": "Cambodge",
     "latitude": 10.79,
     "longitude": 103.8,
@@ -444,7 +444,7 @@
   {
     "label": "Ibiza",
     "slug": "ibiza",
-    "date": "18/05/2020",
+    "date": "21/05/2020",
     "country": "Espagne",
     "latitude": 38.846,
     "longitude": 1.428,
@@ -456,7 +456,7 @@
   {
     "label": "Vésuve",
     "slug": "vesuve",
-    "date": "18/05/2020",
+    "date": "21/05/2020",
     "country": "Italie",
     "latitude": 40.7894,
     "longitude": 14.425,
@@ -467,7 +467,7 @@
   {
     "label": "St Michael's Mount",
     "slug": "saint-michaels-mount",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Angleterre",
     "latitude": 50.006,
     "longitude": -5.477,
@@ -478,7 +478,7 @@
   {
     "label": "Minas Tirith",
     "slug": "minas-tirith",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Seigneur des Anneaux",
     "latitude": 0,
     "longitude": 0,
@@ -489,7 +489,7 @@
   {
     "label": "île de Pâques",
     "slug": "ile-paques",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Chili",
     "latitude": -27.272,
     "longitude": -109.352,
@@ -500,7 +500,7 @@
   {
     "label": "Berlin",
     "slug": "berlin",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Allemagne",
     "latitude": 13.381,
     "longitude": 52.312,
@@ -511,7 +511,7 @@
   {
     "label": "Grotte de Phraya Nakhon",
     "slug": "grotte-phraya-nakhon",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Thaïlande",
     "latitude": 12.1923,
     "longitude": 100.0113,
@@ -522,7 +522,7 @@
   {
     "label": "Durdle Door",
     "slug": "durdle-door",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Angleterre",
     "latitude": 50.6177,
     "longitude": -2.2767,
@@ -533,7 +533,7 @@
   {
     "label": "Rocher Percé",
     "slug": "rocher-perce",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Canada",
     "latitude": 48.413,
     "longitude": -64.199,
@@ -544,7 +544,7 @@
   {
     "label": "London Arch",
     "slug": "london-arch",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Australie",
     "latitude": -38.6278,
     "longitude": 142.9309,
@@ -555,7 +555,7 @@
   {
     "label": "Chutes Victoria",
     "slug": "chutes-victoria",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Zimbabwe",
     "latitude": -20.51,
     "longitude": 25.84,
@@ -566,7 +566,7 @@
   {
     "label": "Baie de Maya",
     "slug": "baie-maya",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Thaïlande",
     "latitude": 7.512,
     "longitude": 98.767,
@@ -577,7 +577,7 @@
   {
     "label": "Plage Kalpitiya",
     "slug": "plage-kalpitiya",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Sri Lanke",
     "latitude": 8.2368062,
     "longitude": 79.7661508,
@@ -589,12 +589,56 @@
   {
     "label": "Rocher de Sigiriya",
     "slug": "rocher-sigiriya",
-    "date": "18/05/2020",
+    "date": "22/05/2020",
     "country": "Sri Lanka",
     "latitude": 7.9076,
     "longitude": 80.7495,
     "categories": [
       "Rocher"
+    ]
+  },
+  {
+    "label": "Route 66",
+    "slug": "route-66",
+    "date": "23/05/2020",
+    "country": "USA",
+    "latitude": 37.1907,
+    "longitude": -93.2861,
+    "categories": [
+      "Route 66"
+    ]
+  },
+  {
+    "label": "Las Coloradas, Yucatàn",
+    "slug": "las-coloradas",
+    "date": "23/05/2020",
+    "country": "Mexique",
+    "latitude": 37.1907,
+    "longitude": -93.2861,
+    "categories": [
+      "Lacs roses"
+    ]
+  },
+  {
+    "label": "Désert de Gobi",
+    "slug": "desert-gobi",
+    "date": "23/05/2020",
+    "country": "Mongolie",
+    "latitude": 42.5861,
+    "longitude": 103.4299,
+    "categories": [
+      "Désert de sable"
+    ]
+  },
+  {
+    "label": "Mongolie",
+    "slug": "mongolie",
+    "date": "23/05/2020",
+    "country": "",
+    "latitude": 47.8602,
+    "longitude": 106.9162,
+    "categories": [
+      "Désert montagneux"
     ]
   }
 ]
