@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueMeta from 'vue-meta';
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import vSelect from 'vue-select';
 import App from './App.vue';
@@ -17,6 +18,10 @@ Vue.prototype.$loadedAlternatives = loadedAlternatives;
 Vue.use(VueRouter);
 
 Vue.use(BootstrapVue);
+
+Vue.use(VueMeta, {
+  refreshOnceOnNavigation: true,
+});
 
 Vue.component('v-select', vSelect);
 
