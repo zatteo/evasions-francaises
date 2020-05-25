@@ -12,7 +12,8 @@
             >
              Cherchez votre prochaine destination parmi plus de {{ $loadedAlternatives.length }}
              alternatives françaises aux plus belles destinations du monde, ou
-            <a href="" v-b-modal.propose-alternative-modal @click.prevent>proposez votre alternative</a>.
+            <a href="" v-b-modal.propose-alternative-modal @click.prevent>
+              proposez votre alternative</a>.
             </p>
             <br />
             <div class="search-bar">
