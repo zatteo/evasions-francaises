@@ -165,7 +165,7 @@ export default {
         return `${alternative.label}, une des plus belles alternatives françaises à ${destination.label}`;
       }
 
-      return `${destination.label} - ${alternative.label}`;
+      return `${alternative.label}, une des plus belles destinations françaises`;
     },
   },
   methods: {
