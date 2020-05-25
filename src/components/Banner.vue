@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <div :class="`d-${display}`">
+  <div :class="`d-none d-${display}`">
     <b-navbar toggleable="lg" type="dark" variant="info" fixed="bottom">
       <div style="display: flex; flex: 1; justify-content: center;">
         <div class="sib-form" style="text-align: center; background-color: transparent;">
@@ -8,9 +8,9 @@
             <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent;">
               <form id="sib-form" method="POST" target="_blank" action="https://49647813.sibforms.com/serve/MUIEAIDNAj1BpQurHFg13yAKRQu1avO9JBfwFNrDDhv1hmu6BEqlLWPjcwQhHpYV42SqRl38duzdVzrDGiDs7zo4VZY2HEyy98yRhwWzJpySEwEMcdvbTrbUmgFo7f5IwlpElOpEAdjVSBh3ZiL_MIhd5HIEEuvAmjzlOBEsFxXYNl3pKElD5sMlv_aiHMHoRtjhPCjL5zdlPLf4">
                 <div style="padding: 8px 0;">
-                  <div class="sib-form-block" style="font-size:24px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#ffffff; background-color:transparent; border-width:px;">
-                    <p>Recevoir les dernières alternatives pour s'évader en France</p>
-                    <p style="font-size:16px; font-weight:normal;">La sélection des dernières alternatives, maximum 2 par mois</p>
+                  <div class="sib-form-block" style="font-size:18px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#ffffff; background-color:transparent; border-width:px;">
+                    <p>Vous ne trouvez pas votre bonheur ? Recevez les prochaines alternatives dans votre boite mail !</p>
+                    <p style="font-size:16px; font-weight:normal;"> </p>
                   </div>
                 </div>
                 <div>
@@ -85,7 +85,7 @@ export default {
   },
   data() {
     return {
-      display: 'flex',
+      display: 'md-flex',
     };
   },
 };
