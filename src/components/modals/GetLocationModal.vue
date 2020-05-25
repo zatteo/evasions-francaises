@@ -16,6 +16,7 @@
           OK
         </b-button>
       </div>
+      <a href="" @click.prevent="resetLocation">Réinitialiser</a>
     </div>
     <template v-slot:modal-footer="{ ok }">
       <b-button class="btn btn-primary" size="sm" @click="ok()">
@@ -46,9 +47,18 @@ export default {
                 longitude: data.features[0].geometry.coordinates[0],
                 latitude: data.features[0].geometry.coordinates[1],
               });
+              this.$bvModal.hide('get-location-modal');
             }
           });
       }
+    },
+    resetLocation() {
+      this.$emit('locationReceived', {
+        name: 'Paris',
+        latitude: 48.8534,
+        longitude: 2.3488,
+      });
+      this.$bvModal.hide('get-location-modal');
     },
   },
 };
