@@ -1,10 +1,10 @@
 <!-- eslint-disable -->
 <template>
   <b-modal
-    id="propose-modal"
+    id="propose-alternative-modal"
     title="Proposer une alternative"
   >
-    <div class="propose">
+    <div class="propose-alternative">
       <p>
         Pour proposer une alternative, rien de plus simple !
         Envoyez-nous un petit message par mail à l'adresse
@@ -34,7 +34,7 @@
 <script>
 
 export default {
-  name: 'ProposeModal',
+  name: 'ProposeAlternativeModal',
 };
 
 </script>

@@ -12,9 +12,7 @@
             >
              Cherchez votre prochaine destination parmi plus de {{ $loadedAlternatives.length }}
              alternatives françaises aux plus belles destinations du monde, ou
-            <a href="" v-b-modal.propose-modal @click.prevent>
-              proposez votre alternative
-            </a>.
+            <a href="" v-b-modal.propose-alternative-modal @click.prevent>proposez votre alternative</a>.
             </p>
             <br />
             <div class="search-bar">
@@ -31,9 +29,9 @@
                   : {{location.longitude}})
                   <a
                     href=""
-                    @click.prevent="getLocation"
+                    v-b-modal.get-location-modal @click.prevent
                   >
-                    Me géolocaliser
+                    Me localiser
                   </a>
                 </span>
                 <span>
@@ -91,7 +89,7 @@
                   du monde en France ! Avec en prime, au moins sur le trajet,
                   une meilleure empreinte environnementale. Et si vous voulez nous aider,
                   vous pouvez même
-                  <a href="" v-b-modal.propose-modal @click.prevent>
+                  <a href="" v-b-modal.propose-alternative-modal @click.prevent>
                     proposer votre alternative
                   </a>.
                 </p>
@@ -114,20 +112,23 @@
         </div>
       </div>
     </div>
-    <ProposeModal/>
+    <GetLocationModal v-on:locationReceived="setLocation"/>
+    <ProposeAlternativeModal/>
   </div>
 </template>
 
 <script>
 
 import AlternativeList from '../components/AlternativeList.vue';
-import ProposeModal from '../components/modals/ProposeModal.vue';
+import ProposeAlternativeModal from '../components/modals/ProposeAlternativeModal.vue';
+import GetLocationModal from '../components/modals/GetLocationModal.vue';
 
 export default {
   name: 'Main',
   components: {
     AlternativeList,
-    ProposeModal,
+    ProposeAlternativeModal,
+    GetLocationModal,
   },
   mounted() {
     const { destinationSlug, alternativeSlug } = this;
@@ -264,16 +265,9 @@ export default {
         this.fullAlternatives[parseInt(Math.random() * this.fullAlternatives.length, 10)],
       ];
     },
-    getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-          this.location.name = 'GPS';
-          this.location.latitude = position.coords.latitude;
-          this.location.longitude = position.coords.longitude;
-        }, (error) => {
-          console.log(error);
-        }, { timeout: 10000 });
-      }
+    setLocation(location) {
+      console.log(location)
+      this.location = location;
     },
     calculateDistance(lat1, lon1, lat2, lon2) {
       const R = 6371; // km
