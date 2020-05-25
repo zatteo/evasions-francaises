@@ -1095,13 +1095,13 @@
         "path": "tufs.jpg"
       }
     ],
-    "description": " Entre la découverte d'un domaine des vins d'Arbois et la dégustation de comté, prenez un instant pour vous arrêter à la cascades des Tufs. Haute de 10m et large de 15m elle saura vous éblouir grâce à ses gours et sa végétation. ",
+    "description": " Entre la découverte d'un domaine des vins d'Arbois et la dégustation de comté, prenez un instant pour vous arrêter à la cascade des Tufs. Haute de 10m et large de 15m elle saura vous éblouir grâce à ses gours et sa végétation luxuriante. ",
     "links": [
       "https://www.jura-tourism.com/patrimoine-naturel/la-cascade-des-tufs-aux-planches-pres-darbois/"
     ]
   },
   {
-    "label": "Plages de Pampelonne",
+    "label": "Plage de Pampelonne",
     "slug": "plage-pampelonne",
     "date": "21/05/2020",
     "department": "Var",
@@ -1118,7 +1118,7 @@
         "source" : "Flickr, Andy M."
       }
     ],
-    "description": " La célèbre plage de Pampelonne, d'une longueur de 4,5km et située dans le Golfe de St-Tropez saura vous séduire avec ces 27 plages 'privées' toutes plus festives les unes que les autres. Pour les amateurs de nature retrouvez du calme grâce au sentier marin de Pampelonne.",
+    "description": " La célèbre plage de Pampelonne, d'une longueur de 4,5km et située dans le Golfe de St-Tropez saura vous séduire avec ses 27 plages 'privées' toutes plus festives les unes que les autres. Pour les amateurs de nature retrouvez du calme grâce au sentier marin de Pampelonne.",
     "links": [
       "https://www.ramatuelle-tourisme.com/"
     ]
@@ -1141,7 +1141,7 @@
         "source" : "Flickr, HarveyDxb"
       }
     ],
-    "description": "Le Puy de Sancy d'une altitude de 1 885mètres en fait le plus haut volcan de France métropolitaine. Pour les plus courageux vous pouvez atteindre son sommet en une heure à pieds, pour les autres vous pouvez emprunter un téléphérique puis entamer l'ascension des 864 marches pour arriver au sommet. ",
+    "description": "Le Puy de Sancy d'une altitude de 1 885mètres en fait le plus haut volcan de France métropolitaine. Pour les plus courageux vous pouvez atteindre son sommet en une heure de marche, pour les autres vous pouvez emprunter un téléphérique puis entamer l'ascension des 864 marches pour arriver au sommet. ",
     "links": [
       "https://www.sancy.com/"
     ]
@@ -1164,7 +1164,7 @@
         "source" : "Flickr, Thomas Schirmann"
       }
     ],
-    "description": " Non, dans ce musée vous ne retrouverez pas les beaux temples d'Angkor ou encore les paysages asiatiques à vous couper le souffle, mais plutôt l'architecture particulière que l'on retrouve en Asie. Vous trouverez ce musée dans le 16 Arondissement à Paris. ",
+    "description": " Non, dans ce musée vous ne retrouverez pas les beaux temples d'Angkor ou encore les paysages asiatiques à vous couper le souffle, mais plutôt l'architecture particulière que l'on retrouve en Asie. Vous trouverez ce musée dans le 16 Arondissement de Paris. ",
     "links": [
       "https://www.guimet.fr/"
     ]
@@ -1204,7 +1204,7 @@
         "source": "tourisme-marseille"
       }
     ],
-    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées de Paris. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionné par ces statuts spectaculaires. ",
+    "description": " La France compte 3 véritables Moaï de l'Ile de Pâques, ils sont exposés dans différents musées parisien. Vous trouvez également une copie sur le Boulevard Schloesing à Marseille, sur la terrasse d'un particulier visiblement passionné par ces statuts spectaculaires. ",
     "links": [
       "https://www.tourisme-marseille.com/fiche/le-moai-du-boulevard-schloesing-marseille/"
     ]
@@ -1244,7 +1244,7 @@
         "description" : "Deux pans du mur de Berlin au Mémorial de Caen"
       }
     ],
-    "description": " Après la chute du mur de Berlin le 9 Novembre 1989, celui ci a été dispersé aux quatres coins de monde. La France expose donc 10 segments du mur de Berlin dans des lieux stratégiques. ",
+    "description": " Après la chute du mur de Berlin le 9 Novembre 1989, celui ci a été dispersé aux quatres coins du monde. La France expose donc 10 segments du mur de Berlin dans des lieux stratégiques. ",
     "links": [
       "https://fr.wikipedia.org/wiki/Liste_des_segments_du_mur_de_Berlin"
     ]
@@ -1348,7 +1348,7 @@
       "source": "Bouvierjr"
     }
   ],
-  "description": " Découvert par hasard par Pascal Sombardier lors de l'écriture de son livre «Chartreuse inédite : itinéraires insolites» en 2006 il est reconnut comme le trésor caché du massif de la Chartreuse. Cette arche n'est pas une simple arche mais plutôt une double arche naturelle ce qui la rend unique en France.",
+  "description": " Découvert par hasard par Pascal Sombardier lors de l'écriture de son livre «Chartreuse inédite : itinéraires insolites» en 2006. Cet double arche naturelle est reconnut comme le trésor caché du massif de la Chartreuse, saurez-vous la trouver ?",
   "links": [
     " https://chartreuse-tourisme.com/ "
   ]
@@ -1365,14 +1365,14 @@
     {
       "path": "archipel_riou.jpg",
       "source": "calanques13",
-      "description" : " Photo depuis l'île du riou"
+      "description" : " Photo depuis l'île du Riou"
     },
     {
       "path": "archipel_riou2.jpg",
       "source": "Flickr, Nicolas Seksik"
     }
   ],
-  "description": " Le seul Archipel du littoral continental français à ne pas être habité, cette Archipel n'est accessible que par ses propres moyens. La seule île accostable est la plus grande, l'île de Riou. Pourtant ce n'est pas les occupations qui manquent, avis aux amateurs de plongée, l'archipel regorgent de site exceptionnel pour la plongée. L'Archipel abrite également plus de 200 espèces d'oiseau !",
+  "description": " Seul Archipel du littoral continental français à ne pas être habité, cet archipel n'est accessible que par ses propres moyens. La seule île accostable est la plus grande, l'île de Riou. Pourtant ce n'est pas les occupations qui manquent, avis aux amateurs de plongée, l'archipel regorgent de site exceptionnel. L'Archipel abrite également plus de 200 espèces d'oiseau !",
   "links": [
     " https://madeinmarseille.net/14945-ile-archipel-riou-calanque-tourisme/ "
   ]
@@ -1399,7 +1399,7 @@
       "source": "tribloo.com"
     }
   ],
-  "description": " L'une des plus belle et des plus réputés des Calanques de Marseille, il faut mériter pour voir ce beau paysage ! Vous avez jusqu'à 1h15 de randonnée pour y parvenir. Eaux turquoises et la végétation aux alentours a de quoi rivaliser avec la Baie de Maya de Thaïlande, en plus les deux sont envahis de touriste... ",
+  "description": " L'une des plus belles et des plus réputées des Calanques de Marseille, il faut le mériter pour voir ce beau paysage ! Vous avez jusqu'à 1h15 de randonnée pour y parvenir. Eaux turquoises et la végétation aux alentours a de quoi rivaliser avec la Baie de Maya de Thaïlande. ",
   "links": [
     " https://www.ot-cassis.com/ "
   ]
@@ -1442,7 +1442,7 @@
       "source": "Rauenstein"
     }
   ],
-  "description": "La France aussi a sa route 66, qui n'a rien à envier à son homolgue américaine. De Remiremont à Mulhouse, laissez vous séduire par 80km de route inintéressante entre mur anti bruit et alsaciens pressés. Vous l'aurez compris, pas d'alternatives françaises à la hauteur pour le moment.",
+  "description": "La France aussi a sa route 66, qui n'a rien à envier à son homolgue américaine. De Remiremont à Mulhouse, laissez vous séduire par 80km de route inintéressante entre mur anti bruit et alsaciens pressés. Vous l'aurez compris, pas d'alternative française à la hauteur pour le moment.",
   "links": [
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   ]
@@ -1488,7 +1488,7 @@
       "source": "Flickr, Marc"
     }
   ],
-  "description": " La chute de Druise d'une hauteur de 72 mètres entouré d'une nature luxuriante. ",
+  "description": " La chute de Druise est haute de 72 mètres et entourée d'une nature luxuriante. ",
   "links": [
     " https://www.visorando.com/randonnee-chute-de-la-druise/ "
   ]
