@@ -185,6 +185,13 @@ export default {
       }
     },
   },
+  watch: {
+    alternative: {
+      handler() {
+        this.imageIndex = 0;
+      },
+    },
+  },
 };
 
 </script>

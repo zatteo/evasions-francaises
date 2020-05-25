@@ -107,8 +107,8 @@
     "slug": "christ-redempteur",
     "date": "18/05/2020",
     "country": "Brésil",
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": -22.9564,
+    "longitude": -43.2108,
     "categories": [
       "Christ Rédempteur"
     ]
@@ -330,8 +330,8 @@
     "slug": "lac-rose",
     "date": "18/05/2020",
     "country": "Sénégal",
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 14.8282,
+    "longitude": -17.2307,
     "categories": [
       "Lacs roses"
     ]

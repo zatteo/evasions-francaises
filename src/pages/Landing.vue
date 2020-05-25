@@ -266,7 +266,6 @@ export default {
       ];
     },
     setLocation(location) {
-      console.log(location)
       this.location = location;
     },
     calculateDistance(lat1, lon1, lat2, lon2) {
