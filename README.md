@@ -29,3 +29,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 cd public/assets/images && mogrify -resize 720\> -path ./medium *.{jpg,png} && cd medium && mogrify -resize x480\> *.{jpg,png}
 ```
+
+## Notes
+
+Récupération de la position des villes : (https://geo.api.gouv.fr/adresse)[https://geo.api.gouv.fr/adresse]

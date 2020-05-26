@@ -46,6 +46,7 @@
                   >
                 </span>
               </div>
+              <NewsletterForm/>
             </div>
             <div class="row">
               <button
@@ -123,6 +124,7 @@
 import AlternativeList from '../components/AlternativeList.vue';
 import ProposeAlternativeModal from '../components/modals/ProposeAlternativeModal.vue';
 import GetLocationModal from '../components/modals/GetLocationModal.vue';
+import NewsletterForm from '../components/NewsletterForm.vue';
 
 export default {
   name: 'Main',
@@ -130,6 +132,7 @@ export default {
     AlternativeList,
     ProposeAlternativeModal,
     GetLocationModal,
+    NewsletterForm,
   },
   mounted() {
     const { destinationSlug, alternativeSlug } = this;
