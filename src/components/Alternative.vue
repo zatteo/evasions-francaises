@@ -1,19 +1,21 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-12 col-md-4 description-wrapper">
+      <div class="col-12 title-wrapper">
+        <h4 class="d-inline-block mb-0">
+          {{ alternative.label }}
+        </h4>
+        <span
+          v-for="validCategory in validCategories"
+          :key="`validCategory-${validCategory}`"
+          class="badge badge-info ml-1"
+        >
+          {{ validCategory }}
+        </span>
+      </div>
+      <div class="col-12 col-md-4 order-2 order-md-1 description-wrapper">
         <div class="card description-card">
           <div class="card-body">
-            <h4 class="card-title text-muted">
-              {{ alternative.label }}
-            </h4>
-            <span
-              v-for="validCategory in validCategories"
-              :key="`validCategory-${validCategory}`"
-              class="badge badge-info"
-            >
-              {{ validCategory }}
-            </span>
             <p v-html="alternative.description" class="text-justify"></p>
             <!-- popover -->
             <div v-if="destination" id="popover-stats">
@@ -63,7 +65,7 @@
         </div>
         <DisplayMapModal :alternative="alternative"/>
       </div>
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-8 order-1 order-md-2">
         <b-carousel
           id="carousel-1"
           :interval="4000"
@@ -210,6 +212,7 @@ export default {
 
 .title-wrapper {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .description-wrapper {
@@ -221,6 +224,7 @@ export default {
 
 .description-card {
   flex: 1;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 

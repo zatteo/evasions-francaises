@@ -46,7 +46,6 @@
                   >
                 </span>
               </div>
-              <NewsletterForm/>
             </div>
             <div class="row">
               <button
@@ -70,6 +69,10 @@
             />
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <NewsletterForm/>
       </div>
 
       <div class="row">
