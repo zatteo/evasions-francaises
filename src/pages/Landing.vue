@@ -78,9 +78,9 @@
       <div class="row">
         <div class="col-12">
           <div class="card why-card">
-            <p class="why-title">Pourquoi ?</p>
             <div class="row">
               <div class="col-12">
+                <br>
                 <p>
                   Vous êtes comme nous ? Ouverts sur le monde, vous aimez voyager, vous évader,
                   découvrir d´autres paysages, d´autres cultures plus exotiques les unes que
@@ -330,11 +330,9 @@ export default {
 
 <style>
 
-@import url("https://fonts.googleapis.com/css?family=Pacifico");
-
 @font-face {
-  font-family: PacificoLight;
-  src: url("./../assets/Pacifico-Light.ttf");
+  font-family: Sacramento;
+  src: url("/assets/fonts/Sacramento/Sacramento-Regular.ttf");
 }
 
 a {
@@ -372,8 +370,8 @@ a {
 
 .title {
   margin: 2% 0 0 0;
-  font-family: "Pacifico";
-  font-size: 4rem;
+  font-family: "Sacramento";
+  font-size: 5rem;
 }
 
 .search-card {
@@ -424,11 +422,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.why-title {
-  font-family: "PacificoLight";
-  font-size: 3rem;
 }
 
 .why-icon {
