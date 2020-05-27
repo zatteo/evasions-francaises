@@ -15,8 +15,13 @@ export default {
 <style>
 html,
 body {
-  background-color: #3fac8c !important;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: #3fac8c !important;
+  }
 }
 
 @media (min-width: 768px) {
