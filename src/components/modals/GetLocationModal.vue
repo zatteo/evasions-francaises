@@ -12,9 +12,6 @@
           type="text"
           placeholder="Entrez votre code postal"
         >
-        <!-- <b-button class="btn btn-primary" size="sm" @click="getLocation()">
-          OK
-        </b-button> -->
       </div>
       <a href="" @click.prevent="resetLocation">Réinitialiser</a>
     </div>

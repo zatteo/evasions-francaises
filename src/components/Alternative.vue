@@ -115,11 +115,6 @@ export default {
   components: {
     DisplayMapModal,
   },
-  metaInfo() {
-    return {
-      title: this.metaTitle,
-    };
-  },
   props: {
     alternative: Object,
     destination: Object,
@@ -157,15 +152,6 @@ export default {
         description: this.alternative.images[this.imageIndex].description || '',
         source: this.alternative.images[this.imageIndex].source ? `(par ${this.alternative.images[this.imageIndex].source})` : '',
       };
-    },
-    metaTitle() {
-      const { destination, alternative } = this;
-
-      if (destination && alternative) {
-        return `${alternative.label}, une des plus belles alternatives françaises à ${destination.label}`;
-      }
-
-      return `${alternative.label}, une des plus belles destinations françaises`;
     },
   },
   methods: {

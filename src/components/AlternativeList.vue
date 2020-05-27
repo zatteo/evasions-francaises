@@ -34,6 +34,11 @@ export default {
   components: {
     Alternative,
   },
+  metaInfo() {
+    return {
+      title: this.metaTitle,
+    };
+  },
   props: {
     destination: Object,
     alternatives: Array,
@@ -51,6 +56,13 @@ export default {
     return {
     };
   },
+  computed: {
+    metaTitle() {
+      const { destination } = this;
+
+      return `Toutes les alternatives à "${destination.label}", pour des voyages plus écoresponsables !`;
+    },
+  },
   methods: {
     setURL() {
       const { destination } = this;
@@ -62,8 +74,6 @@ export default {
         }
       }
     },
-  },
-  watch: {
   },
 };
 
