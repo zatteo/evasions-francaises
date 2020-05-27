@@ -12,14 +12,14 @@
           type="text"
           placeholder="Entrez votre code postal"
         >
-        <b-button class="btn btn-primary" size="sm" @click="getLocation()">
+        <!-- <b-button class="btn btn-primary" size="sm" @click="getLocation()">
           OK
-        </b-button>
+        </b-button> -->
       </div>
       <a href="" @click.prevent="resetLocation">Réinitialiser</a>
     </div>
     <template v-slot:modal-footer="{ ok }">
-      <b-button class="btn btn-primary" size="sm" @click="ok()">
+      <b-button class="btn btn-primary" size="sm" @click="getLocation()">
         OK
       </b-button>
     </template>
