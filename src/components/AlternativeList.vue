@@ -1,39 +1,27 @@
 <template>
   <div>
+    <div class="card">
+      <div class="card-header text-left">
+        <h3 class="d-inline-block mb-0">
+          {{ alternatives.length }}
+          {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
+          pour "{{ destination.label }}"
+        </h3>
+        <span
+          v-for="category in destination.categories"
+          :key="category"
+          class="badge badge-info ml-1"
+        >
+          {{ category }}
+        </span>
+      </div>
+    </div>
     <div v-for="alternative in alternatives" :key="alternative.slug">
       <Alternative
         :alternative="alternative"
         :destination="destination"
       />
     </div>
-    <!-- <div class="card">
-      <div class="card-header">
-        <div class="row">
-          <div class="col-12 col-md-8 text-left">
-            <div v-if="destination">
-              <h3 class="d-inline-block mb-0">
-                {{ alternatives.length }}
-                {{ alternatives.length > 1 ? 'alternatives' : 'alternative' }}
-                pour "{{ destination.label }}"
-              </h3>
-              <span
-                v-for="category in destination.categories"
-                :key="category"
-                class="badge badge-info ml-1"
-              >
-                {{ category }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="card">
-      <h3 class="card-header">Aucune alternative n'a été trouvée</h3>
-      <div class="card-body">
-        Essayez peut-être de chercher une autre destination, voir d'augmenter la distance maximale ?
-      </div>
-    </div> -->
   </div>
 </template>
 

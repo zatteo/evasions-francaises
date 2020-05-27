@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <div class="card-header">
+    <div class="card-header text-left">
       <h4 class="d-inline-block mb-0">
         {{ alternative.label }}
       </h4>

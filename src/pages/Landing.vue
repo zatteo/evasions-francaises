@@ -5,7 +5,9 @@
         <div class="col-12">
           <div class="card search-card">
             <a href="/" @click.prevent="resetSelected(true)">
-              <p class="title">Évasions françaises</p>
+              <!-- <p class="title">Évasions françaises</p<img > -->
+              <img src="/assets/logo_text_green.png" class="title">
+
             </a>
             <p
               class="search-text"
@@ -364,9 +366,13 @@ a {
 }
 
 .title {
-  margin: 2% 0 0 0;
-  font-family: "Sacramento";
-  font-size: 5rem;
+  max-width: 70%;
+}
+
+@media (min-width: 768px) {
+  .title {
+    max-width: 300px;
+  }
 }
 
 .search-card {
@@ -374,6 +380,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1%;
 }
 
 .search-text {
