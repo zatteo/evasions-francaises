@@ -21,6 +21,7 @@
                 :value="selected"
                 @input="setSelected"
                 :reduce="destination => destination.slug"
+                label="title"
                 :options="sortedDestinations"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
@@ -173,7 +174,10 @@ export default {
         $loadedDestinations,
       } = this;
 
-      return $loadedDestinations.sort((a, b) => a.label.localeCompare(b.label));
+      return $loadedDestinations.sort((a, b) => a.label.localeCompare(b.label)).map((d) => ({
+        title: `${d.label}${d.country ? `, ${d.country}` : ''}`,
+        ...d,
+      }));
     },
     fullDestinations() {
       const {
