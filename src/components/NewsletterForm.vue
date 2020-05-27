@@ -18,7 +18,7 @@
                     <div class="form__label-row ">
 
                       <div class="entry__field">
-                        <input v-model="name" class="input" maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="PRENOM" data-required="true" required />
+                        <input class="input" maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="PRENOM" data-required="true" required />
                       </div>
                     </div>
 
@@ -32,7 +32,7 @@
                   <div class="form__entry entry_block">
                     <div class="form__label-row ">
                       <div class="entry__field">
-                        <input v-model="email" class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">

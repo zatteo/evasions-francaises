@@ -11,12 +11,7 @@ const router = new VueRouter({
       component: Landing,
     },
     {
-      path: '/destination/:destinationSlug/alternative/:alternativeSlug',
-      component: Landing,
-      props: true,
-    },
-    {
-      path: '/alternative/:alternativeSlug',
+      path: '/destination/:destinationSlug',
       component: Landing,
       props: true,
     },

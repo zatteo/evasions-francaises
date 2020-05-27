@@ -50,9 +50,9 @@
             <div class="row">
               <button
                 type="button"
-                class="btn btn-primary btn-toolbar" @click="setRandomAlternative"
+                class="btn btn-primary btn-toolbar" @click="setRandomDestination"
               >
-                Une alternative au hasard
+                Une destination au hasard
               </button>
             </div>
           </div>
@@ -138,17 +138,11 @@ export default {
     NewsletterForm,
   },
   mounted() {
-    const { destinationSlug, alternativeSlug } = this;
+    const { destinationSlug } = this;
 
     if (destinationSlug) {
       this.selected = destinationSlug;
       this.destination = this.fullDestinations.find((a) => a.slug === this.destinationSlug);
-    }
-
-    if (alternativeSlug) {
-      this.alternatives = [
-        this.fullAlternatives.find((a) => a.slug === this.alternativeSlug),
-      ];
     }
 
     // eslint-disable-next-line no-undef
@@ -156,7 +150,6 @@ export default {
   },
   props: [
     'destinationSlug',
-    'alternativeSlug',
   ],
   data() {
     return {
@@ -265,12 +258,10 @@ export default {
         this.$router.push('/');
       }
     },
-    setRandomAlternative() {
+    setRandomDestination() {
       this.resetSelected();
 
-      this.alternatives = [
-        this.fullAlternatives[parseInt(Math.random() * this.fullAlternatives.length, 10)],
-      ];
+      this.setSelected(this.fullDestinations[parseInt(Math.random() * this.fullDestinations.length, 10)].slug);
     },
     setLocation(location) {
       this.location = location;
