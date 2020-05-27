@@ -90,7 +90,7 @@
                   class="image"
                   width="1024"
                   height="480"
-                  :src="`/assets/images/${image.path}`"
+                  :src="`/assets/images/medium/${image.path}`"
                   alt="..."
                 >
               </template>
