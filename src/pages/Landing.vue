@@ -39,7 +39,7 @@
                   </a>
                 </span>
                 <span>
-                  Distance maximale
+                  Distance maximale :
                   <input
                     id="distance"
                     class="search-distance"
@@ -47,6 +47,7 @@
                     type="number"
                     step="10"
                   >
+                  km
                 </span>
               </div>
             </div>
@@ -81,40 +82,37 @@
       <div class="row">
         <div class="col-12">
           <div class="card why-card">
-            <div class="row">
-              <div class="col-12">
-                <br>
-                <p>
-                  Vous êtes comme nous ? Ouverts sur le monde, vous aimez voyager, vous évader,
-                  découvrir d´autres paysages, d´autres cultures plus exotiques les unes que
-                  les autres ?
-                  <br><br>
-                  Après deux mois de confinement, nous vous proposons de vous évader
-                  de vos quatre murs pour partir à la découverte d´un pays exotique : la France !
-                  <br><br>
-                  Pour chacune de vos destinations de rêve, nous vous proposons des destinations
-                  alternatives locales. Essayez, vous verrez : il est possible de faire le tour
-                  du monde en France ! Avec en prime, au moins sur le trajet,
-                  une meilleure empreinte environnementale. Et si vous voulez nous aider,
-                  vous pouvez même
-                  <a href="" v-b-modal.propose-alternative-modal @click.prevent>
-                    proposer votre alternative
-                  </a>.
-                </p>
+            <div class="card-body">
+              <p>
+                Vous êtes comme nous ? Ouverts sur le monde, vous aimez voyager, vous évader,
+                découvrir d´autres paysages, d´autres cultures plus exotiques les unes que
+                les autres ?
+                <br><br>
+                Après deux mois de confinement, nous vous proposons de vous évader
+                de vos quatre murs pour partir à la découverte d´un pays exotique : la France !
+                <br><br>
+                Pour chacune de vos destinations de rêve, nous vous proposons des destinations
+                alternatives locales. Essayez, vous verrez : il est possible de faire le tour
+                du monde en France ! Avec en prime, au moins sur le trajet,
+                une meilleure empreinte environnementale. Et si vous voulez nous aider,
+                vous pouvez même
+                <a href="" v-b-modal.propose-alternative-modal @click.prevent>
+                  proposer votre alternative
+                </a>.
+              </p>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <img class="why-icon" src="/assets/map.png">
+                  <p class="why-icon-text">Soutenir le tourisme local</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img class="why-icon" src="/assets/pollution.png">
+                  <p class="why-icon-text">Réduire les émissions de CO₂ liées au tourisme</p>
+                </div>
               </div>
-              <div class="col-12 col-sm-6">
-                <img class="why-icon" src="/assets/map.png">
-                <p class="why-icon-text">Soutenir le tourisme local</p>
-              </div>
-              <div class="col-12 col-sm-6">
-                <img class="why-icon" src="/assets/pollution.png">
-                <p class="why-icon-text">Réduire les émissions de CO₂ liées au tourisme</p>
-              </div>
-              <div class="col-12">
-                <p>
-                  Fait avec <i data-feather="heart"></i> en confinement. Hébergé en 🇫🇷 chez <a href="https://scalingo.com/fr" target="_blank">Scalingo</a>. Fond d'écran par <a href="https://twitter.com/ladydaner">ladydaner</a>.
-                </p>
-              </div>
+              <p>
+                Fait avec <i data-feather="heart"></i> en confinement. Hébergé en 🇫🇷 chez <a href="https://scalingo.com/fr" target="_blank">Scalingo</a>. Fond d'écran par <a href="https://twitter.com/ladydaner">ladydaner</a>.
+              </p>
             </div>
           </div>
         </div>

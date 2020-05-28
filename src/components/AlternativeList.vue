@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card">
+    <div v-if="destination" class="card">
       <div class="card-header text-left">
         <h3 class="d-inline-block mb-0">
           {{ alternatives.length }}
@@ -59,8 +59,11 @@ export default {
   computed: {
     metaTitle() {
       const { destination } = this;
+      if (destination) {
+        return `Toutes les alternatives à "${destination.label}", pour des voyages plus écoresponsables !`;
+      }
 
-      return `Toutes les alternatives à "${destination.label}", pour des voyages plus écoresponsables !`;
+      return 'Trouvez les alternatives françaises aux plus belles destinations du monde !';
     },
   },
   methods: {
