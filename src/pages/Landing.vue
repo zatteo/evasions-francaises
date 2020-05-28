@@ -142,8 +142,7 @@ export default {
     const { destinationSlug } = this;
 
     if (destinationSlug) {
-      this.selected = destinationSlug;
-      this.destination = this.fullDestinations.find((a) => a.slug === this.destinationSlug);
+      this.setSelected(destinationSlug);
     }
 
     // eslint-disable-next-line no-undef
