@@ -265,7 +265,9 @@ export default {
     setRandomDestination() {
       this.resetSelected();
 
-      this.setSelected(this.fullDestinations[parseInt(Math.random() * this.fullDestinations.length, 10)].slug);
+      this.setSelected(this.fullDestinations[parseInt(
+        Math.random() * this.fullDestinations.length, 10,
+      )].slug);
     },
     setLocation(location) {
       this.location = location;

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueMeta from 'vue-meta';
 import VueMatomo from 'vue-matomo';
+import VueSocialSharing from 'vue-social-sharing';
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import vSelect from 'vue-select';
 import App from './App.vue';
@@ -27,6 +28,8 @@ Vue.use(VueMatomo, {
   siteId: 1,
   router,
 });
+
+Vue.use(VueSocialSharing);
 
 Vue.use(BootstrapVue);
 

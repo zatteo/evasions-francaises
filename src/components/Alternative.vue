@@ -29,7 +29,11 @@
                   CO₂
                   <b>{{ emissionDifferenceInPercent }} %</b>
                 </span></h5>
-                <b-popover :target="`popover-stats-${alternative.slug}`" triggers="hover" placement="top">
+                <b-popover
+                  :target="`popover-stats-${alternative.slug}`"
+                  triggers="hover"
+                  placement="top"
+                >
                   <template v-slot:title>Calcul des émissions de CO₂</template>
                   <p>
                     Les émissions de CO₂ sont calculées sur la base d'un passager en avion
@@ -45,6 +49,26 @@
                 </b-popover>
               </div>
               <br>
+              <ShareNetwork
+                network="facebook"
+                :url="`https://evasions-francaises.fr${this.$route.path}`"
+                :title="`Avec Évasions françaises,
+                trouvez les alternatives françaises aux plus belles destinations du monde !`"
+                class="share-button"
+              >
+                <i data-feather="facebook"></i>
+              </ShareNetwork>
+              &nbsp;
+              <ShareNetwork
+                network="twitter"
+                :url="`https://evasions-francaises.fr${this.$route.path}`"
+                :title="`Avec Évasions françaises,
+                trouvez les alternatives françaises aux plus belles destinations du monde !`"
+                class="share-button"
+              >
+                <i data-feather="twitter"></i>
+              </ShareNetwork>
+              <br>
               <a href="" v-b-modal="`map-modal-${alternative.slug}`" @click.prevent>
                 Afficher sur une carte
               </a>
@@ -58,10 +82,9 @@
               Coronavirus
               <i data-feather="alert-triangle" style="width: 16px; height: 16px;"></i>
               <br>
-              <p class="font-italic">
-                Le combat contre le coronavirus est notre responsabilité à tous.
+              <span class="font-italic">
                 Respectez les consignes locales et les gestes barrières.
-              </p>
+              </span>
             </div>
           </div>
           <DisplayMapModal :alternative="alternative"/>
@@ -213,6 +236,14 @@ export default {
     max-height: 100%;
     width: auto;
   }
+}
+
+.share-button {
+  cursor: pointer;
+}
+
+.share-button:hover {
+  text-decoration: underline;
 }
 
 </style>
