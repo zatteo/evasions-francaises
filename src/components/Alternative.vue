@@ -19,7 +19,7 @@
             <div class="card-body">
               <p v-html="alternative.description" class="text-justify"></p>
               <!-- popover -->
-              <div v-if="destination" id="popover-stats">
+              <div v-if="destination" :id="`popover-stats-${alternative.slug}`">
                 <h5><span class="badge badge-primary" style="font-size: 85%; font-weight: normal;">
                   Distance
                   <b>{{ distanceDifference }} km</b>
@@ -29,7 +29,7 @@
                   CO₂
                   <b>{{ emissionDifferenceInPercent }} %</b>
                 </span></h5>
-                <b-popover target="popover-stats" triggers="hover" placement="top">
+                <b-popover :target="`popover-stats-${alternative.slug}`" triggers="hover" placement="top">
                   <template v-slot:title>Calcul des émissions de CO₂</template>
                   <p>
                     Les émissions de CO₂ sont calculées sur la base d'un passager en avion
@@ -45,7 +45,7 @@
                 </b-popover>
               </div>
               <br>
-              <a href="" v-b-modal.map-modal @click.prevent>
+              <a href="" v-b-modal="`map-modal-${alternative.slug}`" @click.prevent>
                 Afficher sur une carte
               </a>
               <br>

@@ -1,12 +1,12 @@
 <!-- eslint-disable -->
 <template>
   <b-modal
-    id="map-modal"
+    :id="`map-modal-${alternative.slug}`"
     title="Carte"
   >
     <div class="map">
       <img
-        :src="`assets/maps/${alternative.label}.jpg`"
+        :src="`/assets/maps/${alternative.label}.jpg`"
         alt="La carte n'est pas disponible :/"
       >
     </div>
