@@ -281,10 +281,10 @@
     ]
   },
   {
-    "label": "Finlande",
-    "slug": "finlande",
+    "label": "Järvi-Suomi",
+    "slug": "jarvi-suomi",
     "date": "18/05/2020",
-    "country": "",
+    "country": "Finlande",
     "latitude": 64,
     "longitude": 26,
     "categories": [
@@ -638,7 +638,46 @@
     "latitude": 47.8602,
     "longitude": 106.9162,
     "categories": [
-      "Désert montagneux"
+      "Désert montagneux",
+      "Pozzines"
+    ]
+  },
+  {
+    "label": "Barbade",
+    "slug": "barbade",
+    "date": "29/05/2020",
+    "country": "",
+    "latitude": 13.1286,
+    "longitude": -59.5452,
+    "categories": [
+      "Iles paradisiaques",
+      "Plages"
+    ]
+  },
+  {
+    "label": "Îles Galápagos",
+    "slug": "iles-galapagos",
+    "date": "29/05/2020",
+    "country": "Équateur",
+    "latitude": -0.865,
+    "longitude": -90.324,
+    "categories": [
+      "Iles paradisiaques",
+      "Plages",
+      "Archipel"
+    ]
+  },
+  {
+    "label": "Palawan",
+    "slug": "palawan",
+    "date": "29/05/2020",
+    "country": "Philippines",
+    "latitude": 9.333,
+    "longitude": 118.499,
+    "categories": [
+      "Iles paradisiaques",
+      "Plages",
+      "Gorges"
     ]
   }
 ]

@@ -1492,5 +1492,96 @@
   "links": [
     " https://www.visorando.com/randonnee-chute-de-la-druise/ "
   ]
+  },
+  {
+  "label": "Lac de Nino",
+  "slug": "lac-nino",
+    "date": "29/05/2020",
+    "department": "Haute-Corse",
+    "latitude": 42.2477,
+  "longitude": 8.9401,
+  "categories": ["Pozzines"],
+  "images": [
+    {
+      "path": "lac_nino.jpg",
+      "source": "Flickr, Gwénael Lelievre"
+    }
+  ],
+  "description": "Deuxième plus grand lac de Corse, le lac de Nino vous fera voyager en mongolie notamment grâce à ses nombreux pozzines, c'est-à-dire les petits lacs tourbeux qu'on peut apercevoir. ",
+  "links": [
+    "https://www.visit-corsica.com/"
+  ]
+  },
+  {
+  "label": "Parc naturel régional de la Brenne",
+  "slug": "parc-naturel-brenne",
+    "date": "29/05/2020",
+    "department": "Indre",
+    "latitude": 46.663,
+  "longitude": 1.241,
+  "categories": ["Lacs et forêts","Marais"],
+  "images": [
+    {
+      "path": "brenne.jpg",
+      "source": "Flickr, Christian Choret"
+    },
+    {
+      "path" : "brenne2.jpg",
+      "source":"Flickr, Nicolas Paris"
+    }
+  ],
+  "description": " 183 000 hectares dans lesquels vous pouvez retrouver 5000 plans d'eau. Plus de 2 300espèces animales se cotoient dans la Brenne, avis aux amateurs de faune n'oubliez pas vos jumelles pour observer le vol d'un Héron pourpré ou encore voir les cistude d'Europe lézarder au soleil.  ",
+  "links": [
+    "https://www.parc-naturel-brenne.fr/"
+  ]
+  },
+  {
+  "label": "Étang de Lindre",
+  "slug": "etang-indre",
+    "date": "29/05/2020",
+    "department": "moselle",
+    "latitude": 48.7299,
+  "longitude": 6.7593,
+  "categories": ["Lacs et forêts","Marais"],
+  "images": [
+    {
+      "path": "etang_lindre.jpg",
+      "source": "Flickr, Sofy Engel"
+    },
+    {
+      "path" : "etang_lindre2.jpg",
+      "source":"Flickr, staudi1960"
+    }
+  ],
+  "description": " L'étang de Lindre abrite sur une presqu'île la ville de Tarquimpol, autrefois appelé Teichenphul soit étang marécageux. ",
+  "links": [
+    "http://www.domainedelindre.com/"
+  ]
+  },
+  {
+  "label": "Parc national du Mercantour",
+  "slug": "parc-mercantour",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritimes",
+    "latitude": 44.1628,
+  "longitude": 7.0833,
+  "categories": ["Lacs et forêts","Lacs et montagnes"],
+  "images": [
+    {
+      "path": "mercantour.jpg"
+    },
+    {
+      "path" : "mercantour2.jpg",
+      "source":"Flickr, D-L-E-F"
+    },
+    {
+      "path" : "mercantour3.jpg",
+      "source":"Flickr, D-L-E-F"
+    }
+  ],
+  "description": " Ce parc national est également un parc naturel européen puisqu'il est geré communément avec le parc naturel des Alpes Maritimes dans la région du Piémont en Italie. Avec les alpes en arrière plan et les lacs par ci et par là, on aurait presque l'impression d'être au Canada...  ",
+  "links": [
+    "http://www.mercantour-parcnational.fr/fr"
+  ]
   }
 ]
