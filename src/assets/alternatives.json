@@ -1583,5 +1583,135 @@
   "links": [
     "http://www.mercantour-parcnational.fr/fr"
   ]
+  },
+  {
+  "label": "Plage de la Salis",
+  "slug": "plage-salis",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritimes",
+    "latitude": 43.5187,
+  "longitude": 7.1246,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "plage_salis.jpg",
+      "source":"Flickr, Florence"
+    }
+  ],
+  "description": " Pour les pro du farniente rendez vous à la plage de la Salis à Antibes. La plage de sable fin, ses eaux turquoises et peu profonde seront vous séduire. Pour plus de calme vous pouvez également vous rendre vers Juan-les-Pins pour découvrir des petites plages et criques qui ne manquent pas de charme.    ",
+  "links": [
+    "https://www.antibesjuanlespins.com/decouvrir/antibes-juan-les-pins-ville-mediterraneenne/les-plages-d-antibes-juan-les-pins"
+  ]
+  },
+  {
+  "label": "Plage de Mala",
+  "slug": "plage-mala",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritimes",
+    "latitude": 43.6599,
+  "longitude": 7.4075,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "plage_mala.jpg",
+      "source":"Flickr, Yannick"
+    },
+    {
+      "path" : "plage_mala2.jpg",
+      "source":"Flickr, Emilie"
+    }
+  ],
+  "description": " Dans la commune de Cap d'Ail retrouvez la plage Mala célèbre pour ses criques sauvages et sa végétation méditéranéenne.   ",
+  "links": [
+    "https://cap-dail.com/fr/"
+  ]
+  },
+  {
+  "label": "Plage de Paloma",
+  "slug": "plage-paloma",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritimes",
+    "latitude": 43.6202,
+  "longitude": 7.3334,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "plage_paloma.jpg",
+      "source":"Flickr, Daniel Lecointe "
+    },
+    {
+      "path" : "plage_paloma2.jpg",
+      "source":"Flickr, Clementinos2009"
+    }
+  ],
+  "description": " Et pourquoi pas se rendre sur l'une des plages les plus instagramées de France ? Ce n'est pas moins de 11 000 clichés posté de la célèbre plage de Saint-Jean-Cap-Ferrat sur Instagram. Envie de rajouter votre pierre à l'édifice ?",
+  "links": [
+    "https://www.saintjeancapferrat-tourisme.fr/"
+  ]
+  },
+  {
+  "label": "Calanque des Anglais",
+  "slug": "calanque-anglais",
+    "date": "29/05/2020",
+    "department": "Var",
+    "latitude": 43.3631,
+  "longitude": 6.8692,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "calanque_anglais.jpg",
+      "source":"Saint-Raphael.com "
+    },
+    {
+      "path" : "calanque_anglais2.jpg",
+      "source":"esterel-cotedazur.com"
+    }
+  ],
+  "description": " Dans le massif de l'Esterel se trouve caché la calanque des anglais. Encadré de ses falaises rouges, ses trois criques de galets rouges peuvent en faire rêver plus d'un. ",
+  "links": [
+    "https://www.esterel-cotedazur.com/decouvrir/plages/calanque-des-anglais/"
+  ]
+  },
+  {
+  "label": "Plages des Sablettes",
+  "slug": "plage-sablettes",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritime",
+    "latitude": 43.7572,
+  "longitude": 7.4961,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "plage_sablettes.jpg",
+      "source":"Office du tourisme Menton "
+    },
+    {
+      "path" : "plage_sablettes2.jpg",
+      "source":"Flickr, Cristian Ivascu"
+    }
+  ],
+  "description": " A l'origine la plage des sablettes était une petite plage. Dans les années 60 elle a été agrandie artificiellement. Au pieds du vieux Menton, pourquoi ne pas en profiter pour visiter la ville d'art et d'histoire afin d'éviter une insolation ? ",
+  "links": [
+    "https://www.menton-riviera-merveilles.fr/"
+  ]
+  },
+  {
+  "label": "Pointe de l'Aiguille",
+  "slug": "pointe-aiguille",
+    "date": "29/05/2020",
+    "department": "Alpes-Maritime",
+    "latitude": 43.4449,
+  "longitude": 6.9406,
+  "categories": ["Plages"],
+  "images": [
+    {
+      "path" : "pointe_aiguille.jpg",
+      "source":"Flickr, Jean-Pierre lozi"
+    }
+  ],
+  "description": " Vous trouverez cette plage de galet à proximité de la ville de Théoule-sur-Mer, au niveau du Parc de le pointe de l'Aiguille.  ",
+  "links": [
+    "https://www.theoule-sur-mer.org/fr/parc-de-pointe-de-laiguille/"
+  ]
   }
 ]
