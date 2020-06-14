@@ -3,12 +3,12 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin');
 
 // vue.config.js
 module.exports = {
-  publicPath: '/',
   configureWebpack: {
     plugins: [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
         routes: ['/destination/afrique-sud'],
+        maxConcurrentRoutes: 4,
       }),
     ],
   },
