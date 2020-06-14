@@ -37,6 +37,9 @@ export default {
   metaInfo() {
     return {
       title: this.metaTitle,
+      meta: [
+        ...this.openGraphTags,
+      ],
     };
   },
   props: {
@@ -64,6 +67,18 @@ export default {
       }
 
       return 'Trouvez les alternatives françaises aux plus belles destinations du monde !';
+    },
+    openGraphTags() {
+      const { destination } = this;
+      if (destination) {
+        return [
+          { name: 'og:title', content: `Envie de "${destination.label}" ?` },
+          { name: 'og:description', content: `Toutes les alternatives françaises à "${destination.label}", pour des voyages plus écoresponsables !` },
+          // { name: 'og:image', content: `` },
+        ];
+      }
+
+      return [];
     },
   },
   methods: {
