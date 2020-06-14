@@ -138,6 +138,14 @@ export default {
     GetLocationModal,
     NewsletterForm,
   },
+  metaInfo() {
+    return {
+      meta: [
+        { name: 'og:title', content: 'Faites le tour du monde en France !' },
+        { name: 'og:description', content: 'Avec Évasions françaises, trouvez les alternatives françaises aux plus belles destinations du monde. Ensemble, soutenons le tourisme local et réduisons notre empreinte carbone.' },
+      ],
+    };
+  },
   mounted() {
     const { destinationSlug } = this;
 
