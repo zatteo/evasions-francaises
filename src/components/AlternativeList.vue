@@ -63,19 +63,24 @@ export default {
     metaTitle() {
       const { destination } = this;
       if (destination) {
-        return `Toutes les alternatives à "${destination.label}", pour des voyages plus écoresponsables !`;
+        return `Évasions françaises - ${destination.label}`;
       }
 
       return 'Trouvez les alternatives françaises aux plus belles destinations du monde !';
     },
     openGraphTags() {
-      const { destination } = this;
+      const { destination, alternatives } = this;
       if (destination) {
-        return [
-          { name: 'og:title', content: `Envie de "${destination.label}" ?` },
-          { name: 'og:description', content: `Toutes les alternatives françaises à "${destination.label}", pour des voyages plus écoresponsables !` },
-          // { name: 'og:image', content: `` },
+        const tags = [
+          { vmid: 'og:title', name: 'og:title', content: `Pourquoi aller ${destination.preposition} ${destination.label} quand on a ces paysages en France ?` },
+          { vmid: 'og:description', name: 'og:description', content: 'Trouvez les alternatives françaises aux plus belles destinations du monde !' },
         ];
+
+        if (alternatives.length > 0 && alternatives[0].images.length > 0) {
+          tags.push({ vmid: 'og:image', name: 'og:image', content: `https://evasions-francaises.fr/assets/images/medium/${alternatives[0].images[0].path}` });
+        }
+
+        return tags;
       }
 
       return [];

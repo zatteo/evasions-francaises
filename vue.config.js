@@ -1,14 +1,20 @@
 const path = require('path');
 const PrerenderSPAPlugin = require('prerender-spa-plugin');
 
+const loadedDestinations = require('./src/assets/places.json');
+
+const prerenderedRoutes = loadedDestinations.map((d) => `/destination/${d.slug}`);
+
+console.log(prerenderedRoutes)
+
 // vue.config.js
 module.exports = {
   configureWebpack: {
     plugins: [
       new PrerenderSPAPlugin({
         staticDir: path.join(__dirname, 'dist'),
-        routes: ['/destination/afrique-sud'],
-        maxConcurrentRoutes: 4,
+        routes: prerenderedRoutes,
+        maxConcurrentRoutes: 10,
       }),
     ],
   },
