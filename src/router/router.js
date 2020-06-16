@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 
 import Landing from '../pages/Landing.vue';
+import Alternative from '../pages/p-Alternative.vue';
 import AlternativeList from '../pages/AlternativeList.vue';
 
 const router = new VueRouter({
@@ -13,6 +14,11 @@ const router = new VueRouter({
     {
       path: '/destination/:destinationSlug/',
       component: Landing,
+      props: true,
+    },
+    {
+      path: '/alternative/:alternativeSlug/',
+      component: Alternative,
       props: true,
     },
     {

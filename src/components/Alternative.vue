@@ -167,8 +167,11 @@ export default {
     validCategories() {
       const { alternative, destination } = this;
 
-      return destination
-      && destination.categories.filter((category) => alternative.categories.includes(category));
+      if (destination) {
+        return destination.categories.filter((category) => alternative.categories.includes(category));
+      }
+
+      return [];
     },
     caption() {
       return {
