@@ -91,7 +91,7 @@ export default {
       const { destination } = this;
 
       if (destination) {
-        const newRoute = `/destination/${destination.slug}`;
+        const newRoute = `/destination/${destination.slug}/`;
         if (this.$route.path !== newRoute) {
           this.$router.push(newRoute);
         }

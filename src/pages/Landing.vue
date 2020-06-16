@@ -143,7 +143,7 @@ export default {
       meta: [
         { vmid: 'og:title', name: 'og:title', content: 'Faites le tour du monde en France !' },
         { vmid: 'og:description', name: 'og:description', content: 'Avec Évasions françaises, trouvez les alternatives françaises aux plus belles destinations du monde. Ensemble, soutenons le tourisme local et réduisons notre empreinte carbone.' },
-        { vmid: 'og:image', name: 'og:image', content: 'https://zatteo.com/grenoble.jpg' },
+        { vmid: 'og:image', name: 'og:image', content: 'https://evasions-francaises.fr/assets/grenoble.jpg' },
       ],
     };
   },
