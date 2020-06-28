@@ -9,6 +9,13 @@
             </h4>
           </div>
           <div class="card-body text-left">
+            <router-link
+              to="/"
+            >
+              Retour à l'accueil
+            </router-link>
+            <br>
+            <br>
             <ul>
               <li v-for="alternative in alternatives" :key="alternative.label">
                 <router-link
