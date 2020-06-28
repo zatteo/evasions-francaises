@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router';
 
-import Landing from '../pages/Landing.vue';
+import Landing from '../pages/p-Landing.vue';
 import Alternative from '../pages/p-Alternative.vue';
-import AlternativeList from '../pages/AlternativeList.vue';
+import AlternativesList from '../pages/p-AlternativesList.vue';
 
 const router = new VueRouter({
   mode: 'history',
@@ -23,7 +23,7 @@ const router = new VueRouter({
     },
     {
       path: '/alternatives',
-      component: AlternativeList,
+      component: AlternativesList,
     },
     // { path: '*', component: NotFoundComponent },
   ],

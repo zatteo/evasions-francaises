@@ -4,12 +4,28 @@
       <div class="row">
         <div>
           <Alternative
+            v-if="currentAlternative"
             :alternative="currentAlternative"
           />
         </div>
       </div>
-      <div v-for="destination in destinations" :key="destination.slug" class="row">
-        <Destination :destination="destination"/>
+      <div class="row">
+        <div class="card w-100">
+          <div class="card-header text-left">
+            <h4>
+              Les destinations ressemblantes
+            </h4>
+          </div>
+          <div class="card-body">
+            <ul v-for="destination in destinations" :key="destination.slug" class="row">
+              <li>
+                <router-link :to="`/destination/${destination.slug}`">
+                  {{ destination.label }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -18,14 +34,11 @@
 <script>
 
 import Alternative from '../components/Alternative.vue';
-import Destination from '../components/c-Destination.vue';
-
 
 export default {
   name: 'p-Alternative',
   components: {
     Alternative,
-    Destination,
   },
   props: [
     'alternativeSlug',
@@ -37,7 +50,7 @@ export default {
   },
   data() {
     return {
-      currentAlternative: {},
+      currentAlternative: false,
     };
   },
   computed: {
@@ -45,7 +58,7 @@ export default {
       const { $loadedDestinations, currentAlternative } = this;
 
       return $loadedDestinations.filter(
-        (d) => d.categories.filter((category) => currentAlternative.categories.includes(category)).length > 0,
+        (d) => d.categories.filter((category) => currentAlternative.categories && currentAlternative.categories.includes(category)).length > 0,
       );
     },
   },

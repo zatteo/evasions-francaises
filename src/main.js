@@ -14,8 +14,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import loadedDestinations from './assets/places.json';
 import loadedAlternatives from './assets/alternatives.json';
 
-Vue.prototype.$loadedDestinations = loadedDestinations;
-Vue.prototype.$loadedAlternatives = loadedAlternatives;
+Vue.prototype.$loadedDestinations = loadedDestinations.sort((a, b) => a.label.localeCompare(b.label));
+Vue.prototype.$loadedAlternatives = loadedAlternatives.sort((a, b) => a.label.localeCompare(b.label));
 
 Vue.use(VueRouter);
 

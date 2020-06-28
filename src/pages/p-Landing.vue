@@ -5,15 +5,14 @@
         <div class="col-12">
           <div class="card search-card">
             <a href="/" @click.prevent="resetSelected(true)">
-              <!-- <p class="title">Évasions françaises</p<img > -->
               <img src="/assets/logo_text_green.png" class="title">
-
             </a>
             <p
               class="search-text"
             >
-             Cherchez votre prochaine destination parmi plus de {{ $loadedAlternatives.length }}
-             alternatives françaises aux plus belles destinations du monde, ou
+              Cherchez votre prochaine destination parmi plus de
+              <router-link to="/alternatives">{{ $loadedAlternatives.length }} alternatives françaises</router-link>
+              aux plus belles destinations du monde, ou
             <a href="" v-b-modal.propose-alternative-modal @click.prevent>
               proposez votre alternative</a>.
             </p>
@@ -24,7 +23,7 @@
                 @input="setSelected"
                 :reduce="destination => destination.slug"
                 label="title"
-                :options="sortedDestinations"
+                :options="titledDestinations"
                 :placeholder="`Bali, Grand Canyon, ...`"
               ></v-select>
               <div class="search-toolbar text-legend">
@@ -177,12 +176,12 @@ export default {
     };
   },
   computed: {
-    sortedDestinations() {
+    titledDestinations() {
       const {
         $loadedDestinations,
       } = this;
 
-      return $loadedDestinations.sort((a, b) => a.label.localeCompare(b.label)).map((d) => ({
+      return $loadedDestinations.map((d) => ({
         title: `${d.label}${d.country ? `, ${d.country}` : ''}`,
         ...d,
       }));
